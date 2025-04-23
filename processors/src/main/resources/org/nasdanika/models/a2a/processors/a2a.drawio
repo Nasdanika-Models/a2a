@@ -64,7 +64,7 @@
         </mxCell>
         <object label="InternalError" link="references/eClassifiers/InternalError/index.html" id="109e6688-b80c-434e-97ca-e57692b0469b">
           <mxCell parent="1" vertex="1">
-            <mxGeometry x="1827.3677955564162" width="150" height="40" as="geometry" />
+            <mxGeometry x="312.61" y="1840" width="97.39" height="40" as="geometry" />
           </mxCell>
         </object>
         <object label="TaskArtifactUpdateEvent" link="references/eClassifiers/TaskArtifactUpdateEvent/index.html" id="69bc0c3e-0833-462a-a511-8fc9fff9b96b">
@@ -178,7 +178,7 @@
         </mxCell>
         <object label="JSONRPCMessage" link="references/eClassifiers/JSONRPCMessage/index.html" id="38e0b34c-c3f4-4d22-950d-6a93c5363f5b">
           <mxCell parent="1" vertex="1">
-            <mxGeometry x="1920" width="150" height="40" as="geometry" />
+            <mxGeometry x="171.61" y="1840" width="128.39" height="40" as="geometry" />
           </mxCell>
         </object>
         <object label="Task" link="references/eClassifiers/Task/index.html" id="c186a2fe-b68c-4fbc-a5c5-e3674c954daa">
@@ -228,7 +228,7 @@
         </object>
         <object label="TaskState" link="references/eClassifiers/TaskState/index.html" id="15ee4137-a0d7-4b19-9f8f-b7ec57b12bea">
           <mxCell parent="1" vertex="1">
-            <mxGeometry x="1920" width="150" height="40" as="geometry" />
+            <mxGeometry x="80" y="1840" width="80" height="40" as="geometry" />
           </mxCell>
         </object>
         <object label="SendTaskResponse" link="references/eClassifiers/SendTaskResponse/index.html" id="98a623a2-37d5-47a3-88f5-9012c0a50d6c">
@@ -461,7 +461,7 @@
         </mxCell>
         <object label="UnsupportedOperationError" link="references/eClassifiers/UnsupportedOperationError/index.html" id="f439b0f6-4e21-44bb-a971-89fc790b6a7d">
           <mxCell parent="1" vertex="1">
-            <mxGeometry x="1920" y="129.99646211858115" width="150" height="40" as="geometry" />
+            <mxGeometry x="80" y="1890" width="160" height="40" as="geometry" />
           </mxCell>
         </object>
       </root>

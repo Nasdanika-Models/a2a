@@ -3388,12 +3388,6 @@ public class A2aPackageImpl extends EPackageImpl implements A2aPackage {
 	protected void createGenModelAnnotations() {
 		String source = "http://www.eclipse.org/emf/2002/GenModel";
 		addAnnotation
-		  (this,
-		   source,
-		   new String[] {
-			   "documentation", "TODO...\r\n\r\n"
-		   });
-		addAnnotation
 		  (taskEClass,
 		   source,
 		   new String[] {

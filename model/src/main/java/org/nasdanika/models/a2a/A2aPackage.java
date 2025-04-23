@@ -20,11 +20,6 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * <!-- begin-model-doc -->
- * TODO...
- * 
- * 
- * <!-- end-model-doc -->
  * @see org.nasdanika.models.a2a.A2aFactory
  * @model kind="package"
  * @generated
