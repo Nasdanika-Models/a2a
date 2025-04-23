@@ -1,4 +1,4 @@
-package org.nasdanika.models.excel.tests;
+package org.nasdanika.models.a2a.tests;
 
 import java.io.File;
 import java.io.FileInputStream;
