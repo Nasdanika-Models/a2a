@@ -63,13 +63,11 @@ public class EcoreGenA2aProcessorsFactory {
 			description = "A model of A2A schema",
 			documentation =  
 				"""				
-				TODO...
+				This is a documentation of [a2a.json](https://github.com/google/A2A/blob/main/specification/json/a2a.json) schema generated as explained in the [Documenting JSON schemas](https://medium.com/nasdanika/documenting-json-schemas-15e3bd690c33) story.
 
 				```drawio-resource
 				a2a.drawio
 				```
-				
-				trrr
 
 				"""
 	)
