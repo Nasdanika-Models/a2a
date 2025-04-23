@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated a2a -->
+      <package
+            uri="ecore://nasdanika.org/models/a2a"
+            class="org.nasdanika.models.a2a.A2aPackage"
+            genModel="model/a2a.genmodel"/>
+   </extension>
+
+</plugin>

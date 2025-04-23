@@ -1,0 +1,409 @@
+<mxfile compressed="false" host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
+  <diagram id="3f3dd8bb-8c46-4d42-bbed-04344557b37a" name="A2A">
+    <mxGraphModel dx="4198" dy="1921" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label="AuthenticationInfo" link="references/eClassifiers/AuthenticationInfo/index.html" id="109665f6-f24e-47c5-8733-1779a24378e5">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="586.7399553315204" y="797.4742072889991" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="JSONRPCResponse" link="references/eClassifiers/JSONRPCResponse/index.html" id="34609998-dde5-409a-b88e-1cf321c7f9f8">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1460.0499015940486" y="1080" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Message" link="references/eClassifiers/Message/index.html" id="8df0ed00-6265-4c55-81d1-6dd5445c7f23">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1088.6536666336965" y="689.0291216911248" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="SendTaskStreamingRequest" link="references/eClassifiers/SendTaskStreamingRequest/index.html" id="dd15710f-f5cf-4261-a0b2-6689b8bee938">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="676.5445931347509" y="586.2058209855345" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="GetTaskResponse" link="references/eClassifiers/GetTaskResponse/index.html" id="0ff4aac0-67d5-47b7-aef9-d53c45a85b50">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1213.8248960888973" y="1014.3082209535794" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="AgentCapabilities" link="references/eClassifiers/AgentCapabilities/index.html" id="f58bb7fc-fb9f-4e3d-8256-7aa5dcab8f18">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="-30" y="250" width="110.72" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="SendTaskStreamingResponse" link="references/eClassifiers/SendTaskStreamingResponse/index.html" id="c8c68936-cc07-4fb1-973e-7aed4fc6ebac">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1519.2771440574786" y="1021.0992537112542" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="InvalidRequestError" link="references/eClassifiers/InvalidRequestError/index.html" id="433939e4-2497-4d07-b5ef-34b0839df97f">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1910" y="460.53" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="TextPart" link="references/eClassifiers/TextPart/index.html" id="e0bc1bb3-e829-4017-bb8d-810de6d6097f">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1021.0804389333157" y="445.625307932455" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="JSONRPCRequest" link="references/eClassifiers/JSONRPCRequest/index.html" id="c2edc56e-c2c1-4b82-9d8e-3d502d8da691">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1894.7093990222365" y="1080" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="AgentCard" link="references/eClassifiers/AgentCard/index.html" id="998ecfb3-392c-45c0-ba0b-767b6e000eb2">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="160.00205512025872" y="140" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="fabb8f8c-d655-48ab-a974-c58041779116" value="capabilities" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="998ecfb3-392c-45c0-ba0b-767b6e000eb2" target="f58bb7fc-fb9f-4e3d-8256-7aa5dcab8f18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="InternalError" link="references/eClassifiers/InternalError/index.html" id="109e6688-b80c-434e-97ca-e57692b0469b">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1827.3677955564162" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="TaskArtifactUpdateEvent" link="references/eClassifiers/TaskArtifactUpdateEvent/index.html" id="69bc0c3e-0833-462a-a511-8fc9fff9b96b">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1594.9961284878675" y="665.6061855484287" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PushNotificationConfig" link="references/eClassifiers/PushNotificationConfig/index.html" id="4a6b1267-8d37-4607-946a-2c92d335d172">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="693.2047194785616" y="903.4518118677238" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="c289d6ef-e74b-42e7-ae49-6d7d04647e13" value="authentication" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="4a6b1267-8d37-4607-946a-2c92d335d172" target="109665f6-f24e-47c5-8733-1779a24378e5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="AgentProvider" link="references/eClassifiers/AgentProvider/index.html" id="4cdf4220-d871-417d-9999-6a8ce7f1b1ce">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="89.99628130644999" y="250" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="e829201d-e2ef-421f-8f9c-1c45e705af2d" value="provider" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="998ecfb3-392c-45c0-ba0b-767b6e000eb2" target="4cdf4220-d871-417d-9999-6a8ce7f1b1ce" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="CancelTaskRequest" link="references/eClassifiers/CancelTaskRequest/index.html" id="cab1ea35-3bf5-4b76-bb13-19b93a01b12d">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="72.99437572436015" y="735.7275557739338" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="TaskSendParams" link="references/eClassifiers/TaskSendParams/index.html" id="7a8a7ebf-f299-4ccc-bc88-19edf4d23775">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="749.8608831936341" y="735.4859173064601" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="addcc527-77b1-4162-8646-28e922fd7c34" value="message" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="7a8a7ebf-f299-4ccc-bc88-19edf4d23775" target="8df0ed00-6265-4c55-81d1-6dd5445c7f23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fdf419db-8e8c-4a8d-941d-c3f8ff56956a" value="pushNotification" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="7a8a7ebf-f299-4ccc-bc88-19edf4d23775" target="4a6b1267-8d37-4607-946a-2c92d335d172" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aa2786a0-501b-4a39-a2bf-c0d3aef7c4c3" value="params" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="dd15710f-f5cf-4261-a0b2-6689b8bee938" target="7a8a7ebf-f299-4ccc-bc88-19edf4d23775" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="SendTaskStreamingResponseResult" link="references/eClassifiers/SendTaskStreamingResponseResult/index.html" id="da80839a-e097-4ed1-acdc-94aec8905ea9">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1629.1063314139049" y="842.6854015620128" width="186" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="88303bf5-d145-4d87-b9f5-deed58e686b3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0" parent="1" source="69bc0c3e-0833-462a-a511-8fc9fff9b96b" target="da80839a-e097-4ed1-acdc-94aec8905ea9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6b13ea35-5395-4d6e-9a20-e8310dc97724" value="result" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="c8c68936-cc07-4fb1-973e-7aed4fc6ebac" target="da80839a-e097-4ed1-acdc-94aec8905ea9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="FilePart" link="references/eClassifiers/FilePart/index.html" id="daddcacc-50b8-446c-827c-b0302cfcb85d">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1267.7137761385884" y="201.78193934057177" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="TaskStatus" link="references/eClassifiers/TaskStatus/index.html" id="471dd959-c04d-4044-ad14-9aa67990db60">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1310.317220071477" y="731.116419209508" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="be7f0901-bd65-405b-b8d0-133ffa749f00" value="message" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="471dd959-c04d-4044-ad14-9aa67990db60" target="8df0ed00-6265-4c55-81d1-6dd5445c7f23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="GetTaskPushNotificationRequest" link="references/eClassifiers/GetTaskPushNotificationRequest/index.html" id="0642e3d8-1062-45b4-8159-f454a0691c5b">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry y="779.7682625962726" width="180" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CancelTaskResponse" link="references/eClassifiers/CancelTaskResponse/index.html" id="3de97fdd-9a95-4e46-81de-88fe0989564b">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1353.689618065493" y="1050.5415181724227" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="TaskQueryParams" link="references/eClassifiers/TaskQueryParams/index.html" id="379f1959-6148-4aab-a18b-cca59863304d">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry y="1013.1800657958404" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="TaskNotFoundError" link="references/eClassifiers/TaskNotFoundError/index.html" id="c03ee6e7-3b73-4802-95a7-03010c47f745">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="29.63966322241948" y="1080" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="MethodNotFoundError" link="references/eClassifiers/MethodNotFoundError/index.html" id="224bd94f-86fa-4817-9273-1c30cfec4bd7">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1920" y="1080" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="GetTaskPushNotificationResponse" link="references/eClassifiers/GetTaskPushNotificationResponse/index.html" id="45657507-588f-47d6-b3d9-c447128738d1">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1025.948948643889" y="1080" width="186" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PushNotificationNotSupportedError" link="references/eClassifiers/PushNotificationNotSupportedError/index.html" id="1015723d-7a06-4bcb-80a0-1b4ef82b9f29">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1839.9958165894163" y="370" width="198" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="SendTaskRequest" link="references/eClassifiers/SendTaskRequest/index.html" id="2c9e73fc-8a04-4c0a-8abe-7fe46cfbd4f1">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="455.48631027365695" y="793.668932953044" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="5a1deec5-08f3-4966-adb8-aa4bdc4a8197" value="params" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="2c9e73fc-8a04-4c0a-8abe-7fe46cfbd4f1" target="7a8a7ebf-f299-4ccc-bc88-19edf4d23775" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="JSONRPCMessage" link="references/eClassifiers/JSONRPCMessage/index.html" id="38e0b34c-c3f4-4d22-950d-6a93c5363f5b">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1920" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Task" link="references/eClassifiers/Task/index.html" id="c186a2fe-b68c-4fbc-a5c5-e3674c954daa">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1275.3098909702633" y="841.7570484101846" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="1451de8a-11ee-4e6f-bffa-0029fa0d5d9c" value="status" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="c186a2fe-b68c-4fbc-a5c5-e3674c954daa" target="471dd959-c04d-4044-ad14-9aa67990db60" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="214dee1e-d501-4fd5-aaa5-2820081c6ea3" value="history" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" parent="1" source="c186a2fe-b68c-4fbc-a5c5-e3674c954daa" target="8df0ed00-6265-4c55-81d1-6dd5445c7f23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="49d6a834-8d74-4186-ae2f-e76587ae93f7" value="result" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="3de97fdd-9a95-4e46-81de-88fe0989564b" target="c186a2fe-b68c-4fbc-a5c5-e3674c954daa" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7393e6d7-b866-4a0a-bbf4-505da6d4ed02" value="result" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="0ff4aac0-67d5-47b7-aef9-d53c45a85b50" target="c186a2fe-b68c-4fbc-a5c5-e3674c954daa" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="TaskResubscriptionRequest" link="references/eClassifiers/TaskResubscriptionRequest/index.html" id="5cc63fe8-cf03-4e57-a407-ca78b2c68c20">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="80.71880207494219" y="972.20123086054" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="f7edb0fe-e8b0-499e-a240-dc17ab193b83" value="params" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="5cc63fe8-cf03-4e57-a407-ca78b2c68c20" target="379f1959-6148-4aab-a18b-cca59863304d" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="TaskNotCancelableError" link="references/eClassifiers/TaskNotCancelableError/index.html" id="1a0d8862-f812-4373-bba9-1ee663a8ad22">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry y="1080" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="SetTaskPushNotificationRequest" link="references/eClassifiers/SetTaskPushNotificationRequest/index.html" id="1f003a30-6fa2-4312-8e39-af6ddc8959a6">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="465.364990617085" y="1016.8006222829656" width="180" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="TaskState" link="references/eClassifiers/TaskState/index.html" id="15ee4137-a0d7-4b19-9f8f-b7ec57b12bea">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1920" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="SendTaskResponse" link="references/eClassifiers/SendTaskResponse/index.html" id="98a623a2-37d5-47a3-88f5-9012c0a50d6c">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1323.0020824863032" y="981.5826718301728" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="5f71d2a1-6d2a-46ed-a9de-b94ba4b9caf7" value="result" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="98a623a2-37d5-47a3-88f5-9012c0a50d6c" target="c186a2fe-b68c-4fbc-a5c5-e3674c954daa" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Artifact" link="references/eClassifiers/Artifact/index.html" id="af540318-2df6-4d36-8c66-d9a177c203f0">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1381.2112505453872" y="622.2604186921407" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="e9fd5fab-7939-40b3-bb4d-44160c4ea0f2" value="artifacts" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" parent="1" source="c186a2fe-b68c-4fbc-a5c5-e3674c954daa" target="af540318-2df6-4d36-8c66-d9a177c203f0" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="958e6335-a1fa-48d4-a7ba-5e9b93350fb4" value="artifact" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="69bc0c3e-0833-462a-a511-8fc9fff9b96b" target="af540318-2df6-4d36-8c66-d9a177c203f0" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="InvalidParamsError" link="references/eClassifiers/InvalidParamsError/index.html" id="24ebf30b-0fae-4fd8-b13f-3edd531d6e83">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1920" y="851.2766675477756" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="TaskPushNotificationConfig" link="references/eClassifiers/TaskPushNotificationConfig/index.html" id="ed189564-233c-4aaa-a881-2b70adceeb13">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="763.7083317123296" y="1063.6833967277087" width="156" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="69ad3c75-c6c5-4303-9ba7-ae715355ed71" value="pushNotificationConfig" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="ed189564-233c-4aaa-a881-2b70adceeb13" target="4a6b1267-8d37-4607-946a-2c92d335d172" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eed6b55f-a787-43ff-9c9f-2e8a57bb384b" value="params" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="1f003a30-6fa2-4312-8e39-af6ddc8959a6" target="ed189564-233c-4aaa-a881-2b70adceeb13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2ecb6f-bb9e-48ff-8ec6-f742c822ae9a" value="result" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="45657507-588f-47d6-b3d9-c447128738d1" target="ed189564-233c-4aaa-a881-2b70adceeb13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="FileContent" link="references/eClassifiers/FileContent/index.html" id="7454c030-b3b2-4b4d-b5ac-54ea07efd7f3">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1313.3781078077466" y="9.749031217268454" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="65922a70-13ad-4332-9fc8-dac2acbac540" value="file" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="daddcacc-50b8-446c-827c-b0302cfcb85d" target="7454c030-b3b2-4b4d-b5ac-54ea07efd7f3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="A2ARequest" link="references/eClassifiers/A2ARequest/index.html" id="123ebf94-c453-432b-934b-a8e5db8e16db">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="202.18880256358347" y="873.4948252139021" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="e6068a84-5abb-4815-99bd-cd99ef62b4ea" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0" parent="1" source="1f003a30-6fa2-4312-8e39-af6ddc8959a6" target="123ebf94-c453-432b-934b-a8e5db8e16db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3391df0d-bf3f-42a6-8a54-0013b71a6f2f" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0" parent="1" source="5cc63fe8-cf03-4e57-a407-ca78b2c68c20" target="123ebf94-c453-432b-934b-a8e5db8e16db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2c89af36-d9b4-4842-a1f4-864284cdcb95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0" parent="1" source="2c9e73fc-8a04-4c0a-8abe-7fe46cfbd4f1" target="123ebf94-c453-432b-934b-a8e5db8e16db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2640a25-df0c-43fa-a611-b6a87db502fe" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0" parent="1" source="0642e3d8-1062-45b4-8159-f454a0691c5b" target="123ebf94-c453-432b-934b-a8e5db8e16db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a586d8f1-84b5-433f-b279-99ccd84eadfa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0" parent="1" source="cab1ea35-3bf5-4b76-bb13-19b93a01b12d" target="123ebf94-c453-432b-934b-a8e5db8e16db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="JSONRPCError" link="references/eClassifiers/JSONRPCError/index.html" id="be27a29f-282e-4d5e-82b2-f2a32fc51931">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1258.0205090158552" y="1080" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="f45171c6-1d79-449e-9ba0-49fe8892e0ec" value="error" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="98a623a2-37d5-47a3-88f5-9012c0a50d6c" target="be27a29f-282e-4d5e-82b2-f2a32fc51931" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="927b8b69-ab93-4eb0-ab8c-4e3dd3de8b31" value="error" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="45657507-588f-47d6-b3d9-c447128738d1" target="be27a29f-282e-4d5e-82b2-f2a32fc51931" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7e2a5e2a-49e0-436b-9635-541872d0c948" value="error" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="3de97fdd-9a95-4e46-81de-88fe0989564b" target="be27a29f-282e-4d5e-82b2-f2a32fc51931" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f79891b5-8d91-41a6-85e9-fba0a5771606" value="error" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="c8c68936-cc07-4fb1-973e-7aed4fc6ebac" target="be27a29f-282e-4d5e-82b2-f2a32fc51931" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="62a711e2-d2cc-4795-8bc2-56810bea7840" value="error" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="0ff4aac0-67d5-47b7-aef9-d53c45a85b50" target="be27a29f-282e-4d5e-82b2-f2a32fc51931" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df24b6f2-5e0a-4b7b-88c4-47142b1722fa" value="error" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="34609998-dde5-409a-b88e-1cf321c7f9f8" target="be27a29f-282e-4d5e-82b2-f2a32fc51931" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="AgentAuthentication" link="references/eClassifiers/AgentAuthentication/index.html" id="03c7e3fd-3514-4496-a737-4a29e38b6a1f">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="252.60994159339208" y="250" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="5b118e52-8f0c-40be-9901-20df1a870192" value="authentication" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="998ecfb3-392c-45c0-ba0b-767b6e000eb2" target="03c7e3fd-3514-4496-a737-4a29e38b6a1f" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="TaskStatusUpdateEvent" link="references/eClassifiers/TaskStatusUpdateEvent/index.html" id="14f36b88-1923-4355-9490-bb4d587eb0eb">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1516.7833308286072" y="763.0161113618066" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ecef7c9e-11a7-4d20-bf98-9a1b3a8bfc69" value="status" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="14f36b88-1923-4355-9490-bb4d587eb0eb" target="471dd959-c04d-4044-ad14-9aa67990db60" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6b5c9db9-c8c0-4ab4-bdd5-d34f22569467" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0" parent="1" source="14f36b88-1923-4355-9490-bb4d587eb0eb" target="da80839a-e097-4ed1-acdc-94aec8905ea9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="JSONParseError" link="references/eClassifiers/JSONParseError/index.html" id="b942186c-a85a-4f52-aa56-53c80a90e03e">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="212.67115266967514" y="1080" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Part" link="references/eClassifiers/Part/index.html" id="0fd6b41f-a5b6-437f-abe3-27c22006cc06">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1205.2370883602346" y="460.5324883683249" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="4381743b-8fd5-49dd-8d41-536eafbcbfa5" value="parts" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" parent="1" source="af540318-2df6-4d36-8c66-d9a177c203f0" target="0fd6b41f-a5b6-437f-abe3-27c22006cc06" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02f465c4-007b-44e2-8619-83c0c639ccf5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0" parent="1" source="daddcacc-50b8-446c-827c-b0302cfcb85d" target="0fd6b41f-a5b6-437f-abe3-27c22006cc06" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d6071142-5322-4366-817a-d1238cf51a15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0" parent="1" source="e0bc1bb3-e829-4017-bb8d-810de6d6097f" target="0fd6b41f-a5b6-437f-abe3-27c22006cc06" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="84b33e0a-8d17-4040-9084-535006df8694" value="parts" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" parent="1" source="8df0ed00-6265-4c55-81d1-6dd5445c7f23" target="0fd6b41f-a5b6-437f-abe3-27c22006cc06" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="GetTaskRequest" link="references/eClassifiers/GetTaskRequest/index.html" id="78cd59ce-caa2-48a6-a46c-a307bdccc700">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry y="912.2696871076511" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="155bf83d-8806-4231-9293-70a9cd108106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0" parent="1" source="78cd59ce-caa2-48a6-a46c-a307bdccc700" target="123ebf94-c453-432b-934b-a8e5db8e16db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe24c327-5d6c-461f-bf9c-d6d02a9286cf" value="params" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="78cd59ce-caa2-48a6-a46c-a307bdccc700" target="379f1959-6148-4aab-a18b-cca59863304d" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="SetTaskPushNotificationResponse" link="references/eClassifiers/SetTaskPushNotificationResponse/index.html" id="606971bb-1fea-46f5-8fc3-81f80208b6d1">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="982.4432680531361" y="1080" width="186" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="2f597978-b9a4-4184-b30c-902ebb59c7b5" value="result" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="606971bb-1fea-46f5-8fc3-81f80208b6d1" target="ed189564-233c-4aaa-a881-2b70adceeb13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15ef6038-526c-4a5a-af79-7fa2c2102375" value="error" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="606971bb-1fea-46f5-8fc3-81f80208b6d1" target="be27a29f-282e-4d5e-82b2-f2a32fc51931" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="DataPart" link="references/eClassifiers/DataPart/index.html" id="6d687c4c-e0c9-43f5-b31f-7105ef7e4143">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1120.8826503490402" y="510.9435285248283" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="86e3602c-f2ab-45d8-81c5-2f76af048844" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0" parent="1" source="6d687c4c-e0c9-43f5-b31f-7105ef7e4143" target="0fd6b41f-a5b6-437f-abe3-27c22006cc06" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="TaskIdParams" link="references/eClassifiers/TaskIdParams/index.html" id="430de92f-53f2-4f7e-98a9-e5d6639fa677">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry y="652.8010699165101" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="6b0e564d-daac-48c6-954d-183d474e9e58" value="params" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="0642e3d8-1062-45b4-8159-f454a0691c5b" target="430de92f-53f2-4f7e-98a9-e5d6639fa677" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbbf3b04-3905-4487-ad99-3f59ec6b1ccd" value="params" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" parent="1" source="cab1ea35-3bf5-4b76-bb13-19b93a01b12d" target="430de92f-53f2-4f7e-98a9-e5d6639fa677" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="AgentSkill" link="references/eClassifiers/AgentSkill/index.html" id="7ce45b89-14e4-46ab-9715-aea672f68b99">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="420.0026322407941" y="250" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="a39bdd0f-dd09-46dd-bb41-e31f928b8dd5" value="skills" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" parent="1" source="998ecfb3-392c-45c0-ba0b-767b6e000eb2" target="7ce45b89-14e4-46ab-9715-aea672f68b99" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="UnsupportedOperationError" link="references/eClassifiers/UnsupportedOperationError/index.html" id="f439b0f6-4e21-44bb-a971-89fc790b6a7d">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry x="1920" y="129.99646211858115" width="150" height="40" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

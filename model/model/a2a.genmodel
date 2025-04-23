@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.nasdanika.models.a2a/src/main/java" creationIcons="false"
+    editorDirectory="" modelPluginID="org.nasdanika.models.a2a" modelName="A2a" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" featureDelegation="Dynamic" complianceLevel="17.0"
+    suppressGenModelAnnotations="false" copyrightFields="false" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>a2a.ecore</foreignModel>
+  <genPackages prefix="A2a" basePackage="org.nasdanika.models" disposableProviderFactory="true"
+      ecorePackage="a2a.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="a2a.ecore#//TaskState">
+      <genEnumLiterals ecoreEnumLiteral="a2a.ecore#//TaskState/submitted"/>
+      <genEnumLiterals ecoreEnumLiteral="a2a.ecore#//TaskState/working"/>
+      <genEnumLiterals ecoreEnumLiteral="a2a.ecore#//TaskState/inputRequired"/>
+      <genEnumLiterals ecoreEnumLiteral="a2a.ecore#//TaskState/completed"/>
+      <genEnumLiterals ecoreEnumLiteral="a2a.ecore#//TaskState/canceled"/>
+      <genEnumLiterals ecoreEnumLiteral="a2a.ecore#//TaskState/failed"/>
+      <genEnumLiterals ecoreEnumLiteral="a2a.ecore#//TaskState/unknown"/>
+    </genEnums>
+    <genClasses ecoreClass="a2a.ecore#//Task">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//Task/metadata"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//Task/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//Task/sessionId"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//Task/history"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//Task/status"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//Task/artifacts"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//UnsupportedOperationError">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//UnsupportedOperationError/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//UnsupportedOperationError/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//UnsupportedOperationError/message"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//JSONRPCRequest">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//JSONRPCRequest/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//JSONRPCRequest/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//JSONRPCRequest/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//JSONRPCRequest/params"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//TaskStatusUpdateEvent">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TaskStatusUpdateEvent/metadata"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskStatusUpdateEvent/final"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskStatusUpdateEvent/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TaskStatusUpdateEvent/status"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//AuthenticationInfo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AuthenticationInfo/credentials"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AuthenticationInfo/schemes"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//SendTaskStreamingResponseResult"/>
+    <genClasses ecoreClass="a2a.ecore#//SendTaskStreamingResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//SendTaskStreamingResponse/result"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SendTaskStreamingResponse/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SendTaskStreamingResponse/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//SendTaskStreamingResponse/error"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//TaskPushNotificationConfig">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskPushNotificationConfig/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TaskPushNotificationConfig/pushNotificationConfig"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//AgentCard">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//AgentCard/skills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentCard/documentationUrl"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//AgentCard/capabilities"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//AgentCard/provider"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentCard/defaultOutputModes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentCard/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentCard/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentCard/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentCard/defaultInputModes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentCard/url"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//AgentCard/authentication"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//AgentCapabilities">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentCapabilities/streaming"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentCapabilities/pushNotifications"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentCapabilities/stateTransitionHistory"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//SendTaskRequest">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SendTaskRequest/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SendTaskRequest/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SendTaskRequest/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//SendTaskRequest/params"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//JSONParseError">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//JSONParseError/code"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//JSONParseError/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//JSONParseError/message"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//DataPart">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//DataPart/metadata"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//DataPart/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//DataPart/type"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//InvalidRequestError">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//InvalidRequestError/code"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//InvalidRequestError/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//InvalidRequestError/message"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//A2ARequest"/>
+    <genClasses ecoreClass="a2a.ecore#//TaskNotFoundError">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskNotFoundError/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskNotFoundError/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskNotFoundError/message"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//JSONRPCResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//JSONRPCResponse/result"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//JSONRPCResponse/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//JSONRPCResponse/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//JSONRPCResponse/error"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//FilePart">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//FilePart/metadata"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//FilePart/file"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//FilePart/type"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//TaskQueryParams">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TaskQueryParams/metadata"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskQueryParams/historyLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskQueryParams/id"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//PushNotificationConfig">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//PushNotificationConfig/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//PushNotificationConfig/token"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//PushNotificationConfig/authentication"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//Part"/>
+    <genClasses ecoreClass="a2a.ecore#//InternalError">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//InternalError/code"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//InternalError/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//InternalError/message"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//AgentAuthentication">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentAuthentication/credentials"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentAuthentication/schemes"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//PushNotificationNotSupportedError">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//PushNotificationNotSupportedError/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//PushNotificationNotSupportedError/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//PushNotificationNotSupportedError/message"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//GetTaskRequest">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//GetTaskRequest/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//GetTaskRequest/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//GetTaskRequest/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//GetTaskRequest/params"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//AgentSkill">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentSkill/inputModes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentSkill/outputModes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentSkill/examples"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentSkill/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentSkill/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentSkill/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentSkill/tags"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//Message">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//Message/metadata"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//Message/role"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//Message/parts"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//SendTaskStreamingRequest">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SendTaskStreamingRequest/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SendTaskStreamingRequest/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SendTaskStreamingRequest/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//SendTaskStreamingRequest/params"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//GetTaskPushNotificationRequest">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//GetTaskPushNotificationRequest/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//GetTaskPushNotificationRequest/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//GetTaskPushNotificationRequest/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//GetTaskPushNotificationRequest/params"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//JSONRPCError">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//JSONRPCError/code"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//JSONRPCError/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//JSONRPCError/message"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//InvalidParamsError">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//InvalidParamsError/code"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//InvalidParamsError/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//InvalidParamsError/message"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//CancelTaskResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//CancelTaskResponse/result"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//CancelTaskResponse/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//CancelTaskResponse/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//CancelTaskResponse/error"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//SendTaskResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//SendTaskResponse/result"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SendTaskResponse/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SendTaskResponse/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//SendTaskResponse/error"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//SetTaskPushNotificationRequest">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SetTaskPushNotificationRequest/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SetTaskPushNotificationRequest/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SetTaskPushNotificationRequest/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//SetTaskPushNotificationRequest/params"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//TextPart">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TextPart/metadata"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TextPart/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TextPart/type"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//GetTaskResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//GetTaskResponse/result"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//GetTaskResponse/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//GetTaskResponse/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//GetTaskResponse/error"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//TaskSendParams">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TaskSendParams/metadata"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskSendParams/historyLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskSendParams/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskSendParams/sessionId"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TaskSendParams/message"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TaskSendParams/pushNotification"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//TaskStatus">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskStatus/state"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TaskStatus/message"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskStatus/timestamp"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//Artifact">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//Artifact/metadata"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//Artifact/lastChunk"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//Artifact/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//Artifact/parts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//Artifact/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//Artifact/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//Artifact/append"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//SetTaskPushNotificationResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//SetTaskPushNotificationResponse/result"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SetTaskPushNotificationResponse/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//SetTaskPushNotificationResponse/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//SetTaskPushNotificationResponse/error"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//FileContent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//FileContent/bytes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//FileContent/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//FileContent/mimeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//FileContent/uri"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//MethodNotFoundError">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//MethodNotFoundError/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//MethodNotFoundError/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//MethodNotFoundError/message"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//TaskResubscriptionRequest">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskResubscriptionRequest/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskResubscriptionRequest/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskResubscriptionRequest/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TaskResubscriptionRequest/params"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//JSONRPCMessage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//JSONRPCMessage/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//JSONRPCMessage/jsonrpc"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//TaskIdParams">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TaskIdParams/metadata"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskIdParams/id"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//TaskNotCancelableError">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskNotCancelableError/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskNotCancelableError/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskNotCancelableError/message"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//CancelTaskRequest">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//CancelTaskRequest/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//CancelTaskRequest/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//CancelTaskRequest/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//CancelTaskRequest/params"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//GetTaskPushNotificationResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//GetTaskPushNotificationResponse/result"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//GetTaskPushNotificationResponse/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//GetTaskPushNotificationResponse/jsonrpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//GetTaskPushNotificationResponse/error"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//TaskArtifactUpdateEvent">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TaskArtifactUpdateEvent/artifact"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a2a.ecore#//TaskArtifactUpdateEvent/metadata"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//TaskArtifactUpdateEvent/id"/>
+    </genClasses>
+    <genClasses ecoreClass="a2a.ecore#//AgentProvider">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentProvider/organization"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a2a.ecore#//AgentProvider/url"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
