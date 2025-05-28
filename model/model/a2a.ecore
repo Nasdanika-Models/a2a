@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="a2a" nsURI="ecore://nasdanika.org/models/a2a" nsPrefix="org.nasdanika.models.a2a">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="a2a" nsURI="ecore://nasdanika.org/models/a2a" nsPrefix="org.nasdanika.models.a2a">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value=""/>
+  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Task">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Task&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;,&#xA;  &quot;properties&quot;: {&#xA;    &quot;metadata&quot;: {&#xA;      &quot;default&quot;: null,&#xA;      &quot;anyOf&quot;: [&#xA;        {&#xA;          &quot;additionalProperties&quot;: {},&#xA;          &quot;type&quot;: &quot;object&quot;&#xA;        },&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Metadata&quot;&#xA;    },&#xA;    &quot;id&quot;: {&#xA;      &quot;title&quot;: &quot;Id&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;sessionId&quot;: {&#xA;      &quot;default&quot;: null,&#xA;      &quot;anyOf&quot;: [&#xA;        {&quot;type&quot;: &quot;string&quot;},&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Sessionid&quot;&#xA;    },&#xA;    &quot;history&quot;: {&#xA;      &quot;default&quot;: null,&#xA;      &quot;anyOf&quot;: [&#xA;        {&#xA;          &quot;type&quot;: &quot;array&quot;,&#xA;          &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Message&quot;}&#xA;        },&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;History&quot;&#xA;    },&#xA;    &quot;status&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskStatus&quot;},&#xA;    &quot;artifacts&quot;: {&#xA;      &quot;default&quot;: null,&#xA;      &quot;anyOf&quot;: [&#xA;        {&#xA;          &quot;type&quot;: &quot;array&quot;,&#xA;          &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Artifact&quot;}&#xA;        },&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Artifacts&quot;&#xA;    }&#xA;  },&#xA;  &quot;required&quot;: [&#xA;    &quot;id&quot;,&#xA;    &quot;status&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
@@ -8,33 +10,34 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Metadata&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Id&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sessionId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sessionId">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Sessionid&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="history" upperBound="-1"
-        eType="#//Message" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="history" upperBound="-1" eType="//Message" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;type&quot;: &quot;array&quot;,&#xA;      &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Message&quot;}&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;History&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -42,8 +45,7 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="status" lowerBound="1"
-        eType="#//TaskStatus" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="status" lowerBound="1" eType="//TaskStatus" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/TaskStatus&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -51,8 +53,7 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="artifacts" upperBound="-1"
-        eType="#//Artifact" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="artifacts" upperBound="-1" eType="//Artifact" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;type&quot;: &quot;array&quot;,&#xA;      &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Artifact&quot;}&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Artifacts&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -68,31 +69,32 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
-        defaultValueLiteral="-32004">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" defaultValueLiteral="-32004">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Error code&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: -32004,&#xA;  &quot;const&quot;: -32004,&#xA;  &quot;examples&quot;: [-32004],&#xA;  &quot;description&quot;: &quot;Error code&quot;,&#xA;  &quot;title&quot;: &quot;Code&quot;,&#xA;  &quot;type&quot;: &quot;integer&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;const&quot;: null,&#xA;  &quot;title&quot;: &quot;Data&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="This operation is not supported">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1" defaultValueLiteral="This operation is not supported">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="A short description of the error&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;This operation is not supported&quot;,&#xA;  &quot;const&quot;: &quot;This operation is not supported&quot;,&#xA;  &quot;examples&quot;: [&quot;This operation is not supported&quot;],&#xA;  &quot;description&quot;: &quot;A short description of the error&quot;,&#xA;  &quot;title&quot;: &quot;Message&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="JSONRPCRequest">
@@ -102,77 +104,78 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Method&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="params" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="params" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Params&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TaskStatusUpdateEvent" eSuperTypes="#//SendTaskStreamingResponseResult">
+  <eClassifiers xsi:type="ecore:EClass" name="TaskStatusUpdateEvent" eSuperTypes="//SendTaskStreamingResponseResult">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;TaskStatusUpdateEvent&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;,&#xA;  &quot;properties&quot;: {&#xA;    &quot;metadata&quot;: {&#xA;      &quot;default&quot;: null,&#xA;      &quot;anyOf&quot;: [&#xA;        {&#xA;          &quot;additionalProperties&quot;: {},&#xA;          &quot;type&quot;: &quot;object&quot;&#xA;        },&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Metadata&quot;&#xA;    },&#xA;    &quot;final&quot;: {&#xA;      &quot;default&quot;: false,&#xA;      &quot;title&quot;: &quot;Final&quot;,&#xA;      &quot;type&quot;: &quot;boolean&quot;&#xA;    },&#xA;    &quot;id&quot;: {&#xA;      &quot;title&quot;: &quot;Id&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;status&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskStatus&quot;}&#xA;  },&#xA;  &quot;required&quot;: [&#xA;    &quot;id&quot;,&#xA;    &quot;status&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Metadata&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="final" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
-        defaultValueLiteral="false">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="final" defaultValueLiteral="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: false,&#xA;  &quot;title&quot;: &quot;Final&quot;,&#xA;  &quot;type&quot;: &quot;boolean&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Id&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="status" lowerBound="1"
-        eType="#//TaskStatus" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="status" lowerBound="1" eType="//TaskStatus" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/TaskStatus&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -188,22 +191,23 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="credentials" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="credentials">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Credentials&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="schemes" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="schemes" upperBound="-1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Schemes&quot;,&#xA;  &quot;type&quot;: &quot;array&quot;,&#xA;  &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SendTaskStreamingResponseResult"/>
@@ -214,8 +218,7 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="#//SendTaskStreamingResponseResult"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="//SendTaskStreamingResponseResult" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/TaskStatusUpdateEvent&quot;},&#xA;    {&quot;$ref&quot;: &quot;#/$defs/TaskArtifactUpdateEvent&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -223,25 +226,25 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="#//JSONRPCError"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="//JSONRPCError" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -257,16 +260,16 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Id&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pushNotificationConfig"
-        lowerBound="1" eType="#//PushNotificationConfig" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pushNotificationConfig" lowerBound="1" eType="//PushNotificationConfig" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/PushNotificationConfig&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -282,8 +285,7 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="skills" upperBound="-1"
-        eType="#//AgentSkill" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="skills" upperBound="-1" eType="//AgentSkill" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Skills&quot;,&#xA;  &quot;type&quot;: &quot;array&quot;,&#xA;  &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/AgentSkill&quot;}&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -291,16 +293,16 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="documentationUrl" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="documentationUrl">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Documentationurl&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="capabilities" lowerBound="1"
-        eType="#//AgentCapabilities" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="capabilities" lowerBound="1" eType="//AgentCapabilities" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/AgentCapabilities&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -308,8 +310,7 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="provider" eType="#//AgentProvider"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="provider" eType="//AgentProvider" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/AgentProvider&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -317,59 +318,61 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultOutputModes" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="[&quot;text&quot;]">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultOutputModes" upperBound="-1" defaultValueLiteral="[&quot;text&quot;]">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: [&quot;text&quot;],&#xA;  &quot;title&quot;: &quot;Defaultoutputmodes&quot;,&#xA;  &quot;type&quot;: &quot;array&quot;,&#xA;  &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Name&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Description&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Version&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultInputModes" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="[&quot;text&quot;]">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultInputModes" upperBound="-1" defaultValueLiteral="[&quot;text&quot;]">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: [&quot;text&quot;],&#xA;  &quot;title&quot;: &quot;Defaultinputmodes&quot;,&#xA;  &quot;type&quot;: &quot;array&quot;,&#xA;  &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Url&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="authentication" eType="#//AgentAuthentication"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="authentication" eType="//AgentAuthentication" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/AgentAuthentication&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -385,70 +388,69 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="streaming" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
-        defaultValueLiteral="false">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="streaming" defaultValueLiteral="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: false,&#xA;  &quot;title&quot;: &quot;Streaming&quot;,&#xA;  &quot;type&quot;: &quot;boolean&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pushNotifications" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
-        defaultValueLiteral="false">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pushNotifications" defaultValueLiteral="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: false,&#xA;  &quot;title&quot;: &quot;PushNotifications&quot;,&#xA;  &quot;type&quot;: &quot;boolean&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stateTransitionHistory"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
-        defaultValueLiteral="false">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stateTransitionHistory" defaultValueLiteral="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: false,&#xA;  &quot;title&quot;: &quot;Statetransitionhistory&quot;,&#xA;  &quot;type&quot;: &quot;boolean&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SendTaskRequest" eSuperTypes="#//A2ARequest">
+  <eClassifiers xsi:type="ecore:EClass" name="SendTaskRequest" eSuperTypes="//A2ARequest">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;SendTaskRequest&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;,&#xA;  &quot;properties&quot;: {&#xA;    &quot;method&quot;: {&#xA;      &quot;default&quot;: &quot;tasks/send&quot;,&#xA;      &quot;const&quot;: &quot;tasks/send&quot;,&#xA;      &quot;title&quot;: &quot;Method&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;id&quot;: {&#xA;      &quot;anyOf&quot;: [&#xA;        {&quot;type&quot;: &quot;integer&quot;},&#xA;        {&quot;type&quot;: &quot;string&quot;},&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Id&quot;&#xA;    },&#xA;    &quot;jsonrpc&quot;: {&#xA;      &quot;default&quot;: &quot;2.0&quot;,&#xA;      &quot;const&quot;: &quot;2.0&quot;,&#xA;      &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskSendParams&quot;}&#xA;  },&#xA;  &quot;required&quot;: [&#xA;    &quot;method&quot;,&#xA;    &quot;params&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="tasks/send">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1" defaultValueLiteral="tasks/send">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;tasks/send&quot;,&#xA;  &quot;const&quot;: &quot;tasks/send&quot;,&#xA;  &quot;title&quot;: &quot;Method&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1"
-        eType="#//TaskSendParams" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1" eType="//TaskSendParams" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/TaskSendParams&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -464,67 +466,67 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
-        defaultValueLiteral="-32700">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" defaultValueLiteral="-32700">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Error code&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: -32700,&#xA;  &quot;const&quot;: -32700,&#xA;  &quot;examples&quot;: [-32700],&#xA;  &quot;description&quot;: &quot;Error code&quot;,&#xA;  &quot;title&quot;: &quot;Code&quot;,&#xA;  &quot;type&quot;: &quot;integer&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="data" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Data&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="Invalid JSON payload">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1" defaultValueLiteral="Invalid JSON payload">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="A short description of the error&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;Invalid JSON payload&quot;,&#xA;  &quot;const&quot;: &quot;Invalid JSON payload&quot;,&#xA;  &quot;examples&quot;: [&quot;Invalid JSON payload&quot;],&#xA;  &quot;description&quot;: &quot;A short description of the error&quot;,&#xA;  &quot;title&quot;: &quot;Message&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DataPart" eSuperTypes="#//Part">
+  <eClassifiers xsi:type="ecore:EClass" name="DataPart" eSuperTypes="//Part">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;DataPart&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;,&#xA;  &quot;properties&quot;: {&#xA;    &quot;metadata&quot;: {&#xA;      &quot;default&quot;: null,&#xA;      &quot;anyOf&quot;: [&#xA;        {&#xA;          &quot;additionalProperties&quot;: {},&#xA;          &quot;type&quot;: &quot;object&quot;&#xA;        },&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Metadata&quot;&#xA;    },&#xA;    &quot;data&quot;: {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;title&quot;: &quot;Data&quot;,&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    &quot;type&quot;: {&#xA;      &quot;default&quot;: &quot;data&quot;,&#xA;      &quot;const&quot;: &quot;data&quot;,&#xA;      &quot;examples&quot;: [&quot;data&quot;],&#xA;      &quot;description&quot;: &quot;Type of the part&quot;,&#xA;      &quot;title&quot;: &quot;Type&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    }&#xA;  },&#xA;  &quot;required&quot;: [&#xA;    &quot;type&quot;,&#xA;    &quot;data&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Metadata&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="data" lowerBound="1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data" lowerBound="1" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;additionalProperties&quot;: {},&#xA;  &quot;title&quot;: &quot;Data&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="data">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" defaultValueLiteral="data">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Type of the part&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;data&quot;,&#xA;  &quot;const&quot;: &quot;data&quot;,&#xA;  &quot;examples&quot;: [&quot;data&quot;],&#xA;  &quot;description&quot;: &quot;Type of the part&quot;,&#xA;  &quot;title&quot;: &quot;Type&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InvalidRequestError">
@@ -534,32 +536,32 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
-        defaultValueLiteral="-32600">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" defaultValueLiteral="-32600">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Error code&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: -32600,&#xA;  &quot;const&quot;: -32600,&#xA;  &quot;examples&quot;: [-32600],&#xA;  &quot;description&quot;: &quot;Error code&quot;,&#xA;  &quot;title&quot;: &quot;Code&quot;,&#xA;  &quot;type&quot;: &quot;integer&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="data" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Data&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="Request payload validation error">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1" defaultValueLiteral="Request payload validation error">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="A short description of the error&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;Request payload validation error&quot;,&#xA;  &quot;const&quot;: &quot;Request payload validation error&quot;,&#xA;  &quot;examples&quot;: [&quot;Request payload validation error&quot;],&#xA;  &quot;description&quot;: &quot;A short description of the error&quot;,&#xA;  &quot;title&quot;: &quot;Message&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="A2ARequest">
@@ -577,31 +579,32 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
-        defaultValueLiteral="-32001">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" defaultValueLiteral="-32001">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Error code&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: -32001,&#xA;  &quot;const&quot;: -32001,&#xA;  &quot;examples&quot;: [-32001],&#xA;  &quot;description&quot;: &quot;Error code&quot;,&#xA;  &quot;title&quot;: &quot;Code&quot;,&#xA;  &quot;type&quot;: &quot;integer&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;const&quot;: null,&#xA;  &quot;title&quot;: &quot;Data&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="Task not found">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1" defaultValueLiteral="Task not found">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="A short description of the error&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;Task not found&quot;,&#xA;  &quot;const&quot;: &quot;Task not found&quot;,&#xA;  &quot;examples&quot;: [&quot;Task not found&quot;],&#xA;  &quot;description&quot;: &quot;A short description of the error&quot;,&#xA;  &quot;title&quot;: &quot;Message&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="JSONRPCResponse">
@@ -611,34 +614,34 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="result" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Result&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="#//JSONRPCError"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="//JSONRPCError" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -647,24 +650,23 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FilePart" eSuperTypes="#//Part">
+  <eClassifiers xsi:type="ecore:EClass" name="FilePart" eSuperTypes="//Part">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;FilePart&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;,&#xA;  &quot;properties&quot;: {&#xA;    &quot;metadata&quot;: {&#xA;      &quot;default&quot;: null,&#xA;      &quot;anyOf&quot;: [&#xA;        {&#xA;          &quot;additionalProperties&quot;: {},&#xA;          &quot;type&quot;: &quot;object&quot;&#xA;        },&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Metadata&quot;&#xA;    },&#xA;    &quot;file&quot;: {&quot;$ref&quot;: &quot;#/$defs/FileContent&quot;},&#xA;    &quot;type&quot;: {&#xA;      &quot;default&quot;: &quot;file&quot;,&#xA;      &quot;const&quot;: &quot;file&quot;,&#xA;      &quot;examples&quot;: [&quot;file&quot;],&#xA;      &quot;description&quot;: &quot;Type of the part&quot;,&#xA;      &quot;title&quot;: &quot;Type&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    }&#xA;  },&#xA;  &quot;required&quot;: [&#xA;    &quot;type&quot;,&#xA;    &quot;file&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Metadata&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="file" lowerBound="1" eType="#//FileContent"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="file" lowerBound="1" eType="//FileContent" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/FileContent&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -672,14 +674,14 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="file">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" defaultValueLiteral="file">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Type of the part&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;file&quot;,&#xA;  &quot;const&quot;: &quot;file&quot;,&#xA;  &quot;examples&quot;: [&quot;file&quot;],&#xA;  &quot;description&quot;: &quot;Type of the part&quot;,&#xA;  &quot;title&quot;: &quot;Type&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TaskQueryParams">
@@ -689,30 +691,32 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Metadata&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="historyLength" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="historyLength">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;HistoryLength&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Id&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PushNotificationConfig">
@@ -722,24 +726,25 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Url&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="token" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="token">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Token&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="authentication" eType="#//AuthenticationInfo"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="authentication" eType="//AuthenticationInfo" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/AuthenticationInfo&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -763,32 +768,32 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
-        defaultValueLiteral="-32603">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" defaultValueLiteral="-32603">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Error code&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: -32603,&#xA;  &quot;const&quot;: -32603,&#xA;  &quot;examples&quot;: [-32603],&#xA;  &quot;description&quot;: &quot;Error code&quot;,&#xA;  &quot;title&quot;: &quot;Code&quot;,&#xA;  &quot;type&quot;: &quot;integer&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="data" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Data&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="Internal error">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1" defaultValueLiteral="Internal error">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="A short description of the error&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;Internal error&quot;,&#xA;  &quot;const&quot;: &quot;Internal error&quot;,&#xA;  &quot;examples&quot;: [&quot;Internal error&quot;],&#xA;  &quot;description&quot;: &quot;A short description of the error&quot;,&#xA;  &quot;title&quot;: &quot;Message&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AgentAuthentication">
@@ -798,22 +803,23 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="credentials" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="credentials">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Credentials&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="schemes" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="schemes" upperBound="-1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Schemes&quot;,&#xA;  &quot;type&quot;: &quot;array&quot;,&#xA;  &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PushNotificationNotSupportedError">
@@ -823,68 +829,69 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
-        defaultValueLiteral="-32003">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" defaultValueLiteral="-32003">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Error code&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: -32003,&#xA;  &quot;const&quot;: -32003,&#xA;  &quot;examples&quot;: [-32003],&#xA;  &quot;description&quot;: &quot;Error code&quot;,&#xA;  &quot;title&quot;: &quot;Code&quot;,&#xA;  &quot;type&quot;: &quot;integer&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;const&quot;: null,&#xA;  &quot;title&quot;: &quot;Data&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="Push Notification is not supported">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1" defaultValueLiteral="Push Notification is not supported">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="A short description of the error&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;Push Notification is not supported&quot;,&#xA;  &quot;const&quot;: &quot;Push Notification is not supported&quot;,&#xA;  &quot;examples&quot;: [&quot;Push Notification is not supported&quot;],&#xA;  &quot;description&quot;: &quot;A short description of the error&quot;,&#xA;  &quot;title&quot;: &quot;Message&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GetTaskRequest" eSuperTypes="#//A2ARequest">
+  <eClassifiers xsi:type="ecore:EClass" name="GetTaskRequest" eSuperTypes="//A2ARequest">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;GetTaskRequest&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;,&#xA;  &quot;properties&quot;: {&#xA;    &quot;method&quot;: {&#xA;      &quot;default&quot;: &quot;tasks/get&quot;,&#xA;      &quot;const&quot;: &quot;tasks/get&quot;,&#xA;      &quot;title&quot;: &quot;Method&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;id&quot;: {&#xA;      &quot;anyOf&quot;: [&#xA;        {&quot;type&quot;: &quot;integer&quot;},&#xA;        {&quot;type&quot;: &quot;string&quot;},&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Id&quot;&#xA;    },&#xA;    &quot;jsonrpc&quot;: {&#xA;      &quot;default&quot;: &quot;2.0&quot;,&#xA;      &quot;const&quot;: &quot;2.0&quot;,&#xA;      &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskQueryParams&quot;}&#xA;  },&#xA;  &quot;required&quot;: [&#xA;    &quot;method&quot;,&#xA;    &quot;params&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="tasks/get">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1" defaultValueLiteral="tasks/get">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;tasks/get&quot;,&#xA;  &quot;const&quot;: &quot;tasks/get&quot;,&#xA;  &quot;title&quot;: &quot;Method&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1"
-        eType="#//TaskQueryParams" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1" eType="//TaskQueryParams" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/TaskQueryParams&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -900,64 +907,68 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="inputModes" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="inputModes" upperBound="-1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;type&quot;: &quot;array&quot;,&#xA;      &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Inputmodes&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="outputModes" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="outputModes" upperBound="-1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;type&quot;: &quot;array&quot;,&#xA;      &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Outputmodes&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="examples" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="examples" upperBound="-1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;type&quot;: &quot;array&quot;,&#xA;      &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Examples&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Name&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Description&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Id&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tags" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tags" upperBound="-1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;type&quot;: &quot;array&quot;,&#xA;      &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Tags&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Message">
@@ -967,25 +978,25 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Metadata&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="role" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="role" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Role&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;,&#xA;  &quot;enum&quot;: [&#xA;    &quot;user&quot;,&#xA;    &quot;agent&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="parts" upperBound="-1"
-        eType="#//Part" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parts" upperBound="-1" eType="//Part" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Parts&quot;,&#xA;  &quot;type&quot;: &quot;array&quot;,&#xA;  &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Part&quot;}&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1001,34 +1012,34 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="tasks/sendSubscribe">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1" defaultValueLiteral="tasks/sendSubscribe">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;tasks/sendSubscribe&quot;,&#xA;  &quot;const&quot;: &quot;tasks/sendSubscribe&quot;,&#xA;  &quot;title&quot;: &quot;Method&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1"
-        eType="#//TaskSendParams" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1" eType="//TaskSendParams" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/TaskSendParams&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1037,41 +1048,41 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GetTaskPushNotificationRequest" eSuperTypes="#//A2ARequest">
+  <eClassifiers xsi:type="ecore:EClass" name="GetTaskPushNotificationRequest" eSuperTypes="//A2ARequest">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;GetTaskPushNotificationRequest&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;,&#xA;  &quot;properties&quot;: {&#xA;    &quot;method&quot;: {&#xA;      &quot;default&quot;: &quot;tasks/pushNotification/get&quot;,&#xA;      &quot;const&quot;: &quot;tasks/pushNotification/get&quot;,&#xA;      &quot;title&quot;: &quot;Method&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;id&quot;: {&#xA;      &quot;anyOf&quot;: [&#xA;        {&quot;type&quot;: &quot;integer&quot;},&#xA;        {&quot;type&quot;: &quot;string&quot;},&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Id&quot;&#xA;    },&#xA;    &quot;jsonrpc&quot;: {&#xA;      &quot;default&quot;: &quot;2.0&quot;,&#xA;      &quot;const&quot;: &quot;2.0&quot;,&#xA;      &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskIdParams&quot;}&#xA;  },&#xA;  &quot;required&quot;: [&#xA;    &quot;method&quot;,&#xA;    &quot;params&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="tasks/pushNotification/get">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1" defaultValueLiteral="tasks/pushNotification/get">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;tasks/pushNotification/get&quot;,&#xA;  &quot;const&quot;: &quot;tasks/pushNotification/get&quot;,&#xA;  &quot;title&quot;: &quot;Method&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1"
-        eType="#//TaskIdParams" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1" eType="//TaskIdParams" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/TaskIdParams&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1087,31 +1098,32 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Code&quot;,&#xA;  &quot;type&quot;: &quot;integer&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="data" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Data&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Message&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InvalidParamsError">
@@ -1121,32 +1133,32 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
-        defaultValueLiteral="-32602">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" defaultValueLiteral="-32602">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Error code&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: -32602,&#xA;  &quot;const&quot;: -32602,&#xA;  &quot;examples&quot;: [-32602],&#xA;  &quot;description&quot;: &quot;Error code&quot;,&#xA;  &quot;title&quot;: &quot;Code&quot;,&#xA;  &quot;type&quot;: &quot;integer&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="data" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Data&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="Invalid parameters">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1" defaultValueLiteral="Invalid parameters">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="A short description of the error&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;Invalid parameters&quot;,&#xA;  &quot;const&quot;: &quot;Invalid parameters&quot;,&#xA;  &quot;examples&quot;: [&quot;Invalid parameters&quot;],&#xA;  &quot;description&quot;: &quot;A short description of the error&quot;,&#xA;  &quot;title&quot;: &quot;Message&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CancelTaskResponse">
@@ -1156,8 +1168,7 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="#//Task"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="//Task" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/Task&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1165,25 +1176,25 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="#//JSONRPCError"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="//JSONRPCError" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1199,8 +1210,7 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="#//Task"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="//Task" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/Task&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1208,25 +1218,25 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="#//JSONRPCError"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="//JSONRPCError" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1235,41 +1245,41 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SetTaskPushNotificationRequest" eSuperTypes="#//A2ARequest">
+  <eClassifiers xsi:type="ecore:EClass" name="SetTaskPushNotificationRequest" eSuperTypes="//A2ARequest">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;SetTaskPushNotificationRequest&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;,&#xA;  &quot;properties&quot;: {&#xA;    &quot;method&quot;: {&#xA;      &quot;default&quot;: &quot;tasks/pushNotification/set&quot;,&#xA;      &quot;const&quot;: &quot;tasks/pushNotification/set&quot;,&#xA;      &quot;title&quot;: &quot;Method&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;id&quot;: {&#xA;      &quot;anyOf&quot;: [&#xA;        {&quot;type&quot;: &quot;integer&quot;},&#xA;        {&quot;type&quot;: &quot;string&quot;},&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Id&quot;&#xA;    },&#xA;    &quot;jsonrpc&quot;: {&#xA;      &quot;default&quot;: &quot;2.0&quot;,&#xA;      &quot;const&quot;: &quot;2.0&quot;,&#xA;      &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskPushNotificationConfig&quot;}&#xA;  },&#xA;  &quot;required&quot;: [&#xA;    &quot;method&quot;,&#xA;    &quot;params&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="tasks/pushNotification/set">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1" defaultValueLiteral="tasks/pushNotification/set">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;tasks/pushNotification/set&quot;,&#xA;  &quot;const&quot;: &quot;tasks/pushNotification/set&quot;,&#xA;  &quot;title&quot;: &quot;Method&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1"
-        eType="#//TaskPushNotificationConfig" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1" eType="//TaskPushNotificationConfig" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/TaskPushNotificationConfig&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1278,38 +1288,39 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TextPart" eSuperTypes="#//Part">
+  <eClassifiers xsi:type="ecore:EClass" name="TextPart" eSuperTypes="//Part">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;TextPart&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;,&#xA;  &quot;properties&quot;: {&#xA;    &quot;metadata&quot;: {&#xA;      &quot;default&quot;: null,&#xA;      &quot;anyOf&quot;: [&#xA;        {&#xA;          &quot;additionalProperties&quot;: {},&#xA;          &quot;type&quot;: &quot;object&quot;&#xA;        },&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Metadata&quot;&#xA;    },&#xA;    &quot;text&quot;: {&#xA;      &quot;title&quot;: &quot;Text&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;type&quot;: {&#xA;      &quot;default&quot;: &quot;text&quot;,&#xA;      &quot;const&quot;: &quot;text&quot;,&#xA;      &quot;examples&quot;: [&quot;text&quot;],&#xA;      &quot;description&quot;: &quot;Type of the part&quot;,&#xA;      &quot;title&quot;: &quot;Type&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    }&#xA;  },&#xA;  &quot;required&quot;: [&#xA;    &quot;type&quot;,&#xA;    &quot;text&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Metadata&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Text&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="text">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" defaultValueLiteral="text">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Type of the part&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;text&quot;,&#xA;  &quot;const&quot;: &quot;text&quot;,&#xA;  &quot;examples&quot;: [&quot;text&quot;],&#xA;  &quot;description&quot;: &quot;Type of the part&quot;,&#xA;  &quot;title&quot;: &quot;Type&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GetTaskResponse">
@@ -1319,8 +1330,7 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="#//Task"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="//Task" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/Task&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1328,25 +1338,25 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="#//JSONRPCError"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="//JSONRPCError" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1362,41 +1372,43 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Metadata&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="historyLength" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="historyLength">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;HistoryLength&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Id&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sessionId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sessionId">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Sessionid&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="message" lowerBound="1"
-        eType="#//Message" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="message" lowerBound="1" eType="//Message" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/Message&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1404,8 +1416,7 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pushNotification" eType="#//PushNotificationConfig"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pushNotification" eType="//PushNotificationConfig" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/PushNotificationConfig&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1421,7 +1432,7 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="state" lowerBound="1" eType="#//TaskState">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="state" lowerBound="1" eType="//TaskState">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/TaskState&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1429,8 +1440,7 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="message" eType="#//Message"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="message" eType="//Message" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/Message&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1438,13 +1448,14 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timestamp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timestamp">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;format&quot;: &quot;date-time&quot;,&#xA;  &quot;title&quot;: &quot;Timestamp&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Artifact">
@@ -1454,33 +1465,34 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Metadata&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastChunk" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastChunk">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;boolean&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;LastChunk&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Name&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="parts" upperBound="-1"
-        eType="#//Part" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parts" upperBound="-1" eType="//Part" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Parts&quot;,&#xA;  &quot;type&quot;: &quot;array&quot;,&#xA;  &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Part&quot;}&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1488,30 +1500,32 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Description&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
-        defaultValueLiteral="0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" defaultValueLiteral="0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: 0,&#xA;  &quot;type&quot;: &quot;integer&quot;,&#xA;  &quot;title&quot;: &quot;Index&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="append" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="append">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;boolean&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Append&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SetTaskPushNotificationResponse">
@@ -1521,8 +1535,7 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="#//TaskPushNotificationConfig"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="//TaskPushNotificationConfig" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/TaskPushNotificationConfig&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1530,25 +1543,25 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="#//JSONRPCError"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="//JSONRPCError" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1564,37 +1577,41 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bytes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bytes">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Bytes&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Name&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mimeType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mimeType">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Mimetype&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uri" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uri">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Uri&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MethodNotFoundError">
@@ -1604,68 +1621,69 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
-        defaultValueLiteral="-32601">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" defaultValueLiteral="-32601">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Error code&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: -32601,&#xA;  &quot;const&quot;: -32601,&#xA;  &quot;examples&quot;: [-32601],&#xA;  &quot;description&quot;: &quot;Error code&quot;,&#xA;  &quot;title&quot;: &quot;Code&quot;,&#xA;  &quot;type&quot;: &quot;integer&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;const&quot;: null,&#xA;  &quot;title&quot;: &quot;Data&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="Method not found">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1" defaultValueLiteral="Method not found">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="A short description of the error&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;Method not found&quot;,&#xA;  &quot;const&quot;: &quot;Method not found&quot;,&#xA;  &quot;examples&quot;: [&quot;Method not found&quot;],&#xA;  &quot;description&quot;: &quot;A short description of the error&quot;,&#xA;  &quot;title&quot;: &quot;Message&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TaskResubscriptionRequest" eSuperTypes="#//A2ARequest">
+  <eClassifiers xsi:type="ecore:EClass" name="TaskResubscriptionRequest" eSuperTypes="//A2ARequest">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;TaskResubscriptionRequest&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;,&#xA;  &quot;properties&quot;: {&#xA;    &quot;method&quot;: {&#xA;      &quot;default&quot;: &quot;tasks/resubscribe&quot;,&#xA;      &quot;const&quot;: &quot;tasks/resubscribe&quot;,&#xA;      &quot;title&quot;: &quot;Method&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;id&quot;: {&#xA;      &quot;anyOf&quot;: [&#xA;        {&quot;type&quot;: &quot;integer&quot;},&#xA;        {&quot;type&quot;: &quot;string&quot;},&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Id&quot;&#xA;    },&#xA;    &quot;jsonrpc&quot;: {&#xA;      &quot;default&quot;: &quot;2.0&quot;,&#xA;      &quot;const&quot;: &quot;2.0&quot;,&#xA;      &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskQueryParams&quot;}&#xA;  },&#xA;  &quot;required&quot;: [&#xA;    &quot;method&quot;,&#xA;    &quot;params&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="tasks/resubscribe">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1" defaultValueLiteral="tasks/resubscribe">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;tasks/resubscribe&quot;,&#xA;  &quot;const&quot;: &quot;tasks/resubscribe&quot;,&#xA;  &quot;title&quot;: &quot;Method&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1"
-        eType="#//TaskQueryParams" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1" eType="//TaskQueryParams" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/TaskQueryParams&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1681,22 +1699,23 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TaskIdParams">
@@ -1706,22 +1725,23 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Metadata&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Id&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TaskNotCancelableError">
@@ -1731,68 +1751,69 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
-        defaultValueLiteral="-32002">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" lowerBound="1" defaultValueLiteral="-32002">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Error code&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: -32002,&#xA;  &quot;const&quot;: -32002,&#xA;  &quot;examples&quot;: [-32002],&#xA;  &quot;description&quot;: &quot;Error code&quot;,&#xA;  &quot;title&quot;: &quot;Code&quot;,&#xA;  &quot;type&quot;: &quot;integer&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;const&quot;: null,&#xA;  &quot;title&quot;: &quot;Data&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="Task cannot be canceled">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" lowerBound="1" defaultValueLiteral="Task cannot be canceled">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="A short description of the error&#xD;&#xA;&#xD;&#xA;## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;Task cannot be canceled&quot;,&#xA;  &quot;const&quot;: &quot;Task cannot be canceled&quot;,&#xA;  &quot;examples&quot;: [&quot;Task cannot be canceled&quot;],&#xA;  &quot;description&quot;: &quot;A short description of the error&quot;,&#xA;  &quot;title&quot;: &quot;Message&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CancelTaskRequest" eSuperTypes="#//A2ARequest">
+  <eClassifiers xsi:type="ecore:EClass" name="CancelTaskRequest" eSuperTypes="//A2ARequest">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;CancelTaskRequest&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;,&#xA;  &quot;properties&quot;: {&#xA;    &quot;method&quot;: {&#xA;      &quot;default&quot;: &quot;tasks/cancel&quot;,&#xA;      &quot;const&quot;: &quot;tasks/cancel&quot;,&#xA;      &quot;title&quot;: &quot;Method&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;id&quot;: {&#xA;      &quot;anyOf&quot;: [&#xA;        {&quot;type&quot;: &quot;integer&quot;},&#xA;        {&quot;type&quot;: &quot;string&quot;},&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Id&quot;&#xA;    },&#xA;    &quot;jsonrpc&quot;: {&#xA;      &quot;default&quot;: &quot;2.0&quot;,&#xA;      &quot;const&quot;: &quot;2.0&quot;,&#xA;      &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    },&#xA;    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskIdParams&quot;}&#xA;  },&#xA;  &quot;required&quot;: [&#xA;    &quot;method&quot;,&#xA;    &quot;params&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="tasks/cancel">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" lowerBound="1" defaultValueLiteral="tasks/cancel">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;tasks/cancel&quot;,&#xA;  &quot;const&quot;: &quot;tasks/cancel&quot;,&#xA;  &quot;title&quot;: &quot;Method&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1"
-        eType="#//TaskIdParams" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="params" lowerBound="1" eType="//TaskIdParams" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/TaskIdParams&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1808,8 +1829,7 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="#//TaskPushNotificationConfig"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="//TaskPushNotificationConfig" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/TaskPushNotificationConfig&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1817,25 +1837,25 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;integer&quot;},&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Id&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="2.0">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jsonrpc" defaultValueLiteral="2.0">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: &quot;2.0&quot;,&#xA;  &quot;const&quot;: &quot;2.0&quot;,&#xA;  &quot;title&quot;: &quot;Jsonrpc&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="#//JSONRPCError"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="error" eType="//JSONRPCError" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1844,15 +1864,14 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TaskArtifactUpdateEvent" eSuperTypes="#//SendTaskStreamingResponseResult">
+  <eClassifiers xsi:type="ecore:EClass" name="TaskArtifactUpdateEvent" eSuperTypes="//SendTaskStreamingResponseResult">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;TaskArtifactUpdateEvent&quot;,&#xA;  &quot;type&quot;: &quot;object&quot;,&#xA;  &quot;properties&quot;: {&#xA;    &quot;artifact&quot;: {&quot;$ref&quot;: &quot;#/$defs/Artifact&quot;},&#xA;    &quot;metadata&quot;: {&#xA;      &quot;default&quot;: null,&#xA;      &quot;anyOf&quot;: [&#xA;        {&#xA;          &quot;additionalProperties&quot;: {},&#xA;          &quot;type&quot;: &quot;object&quot;&#xA;        },&#xA;        {&quot;type&quot;: &quot;null&quot;}&#xA;      ],&#xA;      &quot;title&quot;: &quot;Metadata&quot;&#xA;    },&#xA;    &quot;id&quot;: {&#xA;      &quot;title&quot;: &quot;Id&quot;,&#xA;      &quot;type&quot;: &quot;string&quot;&#xA;    }&#xA;  },&#xA;  &quot;required&quot;: [&#xA;    &quot;id&quot;,&#xA;    &quot;artifact&quot;&#xA;  ]&#xA;}&#xA;```&#xA;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="artifact" lowerBound="1"
-        eType="#//Artifact" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="artifact" lowerBound="1" eType="//Artifact" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&quot;$ref&quot;: &quot;#/$defs/Artifact&quot;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
@@ -1860,22 +1879,23 @@
         <details key="generated" value="true"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metadata" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&#xA;      &quot;additionalProperties&quot;: {},&#xA;      &quot;type&quot;: &quot;object&quot;&#xA;    },&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Metadata&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Id&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TaskState">
@@ -1887,7 +1907,7 @@
     </eAnnotations>
     <eLiterals name="submitted" literal="submitted"/>
     <eLiterals name="working" value="1" literal="working"/>
-    <eLiterals name="inputRequired" value="2" literal="inputRequired"/>
+    <eLiterals name="input-required" value="2" literal="input-required"/>
     <eLiterals name="completed" value="3" literal="completed"/>
     <eLiterals name="canceled" value="4" literal="canceled"/>
     <eLiterals name="failed" value="5" literal="failed"/>
@@ -1900,22 +1920,23 @@
     <eAnnotations source="urn:org.nasdanika">
       <details key="generated" value="true"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="organization" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="organization" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;title&quot;: &quot;Organization&quot;,&#xA;  &quot;type&quot;: &quot;string&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="## Specification&#xA;&#xA;```json&#xA;{&#xA;  &quot;default&quot;: null,&#xA;  &quot;anyOf&quot;: [&#xA;    {&quot;type&quot;: &quot;string&quot;},&#xA;    {&quot;type&quot;: &quot;null&quot;}&#xA;  ],&#xA;  &quot;title&quot;: &quot;Url&quot;&#xA;}&#xA;```&#xA;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="urn:org.nasdanika">
         <details key="generated" value="true"/>
       </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
 </ecore:EPackage>
