@@ -1,1630 +1,1630 @@
 {
   "references/eClassifiers/PushNotificationNotSupportedError/references/eStructuralFeatures/data/index.html": {
     "path": "PushNotificationNotSupportedError/Attributes/data",
-    "link-uuid": "6c2077af-d67e-442a-8eb1-0e5627cd9b6e",
+    "link-uuid": "30779ae1-1aec-463a-8c72-a46abc5d6b7e",
     "title": "data",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;default&quot;: null,\n  &quot;const&quot;: null,\n  &quot;title&quot;: &quot;Data&quot;\n}",
-    "timestamp": 1749679818909
+    "timestamp": 1751287541525
   },
   "references/eClassifiers/GetTaskRequest/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "GetTaskRequest/Attributes/jsonrpc",
-    "link-uuid": "49747bab-d0cc-4588-aaed-bcf4d2152a8e",
+    "link-uuid": "4d15411e-50fb-4973-b3f8-ced4805273e2",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818182
+    "timestamp": 1751287540768
   },
   "references/eClassifiers/TaskResubscriptionRequest/index.html": {
-    "link-uuid": "c24b8948-47f4-48d9-bc30-ce687faa57b6",
+    "link-uuid": "fae7de90-ab0a-45be-b4eb-0a5722457a26",
     "title": "TaskResubscriptionRequest",
     "content": "Specification {\n  &quot;title&quot;: &quot;TaskResubscriptionRequest&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;method&quot;: {\n      &quot;default&quot;: &quot;tasks/resubscribe&quot;,\n      &quot;const&quot;: &quot;tasks/resubscribe&quot;,\n      &quot;title&quot;: &quot;Method&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskQueryParams&quot;}\n  },\n  &quot;required&quot;: [\n    &quot;method&quot;,\n    &quot;params&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819701
+    "timestamp": 1751287542370
   },
   "references/eClassifiers/SendTaskStreamingResponse/references/eStructuralFeatures/id/index.html": {
     "path": "SendTaskStreamingResponse/Attributes/id",
-    "link-uuid": "61e30c42-416a-4b6a-ae04-817bf3733e98",
+    "link-uuid": "36f3c79d-1c2f-4c4a-be27-751a4a3ed31d",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679819137
+    "timestamp": 1751287541759
   },
   "references/eClassifiers/UnsupportedOperationError/references/eStructuralFeatures/code/index.html": {
     "path": "UnsupportedOperationError/Attributes/code",
-    "link-uuid": "800deac2-9d4f-43b0-a7a9-8107144ffad4",
+    "link-uuid": "659f6fc3-83aa-4903-82b9-0e58fa05a88d",
     "title": "code",
     "content": "Type EIntegerObject Multiplicity 1 Error code Specification {\n  &quot;default&quot;: -32004,\n  &quot;const&quot;: -32004,\n  &quot;examples&quot;: [-32004],\n  &quot;description&quot;: &quot;Error code&quot;,\n  &quot;title&quot;: &quot;Code&quot;,\n  &quot;type&quot;: &quot;integer&quot;\n}",
-    "timestamp": 1749679820026
+    "timestamp": 1751287542714
   },
   "references/eClassifiers/GetTaskPushNotificationRequest/references/eStructuralFeatures/method/index.html": {
     "path": "GetTaskPushNotificationRequest/Attributes/method",
-    "link-uuid": "16b3c5e1-b5da-4bb0-8624-4250d28c972b",
+    "link-uuid": "b2aaa5a5-90ce-4a6f-9a1f-1cb9865a8e17",
     "title": "method",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;default&quot;: &quot;tasks/pushNotification/get&quot;,\n  &quot;const&quot;: &quot;tasks/pushNotification/get&quot;,\n  &quot;title&quot;: &quot;Method&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818064
+    "timestamp": 1751287540648
   },
   "references/eClassifiers/MethodNotFoundError/references/eStructuralFeatures/data/index.html": {
     "path": "MethodNotFoundError/Attributes/data",
-    "link-uuid": "5f0a4bda-d2d7-4faa-bc33-3e1b462f69c5",
+    "link-uuid": "4df55f34-c88a-4fbc-a301-884fbd5973ee",
     "title": "data",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;default&quot;: null,\n  &quot;const&quot;: null,\n  &quot;title&quot;: &quot;Data&quot;\n}",
-    "timestamp": 1749679818782
+    "timestamp": 1751287541389
   },
   "references/eClassifiers/SetTaskPushNotificationRequest/references/eStructuralFeatures/params/index.html": {
     "path": "SetTaskPushNotificationRequest/References/params",
-    "link-uuid": "b399e8df-f6a1-4910-978f-daef5d82cab0",
+    "link-uuid": "b4d08502-2bd5-4323-b718-8c73f3831edb",
     "title": "params",
     "content": "Type TaskPushNotificationConfig Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/TaskPushNotificationConfig&quot;}",
-    "timestamp": 1749679819235
+    "timestamp": 1751287541866
   },
   "references/eClassifiers/JSONRPCError/references/eStructuralFeatures/code/index.html": {
     "path": "JSONRPCError/Attributes/code",
-    "link-uuid": "257b1a57-bd3b-4b32-aae9-0d23b62b632f",
+    "link-uuid": "42242f30-10aa-4f3b-bfda-529ecd8e2403",
     "title": "code",
     "content": "Type EIntegerObject Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Code&quot;,\n  &quot;type&quot;: &quot;integer&quot;\n}",
-    "timestamp": 1749679818508
+    "timestamp": 1751287541106
   },
   "references/eClassifiers/Task/references/eStructuralFeatures/sessionId/index.html": {
     "path": "Task/Attributes/sessionId",
-    "link-uuid": "ba295152-4113-4c52-b6ee-b898428a2579",
+    "link-uuid": "a5799056-d2f8-4912-81bb-9fc621d5b462",
     "title": "sessionId",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Sessionid&quot;\n}",
-    "timestamp": 1749679819359
+    "timestamp": 1751287541996
   },
   "references/eClassifiers/PushNotificationConfig/references/eStructuralFeatures/token/index.html": {
     "path": "PushNotificationConfig/Attributes/token",
-    "link-uuid": "77ebb4ac-3461-4188-8bd0-1cc8cdf748b9",
+    "link-uuid": "abf750a7-5196-4245-b441-38035e5a0111",
     "title": "token",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Token&quot;\n}",
-    "timestamp": 1749679818858
+    "timestamp": 1751287541469
   },
   "references/eClassifiers/A2ARequest/index.html": {
-    "link-uuid": "90a93013-178b-43b7-9843-4d9a68266de6",
+    "link-uuid": "de565019-81e6-4c9b-a2d7-e8fe240cf1c0",
     "title": "A2ARequest",
     "content": "Specification {\n  &quot;oneOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/SendTaskRequest&quot;},\n    {&quot;$ref&quot;: &quot;#/$defs/GetTaskRequest&quot;},\n    {&quot;$ref&quot;: &quot;#/$defs/CancelTaskRequest&quot;},\n    {&quot;$ref&quot;: &quot;#/$defs/SetTaskPushNotificationRequest&quot;},\n    {&quot;$ref&quot;: &quot;#/$defs/GetTaskPushNotificationRequest&quot;},\n    {&quot;$ref&quot;: &quot;#/$defs/TaskResubscriptionRequest&quot;}\n  ],\n  &quot;title&quot;: &quot;A2ARequest&quot;\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817268
+    "timestamp": 1751287539831
   },
   "references/eClassifiers/TaskSendParams/references/eStructuralFeatures/message/index.html": {
     "path": "TaskSendParams/References/message",
-    "link-uuid": "c2fea681-dbf1-4bef-8ab8-60b58db13514",
+    "link-uuid": "73e65c6c-028e-4d74-8d59-bae32260c080",
     "title": "message",
     "content": "Type Message Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/Message&quot;}",
-    "timestamp": 1749679819786
+    "timestamp": 1751287542458
   },
   "references/eClassifiers/AgentCard/references/eStructuralFeatures/defaultOutputModes/index.html": {
     "path": "AgentCard/Attributes/defaultOutputModes",
-    "link-uuid": "8c7a9e38-cb49-461f-beed-7683ec28451a",
+    "link-uuid": "890abe7f-58ce-4d88-9c7b-a93d0d04eff5",
     "title": "defaultOutputModes",
     "content": "Type EString Multiplicity 0..* Specification {\n  &quot;default&quot;: [&quot;text&quot;],\n  &quot;title&quot;: &quot;Defaultoutputmodes&quot;,\n  &quot;type&quot;: &quot;array&quot;,\n  &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n}",
-    "timestamp": 1749679817419
+    "timestamp": 1751287539989
   },
   "references/eClassifiers/AuthenticationInfo/references/eStructuralFeatures/schemes/index.html": {
     "path": "AuthenticationInfo/Attributes/schemes",
-    "link-uuid": "5786c85a-2745-4443-ae2b-a3bc6ddaada1",
+    "link-uuid": "af268ec2-7800-4a1f-b3d7-d6287f4cae57",
     "title": "schemes",
     "content": "Type EString Multiplicity 0..* Specification {\n  &quot;title&quot;: &quot;Schemes&quot;,\n  &quot;type&quot;: &quot;array&quot;,\n  &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n}",
-    "timestamp": 1749679817700
+    "timestamp": 1751287540289
   },
   "references/eClassifiers/InternalError/references/eStructuralFeatures/message/index.html": {
     "path": "InternalError/Attributes/message",
-    "link-uuid": "d7356ecd-f339-4e3a-a586-9b5027a15d15",
+    "link-uuid": "2fce8dbb-c5ec-4c10-8f68-7ec415b0be84",
     "title": "message",
     "content": "Type EString Multiplicity 1 A short description of the error Specification {\n  &quot;default&quot;: &quot;Internal error&quot;,\n  &quot;const&quot;: &quot;Internal error&quot;,\n  &quot;examples&quot;: [&quot;Internal error&quot;],\n  &quot;description&quot;: &quot;A short description of the error&quot;,\n  &quot;title&quot;: &quot;Message&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818304
+    "timestamp": 1751287540893
   },
   "references/eClassifiers/TextPart/references/eStructuralFeatures/text/index.html": {
     "path": "TextPart/Attributes/text",
-    "link-uuid": "bd87b319-feea-45b2-b763-827fa4dd7a69",
+    "link-uuid": "43d1a420-1dae-4a53-b92d-80849bf84f95",
     "title": "text",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Text&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819981
+    "timestamp": 1751287542668
   },
   "references/eClassifiers/GetTaskResponse/references/eStructuralFeatures/id/index.html": {
     "path": "GetTaskResponse/Attributes/id",
-    "link-uuid": "2cf927f5-4d0a-4783-b9b6-c87fbc0d4f4b",
+    "link-uuid": "053d924a-e09f-492f-9e4c-cdb344c98116",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679818242
+    "timestamp": 1751287540827
   },
   "references/eClassifiers/TaskNotCancelableError/references/eStructuralFeatures/data/index.html": {
     "path": "TaskNotCancelableError/Attributes/data",
-    "link-uuid": "047ae8a6-4864-4bda-b31a-490fe2395478",
+    "link-uuid": "21135474-ca49-4d05-bffd-105625c64b90",
     "title": "data",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;default&quot;: null,\n  &quot;const&quot;: null,\n  &quot;title&quot;: &quot;Data&quot;\n}",
-    "timestamp": 1749679819525
+    "timestamp": 1751287542171
   },
   "references/eClassifiers/TaskResubscriptionRequest/references/eStructuralFeatures/method/index.html": {
     "path": "TaskResubscriptionRequest/Attributes/method",
-    "link-uuid": "86f918f5-8b6a-4f6f-9675-443edc5d53c1",
+    "link-uuid": "ec6271ac-0900-4f41-a00f-e1ec7a310cd4",
     "title": "method",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;default&quot;: &quot;tasks/resubscribe&quot;,\n  &quot;const&quot;: &quot;tasks/resubscribe&quot;,\n  &quot;title&quot;: &quot;Method&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819726
+    "timestamp": 1751287542395
   },
   "references/eClassifiers/FileContent/references/eStructuralFeatures/bytes/index.html": {
     "path": "FileContent/Attributes/bytes",
-    "link-uuid": "2ab0d829-2012-4326-94a3-517fcfbb6a93",
+    "link-uuid": "0867519c-a15e-46d7-8531-0040a9b1bc63",
     "title": "bytes",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Bytes&quot;\n}",
-    "timestamp": 1749679817929
+    "timestamp": 1751287540520
   },
   "references/eClassifiers/CancelTaskRequest/references/eStructuralFeatures/id/index.html": {
     "path": "CancelTaskRequest/Attributes/id",
-    "link-uuid": "f415e9a2-f7ae-4ca6-b1ba-e7685682b6f8",
+    "link-uuid": "d71904fb-721c-4484-a10f-d5973e5538e7",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679817742
+    "timestamp": 1751287540336
   },
   "references/eClassifiers/FilePart/inheritance.html": {
     "path": "FilePart/Inheritance",
-    "link-uuid": "2c8a08dd-0518-4e9d-8847-4613003b7b65",
+    "link-uuid": "0b5526d1-5d5c-4298-a81f-660ca562a12c",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1749679817983
+    "timestamp": 1751287540569
   },
   "references/eClassifiers/GetTaskResponse/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "GetTaskResponse/Attributes/jsonrpc",
-    "link-uuid": "3890e573-dfbe-4308-9d51-70f9ddcd0d1b",
+    "link-uuid": "1f8d1006-a989-4ac6-8fba-f6215e8e4653",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818247
+    "timestamp": 1751287540833
   },
   "references/eClassifiers/Task/references/eStructuralFeatures/history/index.html": {
     "path": "Task/References/history",
-    "link-uuid": "b8c8b2db-7b65-4589-bfeb-14fe5a8457de",
+    "link-uuid": "a060d17b-4aa1-495a-8d88-8fb0ace0e705",
     "title": "history",
     "content": "Type Message Multiplicity 0..* Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Message&quot;}\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;History&quot;\n}",
-    "timestamp": 1749679819344
+    "timestamp": 1751287541980
   },
   "references/eClassifiers/FileContent/references/eStructuralFeatures/mimeType/index.html": {
     "path": "FileContent/Attributes/mimeType",
-    "link-uuid": "9563b39e-ad09-4d03-9572-2731db750b7b",
+    "link-uuid": "1ede2e46-fae1-48b9-87f9-6d09c688e6e9",
     "title": "mimeType",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Mimetype&quot;\n}",
-    "timestamp": 1749679817934
+    "timestamp": 1751287540525
   },
   "references/eClassifiers/SendTaskStreamingRequest/references/eStructuralFeatures/method/index.html": {
     "path": "SendTaskStreamingRequest/Attributes/method",
-    "link-uuid": "db551d17-36a9-4819-932f-7a24803779b9",
+    "link-uuid": "92c0104c-2093-4f9f-9924-26b040fa1d2f",
     "title": "method",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;default&quot;: &quot;tasks/sendSubscribe&quot;,\n  &quot;const&quot;: &quot;tasks/sendSubscribe&quot;,\n  &quot;title&quot;: &quot;Method&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819086
+    "timestamp": 1751287541702
   },
   "references/eClassifiers/TaskResubscriptionRequest/references/eStructuralFeatures/id/index.html": {
     "path": "TaskResubscriptionRequest/Attributes/id",
-    "link-uuid": "59493887-a4b9-4eb8-b018-da3fb15286db",
+    "link-uuid": "9df30ae0-f13b-421a-b91a-681c0922744c",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679819715
+    "timestamp": 1751287542385
   },
   "references/eClassifiers/TextPart/index.html": {
-    "link-uuid": "49d515ee-4856-44a3-aa11-b78c87d46026",
+    "link-uuid": "f77f350b-4bc5-4144-bfb1-4cad148c9de7",
     "title": "TextPart",
     "content": "Specification {\n  &quot;title&quot;: &quot;TextPart&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;metadata&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Metadata&quot;\n    },\n    &quot;text&quot;: {\n      &quot;title&quot;: &quot;Text&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;type&quot;: {\n      &quot;default&quot;: &quot;text&quot;,\n      &quot;const&quot;: &quot;text&quot;,\n      &quot;examples&quot;: [&quot;text&quot;],\n      &quot;description&quot;: &quot;Type of the part&quot;,\n      &quot;title&quot;: &quot;Type&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;type&quot;,\n    &quot;text&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819962
+    "timestamp": 1751287542645
   },
   "references/eClassifiers/TextPart/references/eStructuralFeatures/type/index.html": {
     "path": "TextPart/Attributes/type",
-    "link-uuid": "3b09bac6-46c2-45fe-af88-a4fde5bf24be",
+    "link-uuid": "5c203d14-745e-4e41-9764-071352c56c86",
     "title": "type",
     "content": "Type EString Multiplicity 1 Type of the part Specification {\n  &quot;default&quot;: &quot;text&quot;,\n  &quot;const&quot;: &quot;text&quot;,\n  &quot;examples&quot;: [&quot;text&quot;],\n  &quot;description&quot;: &quot;Type of the part&quot;,\n  &quot;title&quot;: &quot;Type&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819986
+    "timestamp": 1751287542673
   },
   "references/eClassifiers/SetTaskPushNotificationRequest/index.html": {
-    "link-uuid": "aa212f37-d4e6-4e8e-bbe4-0a9df3b342bc",
+    "link-uuid": "fb1f4da2-3717-4ebc-882b-368211d64d56",
     "title": "SetTaskPushNotificationRequest",
     "content": "Specification {\n  &quot;title&quot;: &quot;SetTaskPushNotificationRequest&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;method&quot;: {\n      &quot;default&quot;: &quot;tasks/pushNotification/set&quot;,\n      &quot;const&quot;: &quot;tasks/pushNotification/set&quot;,\n      &quot;title&quot;: &quot;Method&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskPushNotificationConfig&quot;}\n  },\n  &quot;required&quot;: [\n    &quot;method&quot;,\n    &quot;params&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819204
+    "timestamp": 1751287541836
   },
   "references/eClassifiers/Artifact/references/eStructuralFeatures/description/index.html": {
     "path": "Artifact/Attributes/description",
-    "link-uuid": "0fb1807e-ea67-4532-a482-dab84c64ab0e",
+    "link-uuid": "cee55ba2-ebc1-4083-a33f-cae1d516a553",
     "title": "description",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Description&quot;\n}",
-    "timestamp": 1749679817617
+    "timestamp": 1751287540215
   },
   "references/eClassifiers/PushNotificationConfig/references/eStructuralFeatures/url/index.html": {
     "path": "PushNotificationConfig/Attributes/url",
-    "link-uuid": "fb065aae-fb65-4bb8-a6cd-d05c8574d6eb",
+    "link-uuid": "c25f1514-81c0-4dc2-9322-984cd720c251",
     "title": "url",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Url&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818863
+    "timestamp": 1751287541475
   },
   "references/eClassifiers/TaskPushNotificationConfig/references/eStructuralFeatures/id/index.html": {
     "path": "TaskPushNotificationConfig/Attributes/id",
-    "link-uuid": "9b26bfcc-0097-4317-8353-77209945f20d",
+    "link-uuid": "4f8cb0a7-68d9-417f-943d-60eca6d510a5",
     "title": "id",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Id&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819612
+    "timestamp": 1751287542277
   },
   "references/eClassifiers/SendTaskStreamingResponse/index.html": {
-    "link-uuid": "c0c87d87-7040-41a8-970b-48dc649f63e9",
+    "link-uuid": "49f517aa-c194-44f7-93d1-be0f0936523b",
     "title": "SendTaskStreamingResponse",
     "content": "Specification {\n  &quot;title&quot;: &quot;SendTaskStreamingResponse&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;result&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/TaskStatusUpdateEvent&quot;},\n        {&quot;$ref&quot;: &quot;#/$defs/TaskArtifactUpdateEvent&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;error&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    }\n  }\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819123
+    "timestamp": 1751287541743
   },
   "references/eClassifiers/InternalError/references/eStructuralFeatures/code/index.html": {
     "path": "InternalError/Attributes/code",
-    "link-uuid": "edac448c-e98b-42f6-b4b7-05f8196a49a9",
+    "link-uuid": "4f9bc7ad-bd7a-46d0-a2c1-bb9ed2a80467",
     "title": "code",
     "content": "Type EIntegerObject Multiplicity 1 Error code Specification {\n  &quot;default&quot;: -32603,\n  &quot;const&quot;: -32603,\n  &quot;examples&quot;: [-32603],\n  &quot;description&quot;: &quot;Error code&quot;,\n  &quot;title&quot;: &quot;Code&quot;,\n  &quot;type&quot;: &quot;integer&quot;\n}",
-    "timestamp": 1749679818294
+    "timestamp": 1751287540881
   },
   "references/eClassifiers/TaskState/index.html": {
-    "link-uuid": "4b71b5a8-3c00-4f88-b98c-b5035702f1f9",
+    "link-uuid": "60fff9de-c8b4-4a8e-b7ad-2f00d783890f",
     "title": "TaskState",
     "content": "An enumeration. Specification {\n  &quot;description&quot;: &quot;An enumeration.&quot;,\n  &quot;title&quot;: &quot;TaskState&quot;,\n  &quot;type&quot;: &quot;string&quot;,\n  &quot;enum&quot;: [\n    &quot;submitted&quot;,\n    &quot;working&quot;,\n    &quot;input-required&quot;,\n    &quot;completed&quot;,\n    &quot;canceled&quot;,\n    &quot;failed&quot;,\n    &quot;unknown&quot;\n  ]\n}",
-    "timestamp": 1749679819810
+    "timestamp": 1751287542486
   },
   "references/eClassifiers/TaskSendParams/references/eStructuralFeatures/id/index.html": {
     "path": "TaskSendParams/Attributes/id",
-    "link-uuid": "c29fe690-f14c-4b6b-8946-caa5905b0d9d",
+    "link-uuid": "95988738-98f2-4eb5-b0db-5adb896021bb",
     "title": "id",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Id&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819781
+    "timestamp": 1751287542453
   },
   "references/eClassifiers/TaskStatusUpdateEvent/index.html": {
-    "link-uuid": "fa20ec9d-2eec-466c-9296-ac7111e4c2a3",
+    "link-uuid": "ecb8fd3c-741c-403a-9a1f-432cb1e5c6cd",
     "title": "TaskStatusUpdateEvent",
     "content": "Specification {\n  &quot;title&quot;: &quot;TaskStatusUpdateEvent&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;metadata&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Metadata&quot;\n    },\n    &quot;final&quot;: {\n      &quot;default&quot;: false,\n      &quot;title&quot;: &quot;Final&quot;,\n      &quot;type&quot;: &quot;boolean&quot;\n    },\n    &quot;id&quot;: {\n      &quot;title&quot;: &quot;Id&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;status&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskStatus&quot;}\n  },\n  &quot;required&quot;: [\n    &quot;id&quot;,\n    &quot;status&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819898
+    "timestamp": 1751287542574
   },
   "references/eClassifiers/AgentSkill/references/eStructuralFeatures/examples/index.html": {
     "path": "AgentSkill/Attributes/examples",
-    "link-uuid": "64f22779-5655-497b-92e8-5f45c4282e6d",
+    "link-uuid": "1cdc5ead-d322-4417-9278-204e44e08c80",
     "title": "examples",
     "content": "Type EString Multiplicity 0..* Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Examples&quot;\n}",
-    "timestamp": 1749679817547
+    "timestamp": 1751287540141
   },
   "references/eClassifiers/TaskSendParams/references/eStructuralFeatures/metadata/index.html": {
     "path": "TaskSendParams/References/metadata",
-    "link-uuid": "562edc95-2632-4495-bf14-a1bb86ae1ba1",
+    "link-uuid": "ffbd07be-124b-4868-80cf-373f521ae07b",
     "title": "metadata",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Metadata&quot;\n}",
-    "timestamp": 1749679819791
+    "timestamp": 1751287542465
   },
   "references/eClassifiers/FilePart/references/eStructuralFeatures/file/index.html": {
     "path": "FilePart/References/file",
-    "link-uuid": "158536bf-b37e-4ff9-918d-e6c6fb845ed5",
+    "link-uuid": "d8ae0f71-3bdb-4c35-b469-3c9e0b014cce",
     "title": "file",
     "content": "Type FileContent Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/FileContent&quot;}",
-    "timestamp": 1749679817995
+    "timestamp": 1751287540579
   },
   "references/eClassifiers/SendTaskResponse/references/eStructuralFeatures/id/index.html": {
     "path": "SendTaskResponse/Attributes/id",
-    "link-uuid": "e6a30791-65f4-4b44-801e-b3e1737502a1",
+    "link-uuid": "087f01e8-6c29-4761-98e1-b35693ede358",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679819021
+    "timestamp": 1751287541637
   },
   "references/eClassifiers/TaskIdParams/references/eStructuralFeatures/id/index.html": {
     "path": "TaskIdParams/Attributes/id",
-    "link-uuid": "f006e96c-7e03-48b3-8dc1-f90ba810314e",
+    "link-uuid": "d05e288e-dcb9-4660-accd-7cab6caa2b37",
     "title": "id",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Id&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819475
+    "timestamp": 1751287542117
   },
   "references/eClassifiers/AgentSkill/references/eStructuralFeatures/description/index.html": {
     "path": "AgentSkill/Attributes/description",
-    "link-uuid": "e68d7b6d-56d1-446b-bbf2-52c0d58c7b20",
+    "link-uuid": "4b447d93-baf0-40ac-b4a8-f8b42563109b",
     "title": "description",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Description&quot;\n}",
-    "timestamp": 1749679817542
+    "timestamp": 1751287540136
   },
   "references/eClassifiers/InvalidParamsError/references/eStructuralFeatures/data/index.html": {
     "path": "InvalidParamsError/References/data",
-    "link-uuid": "cfaee970-5642-4148-9605-6dc0a6fe6191",
+    "link-uuid": "c36b11e9-6971-4714-b6c5-8f41286e8627",
     "title": "data",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Data&quot;\n}",
-    "timestamp": 1749679818351
+    "timestamp": 1751287540941
   },
   "references/eClassifiers/PushNotificationNotSupportedError/index.html": {
-    "link-uuid": "6aa93c0c-bf40-4f8b-987b-60145f173698",
+    "link-uuid": "8a9c777f-683d-4454-ba93-5ffd017c09e5",
     "title": "PushNotificationNotSupportedError",
     "content": "Specification {\n  &quot;title&quot;: &quot;PushNotificationNotSupportedError&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;code&quot;: {\n      &quot;default&quot;: -32003,\n      &quot;const&quot;: -32003,\n      &quot;examples&quot;: [-32003],\n      &quot;description&quot;: &quot;Error code&quot;,\n      &quot;title&quot;: &quot;Code&quot;,\n      &quot;type&quot;: &quot;integer&quot;\n    },\n    &quot;data&quot;: {\n      &quot;default&quot;: null,\n      &quot;const&quot;: null,\n      &quot;title&quot;: &quot;Data&quot;\n    },\n    &quot;message&quot;: {\n      &quot;default&quot;: &quot;Push Notification is not supported&quot;,\n      &quot;const&quot;: &quot;Push Notification is not supported&quot;,\n      &quot;examples&quot;: [&quot;Push Notification is not supported&quot;],\n      &quot;description&quot;: &quot;A short description of the error&quot;,\n      &quot;title&quot;: &quot;Message&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;code&quot;,\n    &quot;message&quot;,\n    &quot;data&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818893
+    "timestamp": 1751287541509
   },
   "references/eClassifiers/SetTaskPushNotificationResponse/references/eStructuralFeatures/id/index.html": {
     "path": "SetTaskPushNotificationResponse/Attributes/id",
-    "link-uuid": "e3b357d3-4ec7-497f-a2be-c4a3e2cd3f56",
+    "link-uuid": "271f969c-cb60-498e-bc87-28ba03ae9c66",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679819282
+    "timestamp": 1751287541914
   },
   "references/eClassifiers/TaskResubscriptionRequest/inheritance.html": {
     "path": "TaskResubscriptionRequest/Inheritance",
-    "link-uuid": "caee51ac-f83d-4358-a62c-e92e1138b2b5",
+    "link-uuid": "e3431c4c-f1bb-403b-80c1-54a85638ecc6",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1749679819706
+    "timestamp": 1751287542375
   },
   "references/eClassifiers/TaskSendParams/index.html": {
-    "link-uuid": "32efb93e-2e00-4943-a5bd-9e6757fa9cc5",
+    "link-uuid": "8426105a-766c-4f0f-9a19-d5c78c547dfa",
     "title": "TaskSendParams",
     "content": "Specification {\n  &quot;title&quot;: &quot;TaskSendParams&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;metadata&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Metadata&quot;\n    },\n    &quot;historyLength&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;HistoryLength&quot;\n    },\n    &quot;id&quot;: {\n      &quot;title&quot;: &quot;Id&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;sessionId&quot;: {\n      &quot;title&quot;: &quot;Sessionid&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;message&quot;: {&quot;$ref&quot;: &quot;#/$defs/Message&quot;},\n    &quot;pushNotification&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/PushNotificationConfig&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    }\n  },\n  &quot;required&quot;: [\n    &quot;id&quot;,\n    &quot;message&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819765
+    "timestamp": 1751287542436
   },
   "references/eClassifiers/UnsupportedOperationError/index.html": {
-    "link-uuid": "05f607b9-5f78-4cd3-a843-b986f273b07b",
+    "link-uuid": "b87622d8-8a46-4686-ac52-98fb0585b207",
     "title": "UnsupportedOperationError",
     "content": "Specification {\n  &quot;title&quot;: &quot;UnsupportedOperationError&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;code&quot;: {\n      &quot;default&quot;: -32004,\n      &quot;const&quot;: -32004,\n      &quot;examples&quot;: [-32004],\n      &quot;description&quot;: &quot;Error code&quot;,\n      &quot;title&quot;: &quot;Code&quot;,\n      &quot;type&quot;: &quot;integer&quot;\n    },\n    &quot;data&quot;: {\n      &quot;default&quot;: null,\n      &quot;const&quot;: null,\n      &quot;title&quot;: &quot;Data&quot;\n    },\n    &quot;message&quot;: {\n      &quot;default&quot;: &quot;This operation is not supported&quot;,\n      &quot;const&quot;: &quot;This operation is not supported&quot;,\n      &quot;examples&quot;: [&quot;This operation is not supported&quot;],\n      &quot;description&quot;: &quot;A short description of the error&quot;,\n      &quot;title&quot;: &quot;Message&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;code&quot;,\n    &quot;message&quot;,\n    &quot;data&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679820016
+    "timestamp": 1751287542704
   },
   "references/eClassifiers/SendTaskStreamingResponse/references/eStructuralFeatures/result/index.html": {
     "path": "SendTaskStreamingResponse/References/result",
-    "link-uuid": "5877ffff-bac9-4ac9-a87e-f75e0a64dbef",
+    "link-uuid": "84ef28a5-e13a-4c40-a119-553ed2969c92",
     "title": "result",
     "content": "Type SendTaskStreamingResponseResult Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/TaskStatusUpdateEvent&quot;},\n    {&quot;$ref&quot;: &quot;#/$defs/TaskArtifactUpdateEvent&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679819147
+    "timestamp": 1751287541770
   },
   "references/eClassifiers/JSONRPCMessage/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "JSONRPCMessage/Attributes/jsonrpc",
-    "link-uuid": "e65c3952-3750-463d-9ea3-e706e448beea",
+    "link-uuid": "d4e12f96-05e3-447d-b533-eecc88184404",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818567
+    "timestamp": 1751287541168
   },
   "references/eClassifiers/Artifact/references/eStructuralFeatures/name/index.html": {
     "path": "Artifact/Attributes/name",
-    "link-uuid": "e85ce5f8-0cb5-4d95-8b88-007942d3cc14",
+    "link-uuid": "d69b1b90-15fd-41e0-b98d-58d4d8b5c099",
     "title": "name",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Name&quot;\n}",
-    "timestamp": 1749679817637
+    "timestamp": 1751287540236
   },
   "references/eClassifiers/AgentProvider/index.html": {
-    "link-uuid": "f002acf7-eb8a-4a5f-bd07-140318f8d27a",
+    "link-uuid": "e974816a-7c3e-4d47-8827-dc83db35025b",
     "title": "AgentProvider",
     "content": "Specification {\n  &quot;title&quot;: &quot;AgentProvider&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;organization&quot;: {\n      &quot;title&quot;: &quot;Organization&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;url&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Url&quot;\n    }\n  },\n  &quot;required&quot;: [&quot;organization&quot;]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817488
+    "timestamp": 1751287540065
   },
   "references/eClassifiers/AgentSkill/references/eStructuralFeatures/tags/index.html": {
     "path": "AgentSkill/Attributes/tags",
-    "link-uuid": "abc2afa3-8b24-4a6d-bf66-deafe72fbef1",
+    "link-uuid": "95742cf0-0288-4f04-be9e-a872a1a5d0e6",
     "title": "tags",
     "content": "Type EString Multiplicity 0..* Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Tags&quot;\n}",
-    "timestamp": 1749679817571
+    "timestamp": 1751287540168
   },
   "references/eClassifiers/CancelTaskRequest/index.html": {
-    "link-uuid": "80b119e8-0817-4236-8ea8-0908e3233745",
+    "link-uuid": "6f14f822-e8bf-4eb3-8d20-62da2ed8474d",
     "title": "CancelTaskRequest",
     "content": "Specification {\n  &quot;title&quot;: &quot;CancelTaskRequest&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;method&quot;: {\n      &quot;default&quot;: &quot;tasks/cancel&quot;,\n      &quot;const&quot;: &quot;tasks/cancel&quot;,\n      &quot;title&quot;: &quot;Method&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskIdParams&quot;}\n  },\n  &quot;required&quot;: [\n    &quot;method&quot;,\n    &quot;params&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817727
+    "timestamp": 1751287540321
   },
   "references/eClassifiers/JSONRPCRequest/references/eStructuralFeatures/params/index.html": {
     "path": "JSONRPCRequest/References/params",
-    "link-uuid": "3928186e-cfec-4885-b208-b47e242d3992",
+    "link-uuid": "d7473032-a91e-446d-b4a8-82fb06b127f7",
     "title": "params",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Params&quot;\n}",
-    "timestamp": 1749679818623
+    "timestamp": 1751287541224
   },
   "references/eClassifiers/SendTaskRequest/references/eStructuralFeatures/params/index.html": {
     "path": "SendTaskRequest/References/params",
-    "link-uuid": "86da0a0d-cbae-4639-b5cc-d819a0274034",
+    "link-uuid": "15b29339-fda8-47b8-9228-d849fbba554c",
     "title": "params",
     "content": "Type TaskSendParams Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/TaskSendParams&quot;}",
-    "timestamp": 1749679818970
+    "timestamp": 1751287541587
   },
   "references/eClassifiers/GetTaskResponse/references/eStructuralFeatures/result/index.html": {
     "path": "GetTaskResponse/References/result",
-    "link-uuid": "a9911988-bdc4-45bc-9451-70e8ead01ab3",
+    "link-uuid": "90901125-cdb6-42f4-9cd4-717b7a56778b",
     "title": "result",
     "content": "Type Task Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/Task&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679818253
+    "timestamp": 1751287540838
   },
   "references/eClassifiers/TextPart/inheritance.html": {
     "path": "TextPart/Inheritance",
-    "link-uuid": "0af9443b-0143-446e-9088-82d2ec0b8c16",
+    "link-uuid": "87d22290-e79b-4ebc-87cc-57f80e131e81",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1749679819967
+    "timestamp": 1751287542652
   },
   "references/eClassifiers/SendTaskResponse/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "SendTaskResponse/Attributes/jsonrpc",
-    "link-uuid": "6af9803f-51d8-4a70-9734-93d1c9c7e9e6",
+    "link-uuid": "9fc97de1-ab7c-454c-a546-481cfcd99d2b",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819026
+    "timestamp": 1751287541642
   },
   "references/eClassifiers/CancelTaskRequest/references/eStructuralFeatures/params/index.html": {
     "path": "CancelTaskRequest/References/params",
-    "link-uuid": "1804adfe-cc57-4be0-9ee2-e9e15e69236e",
+    "link-uuid": "42be7403-a3f6-46d0-a9f1-e51d18e5d3dc",
     "title": "params",
     "content": "Type TaskIdParams Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/TaskIdParams&quot;}",
-    "timestamp": 1749679817758
+    "timestamp": 1751287540357
   },
   "references/eClassifiers/SendTaskRequest/inheritance.html": {
     "path": "SendTaskRequest/Inheritance",
-    "link-uuid": "06630300-3822-4122-b5e0-cd4b286f6743",
+    "link-uuid": "2f6727b8-9bbc-4133-93ba-96f8692707d1",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1749679818945
+    "timestamp": 1751287541562
   },
   "references/eClassifiers/FileContent/references/eStructuralFeatures/uri/index.html": {
     "path": "FileContent/Attributes/uri",
-    "link-uuid": "409b2b23-6a90-458f-9f63-739d022ea463",
+    "link-uuid": "87b96475-268b-4656-9bbf-cb19ee4988a7",
     "title": "uri",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Uri&quot;\n}",
-    "timestamp": 1749679817945
+    "timestamp": 1751287540535
   },
   "references/eClassifiers/SendTaskStreamingResponse/references/eStructuralFeatures/error/index.html": {
     "path": "SendTaskStreamingResponse/References/error",
-    "link-uuid": "b66eceba-ec51-42de-82e8-e3237577d7d2",
+    "link-uuid": "ae268eb4-e4c7-4ad5-b813-0c4158d48cd4",
     "title": "error",
     "content": "Type JSONRPCError Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679819132
+    "timestamp": 1751287541754
   },
   "references/eClassifiers/AgentCard/references/eStructuralFeatures/url/index.html": {
     "path": "AgentCard/Attributes/url",
-    "link-uuid": "fa6676a0-5fc3-459e-a3fd-f3e12eed9667",
+    "link-uuid": "5006d9b6-56ba-4020-b312-4202112452b4",
     "title": "url",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Url&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679817450
+    "timestamp": 1751287540021
   },
   "references/eClassifiers/TaskStatusUpdateEvent/references/eStructuralFeatures/status/index.html": {
     "path": "TaskStatusUpdateEvent/References/status",
-    "link-uuid": "1bd87554-0fdd-46a0-b171-504734fab35b",
+    "link-uuid": "5f4f9b00-c8fb-44db-bee7-256970dd8eb1",
     "title": "status",
     "content": "Type TaskStatus Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/TaskStatus&quot;}",
-    "timestamp": 1749679819929
+    "timestamp": 1751287542611
   },
   "references/eClassifiers/CancelTaskRequest/inheritance.html": {
     "path": "CancelTaskRequest/Inheritance",
-    "link-uuid": "d63bd46c-b3cb-4c94-89d0-f44ce7098b09",
+    "link-uuid": "e3606fa3-0322-41f2-9362-5c6c32fd3a6d",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1749679817732
+    "timestamp": 1751287540326
   },
   "references/eClassifiers/TaskSendParams/references/eStructuralFeatures/historyLength/index.html": {
     "path": "TaskSendParams/Attributes/historyLength",
-    "link-uuid": "4ddbcea6-e28f-4b51-a50a-27a6d7cf16f5",
+    "link-uuid": "0afc4b6d-23ef-47e1-a5bf-c13b3c162217",
     "title": "historyLength",
     "content": "Type EIntegerObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;HistoryLength&quot;\n}",
-    "timestamp": 1749679819775
+    "timestamp": 1751287542448
   },
   "index.html": {
-    "link-uuid": "1d482df5-9947-45e0-8d4c-89fb3ae2a039",
+    "link-uuid": "bc8ab3bd-d614-4132-88e5-7a59b6af6169",
     "title": "A2a",
     "content": "This is a documentation of a2a.json schema generated as explained in the Documenting JSON schemas story. AuthenticationInfo JSONRPCResponse Message SendTaskStreamingRequest GetTaskResponse AgentCapabilities SendTaskStreamingResponse InvalidRequestError TextPart JSONRPCRequest AgentCard capabilities InternalError TaskArtifactUpdateEvent PushNotificationConfig authentication AgentProvider provider CancelTaskRequest TaskSendParams message pushNotification params SendTaskStreamingResponseResult result FilePart TaskStatus message GetTaskPushNotificationRequest CancelTaskResponse TaskQueryParams TaskNotFoundError MethodNotFoundError GetTaskPushNotificationResponse PushNotificationNotSupportedError SendTaskRequest params JSONRPCMessage Task status history result result TaskResubscriptionRequest params TaskNotCancelableError SetTaskPushNotificationRequest TaskState SendTaskResponse result Artifact artifacts artifact InvalidParamsError TaskPushNotificationConfig pushNotificationConfig params result FileContent file A2ARequest JSONRPCError error error error error error error AgentAuthentication authentication TaskStatusUpdateEvent status JSONParseError Part parts parts GetTaskRequest params SetTaskPushNotificationResponse result error DataPart TaskIdParams params params AgentSkill skills UnsupportedOperationError A2A",
-    "timestamp": 1749679817244
+    "timestamp": 1751287539804
   },
   "references/eClassifiers/AgentCard/references/eStructuralFeatures/skills/index.html": {
     "path": "AgentCard/References/skills",
-    "link-uuid": "a71f7654-93cb-420c-a7c4-2e6027ebcfec",
+    "link-uuid": "56f69166-40ce-4286-8cfe-d678479e4fab",
     "title": "skills",
     "content": "Type AgentSkill Multiplicity 0..* Specification {\n  &quot;title&quot;: &quot;Skills&quot;,\n  &quot;type&quot;: &quot;array&quot;,\n  &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/AgentSkill&quot;}\n}",
-    "timestamp": 1749679817445
+    "timestamp": 1751287540016
   },
   "references/eClassifiers/TaskStatus/references/eStructuralFeatures/timestamp/index.html": {
     "path": "TaskStatus/Attributes/timestamp",
-    "link-uuid": "11605258-339c-4142-afd1-72abae57897e",
+    "link-uuid": "2e81a70c-3c02-4c7f-bbb9-bb16e9f5f40e",
     "title": "timestamp",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;format&quot;: &quot;date-time&quot;,\n  &quot;title&quot;: &quot;Timestamp&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819864
+    "timestamp": 1751287542539
   },
   "references/eClassifiers/TaskArtifactUpdateEvent/index.html": {
-    "link-uuid": "4ab82c1e-5565-409e-bf70-4deaa43e1002",
+    "link-uuid": "f1193469-3775-41cc-b621-dc99435911ee",
     "title": "TaskArtifactUpdateEvent",
     "content": "Specification {\n  &quot;title&quot;: &quot;TaskArtifactUpdateEvent&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;artifact&quot;: {&quot;$ref&quot;: &quot;#/$defs/Artifact&quot;},\n    &quot;metadata&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Metadata&quot;\n    },\n    &quot;id&quot;: {\n      &quot;title&quot;: &quot;Id&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;id&quot;,\n    &quot;artifact&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819397
+    "timestamp": 1751287542047
   },
   "references/eClassifiers/InternalError/index.html": {
-    "link-uuid": "417ed0fe-d438-49f1-9de6-f8d021789473",
+    "link-uuid": "397f917f-73a2-43fb-b1c5-a62ef51075bf",
     "title": "InternalError",
     "content": "Specification {\n  &quot;title&quot;: &quot;InternalError&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;code&quot;: {\n      &quot;default&quot;: -32603,\n      &quot;const&quot;: -32603,\n      &quot;examples&quot;: [-32603],\n      &quot;description&quot;: &quot;Error code&quot;,\n      &quot;title&quot;: &quot;Code&quot;,\n      &quot;type&quot;: &quot;integer&quot;\n    },\n    &quot;data&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Data&quot;\n    },\n    &quot;message&quot;: {\n      &quot;default&quot;: &quot;Internal error&quot;,\n      &quot;const&quot;: &quot;Internal error&quot;,\n      &quot;examples&quot;: [&quot;Internal error&quot;],\n      &quot;description&quot;: &quot;A short description of the error&quot;,\n      &quot;title&quot;: &quot;Message&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;code&quot;,\n    &quot;message&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818284
+    "timestamp": 1751287540870
   },
   "references/eClassifiers/TextPart/references/eStructuralFeatures/metadata/index.html": {
     "path": "TextPart/References/metadata",
-    "link-uuid": "b7eda1a8-8946-42e6-b887-eb4b2bea50be",
+    "link-uuid": "0dca24c7-58d1-4bc4-b65e-1cffdf584204",
     "title": "metadata",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Metadata&quot;\n}",
-    "timestamp": 1749679819976
+    "timestamp": 1751287542663
   },
   "references/eClassifiers/Task/references/eStructuralFeatures/metadata/index.html": {
     "path": "Task/References/metadata",
-    "link-uuid": "0b47cc76-6fb2-4ac5-b0be-3674353e0f26",
+    "link-uuid": "30190e5b-f2eb-4bdf-b78d-4985739206c1",
     "title": "metadata",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Metadata&quot;\n}",
-    "timestamp": 1749679819353
+    "timestamp": 1751287541991
   },
   "references/eClassifiers/CancelTaskRequest/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "CancelTaskRequest/Attributes/jsonrpc",
-    "link-uuid": "38d4f5cc-be8c-44e9-97c3-5aa71208e795",
+    "link-uuid": "f9a0ed51-1f4d-478c-81ef-b9a567a844aa",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679817747
+    "timestamp": 1751287540345
   },
   "references/eClassifiers/TaskNotFoundError/references/eStructuralFeatures/message/index.html": {
     "path": "TaskNotFoundError/Attributes/message",
-    "link-uuid": "039c9485-e4ce-4981-ab1d-6bd1fa3ddb98",
+    "link-uuid": "a76f8c5a-b1d2-4203-a64c-3be387d8d1d0",
     "title": "message",
     "content": "Type EString Multiplicity 1 A short description of the error Specification {\n  &quot;default&quot;: &quot;Task not found&quot;,\n  &quot;const&quot;: &quot;Task not found&quot;,\n  &quot;examples&quot;: [&quot;Task not found&quot;],\n  &quot;description&quot;: &quot;A short description of the error&quot;,\n  &quot;title&quot;: &quot;Message&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819576
+    "timestamp": 1751287542232
   },
   "references/eClassifiers/TaskQueryParams/index.html": {
-    "link-uuid": "5e122b9b-4541-443a-828a-59e362a06777",
+    "link-uuid": "7eb7b90d-cd9d-42fb-b131-6b3fa27ca141",
     "title": "TaskQueryParams",
     "content": "Specification {\n  &quot;title&quot;: &quot;TaskQueryParams&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;metadata&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Metadata&quot;\n    },\n    &quot;historyLength&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;HistoryLength&quot;\n    },\n    &quot;id&quot;: {\n      &quot;title&quot;: &quot;Id&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [&quot;id&quot;]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819650
+    "timestamp": 1751287542317
   },
   "references/eClassifiers/JSONRPCError/references/eStructuralFeatures/message/index.html": {
     "path": "JSONRPCError/Attributes/message",
-    "link-uuid": "c1d71bc6-e0c0-46d4-8cfe-c5e08734ed4e",
+    "link-uuid": "eff1f393-f90c-4584-9532-34131e0a5466",
     "title": "message",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Message&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818518
+    "timestamp": 1751287541116
   },
   "references/eClassifiers/JSONRPCRequest/index.html": {
-    "link-uuid": "26b8ecac-09c4-4fde-85aa-a7aff1d35823",
+    "link-uuid": "888282dc-8f40-4948-930a-f1f0ef7959eb",
     "title": "JSONRPCRequest",
     "content": "Specification {\n  &quot;title&quot;: &quot;JSONRPCRequest&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;method&quot;: {\n      &quot;title&quot;: &quot;Method&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;params&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Params&quot;\n    }\n  },\n  &quot;required&quot;: [&quot;method&quot;]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818596
+    "timestamp": 1751287541197
   },
   "references/eClassifiers/Message/references/eStructuralFeatures/role/index.html": {
     "path": "Message/Attributes/role",
-    "link-uuid": "55d8640a-0ad7-480d-9ea7-cb9b4c22adef",
+    "link-uuid": "eb8da297-652f-44ba-adac-d8df9837ba92",
     "title": "role",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Role&quot;,\n  &quot;type&quot;: &quot;string&quot;,\n  &quot;enum&quot;: [\n    &quot;user&quot;,\n    &quot;agent&quot;\n  ]\n}",
-    "timestamp": 1749679818738
+    "timestamp": 1751287541340
   },
   "references/eClassifiers/TaskSendParams/references/eStructuralFeatures/sessionId/index.html": {
     "path": "TaskSendParams/Attributes/sessionId",
-    "link-uuid": "b471eed8-679c-4de1-850f-f21e771535ef",
+    "link-uuid": "9a9be12c-7465-407b-a339-e51687bd8999",
     "title": "sessionId",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;title&quot;: &quot;Sessionid&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819801
+    "timestamp": 1751287542475
   },
   "references/eClassifiers/MethodNotFoundError/index.html": {
-    "link-uuid": "d5ab16ed-1206-4bee-b6ed-0c36e0c7e2c1",
+    "link-uuid": "2583f321-5118-4db7-98bf-6bddd33eef72",
     "title": "MethodNotFoundError",
     "content": "Specification {\n  &quot;title&quot;: &quot;MethodNotFoundError&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;code&quot;: {\n      &quot;default&quot;: -32601,\n      &quot;const&quot;: -32601,\n      &quot;examples&quot;: [-32601],\n      &quot;description&quot;: &quot;Error code&quot;,\n      &quot;title&quot;: &quot;Code&quot;,\n      &quot;type&quot;: &quot;integer&quot;\n    },\n    &quot;data&quot;: {\n      &quot;default&quot;: null,\n      &quot;const&quot;: null,\n      &quot;title&quot;: &quot;Data&quot;\n    },\n    &quot;message&quot;: {\n      &quot;default&quot;: &quot;Method not found&quot;,\n      &quot;const&quot;: &quot;Method not found&quot;,\n      &quot;examples&quot;: [&quot;Method not found&quot;],\n      &quot;description&quot;: &quot;A short description of the error&quot;,\n      &quot;title&quot;: &quot;Message&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;code&quot;,\n    &quot;message&quot;,\n    &quot;data&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818767
+    "timestamp": 1751287541371
   },
   "references/eClassifiers/AgentSkill/index.html": {
-    "link-uuid": "58df3468-513f-4bb4-a5b8-ced17a2366f2",
+    "link-uuid": "39121971-3500-4bb4-bb4f-b07fb8c259ed",
     "title": "AgentSkill",
     "content": "Specification {\n  &quot;title&quot;: &quot;AgentSkill&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;inputModes&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;type&quot;: &quot;array&quot;,\n          &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Inputmodes&quot;\n    },\n    &quot;outputModes&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;type&quot;: &quot;array&quot;,\n          &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Outputmodes&quot;\n    },\n    &quot;examples&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;type&quot;: &quot;array&quot;,\n          &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Examples&quot;\n    },\n    &quot;name&quot;: {\n      &quot;title&quot;: &quot;Name&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;description&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Description&quot;\n    },\n    &quot;id&quot;: {\n      &quot;title&quot;: &quot;Id&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;tags&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;type&quot;: &quot;array&quot;,\n          &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Tags&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;id&quot;,\n    &quot;name&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817531
+    "timestamp": 1751287540125
   },
   "references/eClassifiers/CancelTaskResponse/index.html": {
-    "link-uuid": "1b279f2d-7ee2-4721-8577-945aea14df56",
+    "link-uuid": "467d0d62-66b9-4eea-a30b-dd59812a1514",
     "title": "CancelTaskResponse",
     "content": "Specification {\n  &quot;title&quot;: &quot;CancelTaskResponse&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;result&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/Task&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;error&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    }\n  }\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817789
+    "timestamp": 1751287540390
   },
   "references/eClassifiers/DataPart/index.html": {
-    "link-uuid": "4d951841-602d-4308-9112-6bf6233e2615",
+    "link-uuid": "c175ec7f-d4dd-4bd5-8153-1637e2a8590b",
     "title": "DataPart",
     "content": "Specification {\n  &quot;title&quot;: &quot;DataPart&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;metadata&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Metadata&quot;\n    },\n    &quot;data&quot;: {\n      &quot;additionalProperties&quot;: {},\n      &quot;title&quot;: &quot;Data&quot;,\n      &quot;type&quot;: &quot;object&quot;\n    },\n    &quot;type&quot;: {\n      &quot;default&quot;: &quot;data&quot;,\n      &quot;const&quot;: &quot;data&quot;,\n      &quot;examples&quot;: [&quot;data&quot;],\n      &quot;description&quot;: &quot;Type of the part&quot;,\n      &quot;title&quot;: &quot;Type&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;type&quot;,\n    &quot;data&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817848
+    "timestamp": 1751287540451
   },
   "references/eClassifiers/TaskStatusUpdateEvent/references/eStructuralFeatures/metadata/index.html": {
     "path": "TaskStatusUpdateEvent/References/metadata",
-    "link-uuid": "e0b5bb92-ae71-4db1-a220-981083ec61ae",
+    "link-uuid": "132d69ac-b003-4b01-ae18-e2b81206e18e",
     "title": "metadata",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Metadata&quot;\n}",
-    "timestamp": 1749679819924
+    "timestamp": 1751287542605
   },
   "references/eClassifiers/JSONRPCResponse/references/eStructuralFeatures/id/index.html": {
     "path": "JSONRPCResponse/Attributes/id",
-    "link-uuid": "a6347d83-53b6-44f3-b0b6-0f32695d69d0",
+    "link-uuid": "21648261-d3ed-4a69-9948-2745fd953a1d",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679818672
+    "timestamp": 1751287541273
   },
   "references/eClassifiers/AgentSkill/references/eStructuralFeatures/outputModes/index.html": {
     "path": "AgentSkill/Attributes/outputModes",
-    "link-uuid": "64a8864c-067c-4d4b-9c01-12ceb01ff642",
+    "link-uuid": "848f59d5-2210-438b-a193-725faf861c03",
     "title": "outputModes",
     "content": "Type EString Multiplicity 0..* Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Outputmodes&quot;\n}",
-    "timestamp": 1749679817567
+    "timestamp": 1751287540163
   },
   "references/eClassifiers/GetTaskPushNotificationRequest/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "GetTaskPushNotificationRequest/Attributes/jsonrpc",
-    "link-uuid": "c7902f4f-d5f3-4018-b6f7-e1847f2b4d0c",
+    "link-uuid": "ab44d1e6-629d-4aaf-9902-46abe2e946c2",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818059
+    "timestamp": 1751287540643
   },
   "references/eClassifiers/GetTaskPushNotificationResponse/references/eStructuralFeatures/error/index.html": {
     "path": "GetTaskPushNotificationResponse/References/error",
-    "link-uuid": "6444a6e0-5f0a-4c3c-812a-0d4643c8f44d",
+    "link-uuid": "8ae31458-a165-4f07-8ab1-87c23db2fcf0",
     "title": "error",
     "content": "Type JSONRPCError Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679818109
+    "timestamp": 1751287540695
   },
   "references/eClassifiers/TaskNotFoundError/references/eStructuralFeatures/code/index.html": {
     "path": "TaskNotFoundError/Attributes/code",
-    "link-uuid": "7bc7f045-8891-4d7f-828d-34958ebd0998",
+    "link-uuid": "f4c012c5-f52a-4c12-8467-a2af28fdcbbf",
     "title": "code",
     "content": "Type EIntegerObject Multiplicity 1 Error code Specification {\n  &quot;default&quot;: -32001,\n  &quot;const&quot;: -32001,\n  &quot;examples&quot;: [-32001],\n  &quot;description&quot;: &quot;Error code&quot;,\n  &quot;title&quot;: &quot;Code&quot;,\n  &quot;type&quot;: &quot;integer&quot;\n}",
-    "timestamp": 1749679819566
+    "timestamp": 1751287542221
   },
   "references/eClassifiers/SendTaskRequest/index.html": {
-    "link-uuid": "7947b030-6d84-44fd-9080-5dc717e27d1f",
+    "link-uuid": "cfec15fe-d386-4786-9a5e-c018013001c2",
     "title": "SendTaskRequest",
     "content": "Specification {\n  &quot;title&quot;: &quot;SendTaskRequest&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;method&quot;: {\n      &quot;default&quot;: &quot;tasks/send&quot;,\n      &quot;const&quot;: &quot;tasks/send&quot;,\n      &quot;title&quot;: &quot;Method&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskSendParams&quot;}\n  },\n  &quot;required&quot;: [\n    &quot;method&quot;,\n    &quot;params&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818940
+    "timestamp": 1751287541557
   },
   "references/eClassifiers/JSONRPCResponse/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "JSONRPCResponse/Attributes/jsonrpc",
-    "link-uuid": "c4a7691a-04e6-4bc6-abfc-96c62ffba6c4",
+    "link-uuid": "ff042a61-e23f-4b75-8d97-00a4a5f0dac2",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818677
+    "timestamp": 1751287541278
   },
   "references/eClassifiers/AgentProvider/references/eStructuralFeatures/url/index.html": {
     "path": "AgentProvider/Attributes/url",
-    "link-uuid": "141d2979-2668-4f3f-9711-cfbb5bebd7ea",
+    "link-uuid": "e055be89-6aea-4ff6-8096-c05c14fd17df",
     "title": "url",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Url&quot;\n}",
-    "timestamp": 1749679817502
+    "timestamp": 1751287540084
   },
   "references/eClassifiers/SendTaskRequest/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "SendTaskRequest/Attributes/jsonrpc",
-    "link-uuid": "0f6e30bd-10ed-482b-9673-f60a84a28f44",
+    "link-uuid": "55b021d1-d7c4-4962-8442-d289eb62425f",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818960
+    "timestamp": 1751287541577
   },
   "references/eClassifiers/JSONRPCResponse/references/eStructuralFeatures/error/index.html": {
     "path": "JSONRPCResponse/References/error",
-    "link-uuid": "6d6f4c6d-5a72-4286-871b-e21e4883aec8",
+    "link-uuid": "c15e2694-5c45-4d35-867c-75c5c21b3057",
     "title": "error",
     "content": "Type JSONRPCError Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679818667
+    "timestamp": 1751287541268
   },
   "references/eClassifiers/Artifact/references/eStructuralFeatures/append/index.html": {
     "path": "Artifact/Attributes/append",
-    "link-uuid": "6c475fe8-4bad-4d07-a9db-9c5c3fa2018d",
+    "link-uuid": "a3fbce6e-388e-4708-b714-e36ea540627e",
     "title": "append",
     "content": "Type EBooleanObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;boolean&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Append&quot;\n}",
-    "timestamp": 1749679817612
+    "timestamp": 1751287540209
   },
   "references/eClassifiers/SendTaskRequest/references/eStructuralFeatures/method/index.html": {
     "path": "SendTaskRequest/Attributes/method",
-    "link-uuid": "af13d10a-04eb-4b4d-81be-c15318818931",
+    "link-uuid": "58a9acd2-5768-45b8-b219-2cdc2000bef6",
     "title": "method",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;default&quot;: &quot;tasks/send&quot;,\n  &quot;const&quot;: &quot;tasks/send&quot;,\n  &quot;title&quot;: &quot;Method&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818965
+    "timestamp": 1751287541582
   },
   "references/eClassifiers/JSONParseError/references/eStructuralFeatures/code/index.html": {
     "path": "JSONParseError/Attributes/code",
-    "link-uuid": "06ed1f3a-45c4-44c2-879e-8e6483ea9b00",
+    "link-uuid": "783b161f-c6e5-45ef-abef-466c4e5b3f55",
     "title": "code",
     "content": "Type EIntegerObject Multiplicity 1 Error code Specification {\n  &quot;default&quot;: -32700,\n  &quot;const&quot;: -32700,\n  &quot;examples&quot;: [-32700],\n  &quot;description&quot;: &quot;Error code&quot;,\n  &quot;title&quot;: &quot;Code&quot;,\n  &quot;type&quot;: &quot;integer&quot;\n}",
-    "timestamp": 1749679818452
+    "timestamp": 1751287541045
   },
   "references/eClassifiers/DataPart/references/eStructuralFeatures/metadata/index.html": {
     "path": "DataPart/References/metadata",
-    "link-uuid": "1c3cd13e-e0b7-4b7a-bfd8-990e89d761f7",
+    "link-uuid": "739b08c5-d95a-40a0-ba91-6d41da05b8b7",
     "title": "metadata",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Metadata&quot;\n}",
-    "timestamp": 1749679817871
+    "timestamp": 1751287540473
   },
   "references/eClassifiers/JSONRPCResponse/references/eStructuralFeatures/result/index.html": {
     "path": "JSONRPCResponse/References/result",
-    "link-uuid": "83752541-db5a-4563-b3fb-d56da795c46a",
+    "link-uuid": "eaffba08-7b8d-41c7-8f47-3520de5d58de",
     "title": "result",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Result&quot;\n}",
-    "timestamp": 1749679818683
+    "timestamp": 1751287541284
   },
   "references/eClassifiers/CancelTaskResponse/references/eStructuralFeatures/error/index.html": {
     "path": "CancelTaskResponse/References/error",
-    "link-uuid": "89cf2b22-15fa-4268-8716-480eee3ad00a",
+    "link-uuid": "8757a08f-3a98-4ca5-9cd6-f82d27cba674",
     "title": "error",
     "content": "Type JSONRPCError Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679817799
+    "timestamp": 1751287540401
   },
   "references/eClassifiers/FileContent/index.html": {
-    "link-uuid": "b026de99-ffcd-4468-9345-2bae4918d737",
+    "link-uuid": "83525a60-9b0d-4234-9ff1-b6f59ede1c7e",
     "title": "FileContent",
     "content": "Represents the content of a file, either as base64 encoded bytes or a URI. Ensures that either &lsquo;bytes&rsquo; or &lsquo;uri&rsquo; is provided, but not both. Specification {\n  &quot;description&quot;: &quot;Represents the content of a file, either as base64 encoded bytes or a URI.\\n\\nEnsures that either 'bytes' or 'uri' is provided, but not both.&quot;,\n  &quot;title&quot;: &quot;FileContent&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;bytes&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Bytes&quot;\n    },\n    &quot;name&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Name&quot;\n    },\n    &quot;mimeType&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Mimetype&quot;\n    },\n    &quot;uri&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Uri&quot;\n    }\n  }\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817918
+    "timestamp": 1751287540509
   },
   "references/eClassifiers/A2ARequest/inheritance.html": {
     "path": "A2ARequest/Inheritance",
-    "link-uuid": "af30ece6-2af4-4702-9034-c58a65d9df73",
+    "link-uuid": "047b4d99-f4c5-42c9-9733-724c0e249e2c",
     "title": "Inheritance",
     "content": "Subtypes ",
-    "timestamp": 1749679817273
+    "timestamp": 1751287539836
   },
   "references/eClassifiers/AgentCapabilities/references/eStructuralFeatures/streaming/index.html": {
     "path": "AgentCapabilities/Attributes/streaming",
-    "link-uuid": "7ff3f30e-dd08-475f-9631-9e17b83b1aae",
+    "link-uuid": "45d6018e-a91d-4aa4-a1e8-54a4bb664115",
     "title": "streaming",
     "content": "Type EBooleanObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: false,\n  &quot;title&quot;: &quot;Streaming&quot;,\n  &quot;type&quot;: &quot;boolean&quot;\n}",
-    "timestamp": 1749679817363
+    "timestamp": 1751287539927
   },
   "references/eClassifiers/GetTaskPushNotificationResponse/index.html": {
-    "link-uuid": "d8557910-7f64-4185-8396-b5209e7729f4",
+    "link-uuid": "5e4237d0-2d07-4907-a0c5-b7288d3bd94c",
     "title": "GetTaskPushNotificationResponse",
     "content": "Specification {\n  &quot;title&quot;: &quot;GetTaskPushNotificationResponse&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;result&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/TaskPushNotificationConfig&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;error&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    }\n  }\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818099
+    "timestamp": 1751287540684
   },
   "references/eClassifiers/AgentCard/index.html": {
-    "link-uuid": "e0a47c60-7598-4030-8b85-e4ba64575cca",
+    "link-uuid": "913df1d3-2d86-49d5-b785-6901bacdfbfd",
     "title": "AgentCard",
     "content": "Specification {\n  &quot;title&quot;: &quot;AgentCard&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;skills&quot;: {\n      &quot;title&quot;: &quot;Skills&quot;,\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/AgentSkill&quot;}\n    },\n    &quot;documentationUrl&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Documentationurl&quot;\n    },\n    &quot;capabilities&quot;: {&quot;$ref&quot;: &quot;#/$defs/AgentCapabilities&quot;},\n    &quot;provider&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/AgentProvider&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    },\n    &quot;defaultOutputModes&quot;: {\n      &quot;default&quot;: [&quot;text&quot;],\n      &quot;title&quot;: &quot;Defaultoutputmodes&quot;,\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n    },\n    &quot;name&quot;: {\n      &quot;title&quot;: &quot;Name&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;description&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Description&quot;\n    },\n    &quot;version&quot;: {\n      &quot;title&quot;: &quot;Version&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;defaultInputModes&quot;: {\n      &quot;default&quot;: [&quot;text&quot;],\n      &quot;title&quot;: &quot;Defaultinputmodes&quot;,\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n    },\n    &quot;url&quot;: {\n      &quot;title&quot;: &quot;Url&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;authentication&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/AgentAuthentication&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    }\n  },\n  &quot;required&quot;: [\n    &quot;name&quot;,\n    &quot;url&quot;,\n    &quot;version&quot;,\n    &quot;capabilities&quot;,\n    &quot;skills&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817393
+    "timestamp": 1751287539962
   },
   "references/eClassifiers/TaskStatusUpdateEvent/references/eStructuralFeatures/id/index.html": {
     "path": "TaskStatusUpdateEvent/Attributes/id",
-    "link-uuid": "49decd99-f4b1-4ede-8e30-89df919356f6",
+    "link-uuid": "d1750676-1706-416d-b044-622ee412d060",
     "title": "id",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Id&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819919
+    "timestamp": 1751287542600
   },
   "references/eClassifiers/GetTaskRequest/inheritance.html": {
     "path": "GetTaskRequest/Inheritance",
-    "link-uuid": "9a551b12-8d5d-4096-a697-369ea2205bb0",
+    "link-uuid": "4679790f-09cc-4426-9988-316206197fa0",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1749679818166
+    "timestamp": 1751287540752
   },
   "references/eClassifiers/AgentCard/references/eStructuralFeatures/capabilities/index.html": {
     "path": "AgentCard/References/capabilities",
-    "link-uuid": "87da71a1-0426-49fc-a32e-262d1907ebd1",
+    "link-uuid": "dbacd0c2-058c-4c63-a694-c5e823d76bb3",
     "title": "capabilities",
     "content": "Type AgentCapabilities Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/AgentCapabilities&quot;}",
-    "timestamp": 1749679817409
+    "timestamp": 1751287539978
   },
   "references/eClassifiers/FileContent/references/eStructuralFeatures/name/index.html": {
     "path": "FileContent/Attributes/name",
-    "link-uuid": "08ef92f8-e703-430d-8f8f-af1d8dbf058a",
+    "link-uuid": "bef82995-0a30-48ed-83be-eeeea83f951f",
     "title": "name",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Name&quot;\n}",
-    "timestamp": 1749679817940
+    "timestamp": 1751287540530
   },
   "references/eClassifiers/TaskStatusUpdateEvent/references/eStructuralFeatures/final/index.html": {
     "path": "TaskStatusUpdateEvent/Attributes/final",
-    "link-uuid": "dcdf7b76-b055-44ca-a27c-175630ddbf65",
+    "link-uuid": "7433cc99-5689-49be-bc12-1179aa0b4bb9",
     "title": "final",
     "content": "Type EBooleanObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: false,\n  &quot;title&quot;: &quot;Final&quot;,\n  &quot;type&quot;: &quot;boolean&quot;\n}",
-    "timestamp": 1749679819913
+    "timestamp": 1751287542594
   },
   "references/eClassifiers/AgentSkill/references/eStructuralFeatures/name/index.html": {
     "path": "AgentSkill/Attributes/name",
-    "link-uuid": "ab05d1ba-bea5-4c24-8bf1-e7e626a5fbb7",
+    "link-uuid": "f6531e97-181a-47aa-98dd-e4b790f31958",
     "title": "name",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Name&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679817562
+    "timestamp": 1751287540158
   },
   "references/eClassifiers/Artifact/index.html": {
-    "link-uuid": "a1138fb9-dd7d-4fa6-a0ed-452f0822ab11",
+    "link-uuid": "dcfd4ea2-f38f-439a-9f5e-f3a116fca269",
     "title": "Artifact",
     "content": "Specification {\n  &quot;title&quot;: &quot;Artifact&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;metadata&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Metadata&quot;\n    },\n    &quot;lastChunk&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;boolean&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;LastChunk&quot;\n    },\n    &quot;name&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Name&quot;\n    },\n    &quot;parts&quot;: {\n      &quot;title&quot;: &quot;Parts&quot;,\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Part&quot;}\n    },\n    &quot;description&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Description&quot;\n    },\n    &quot;index&quot;: {\n      &quot;default&quot;: 0,\n      &quot;type&quot;: &quot;integer&quot;,\n      &quot;title&quot;: &quot;Index&quot;\n    },\n    &quot;append&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;boolean&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Append&quot;\n    }\n  },\n  &quot;required&quot;: [&quot;parts&quot;]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817601
+    "timestamp": 1751287540199
   },
   "references/eClassifiers/GetTaskRequest/references/eStructuralFeatures/method/index.html": {
     "path": "GetTaskRequest/Attributes/method",
-    "link-uuid": "e3fe1e59-2dec-4ed2-88eb-d5ca3f3aa991",
+    "link-uuid": "626579fd-6c37-406d-ad24-6123f9575003",
     "title": "method",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;default&quot;: &quot;tasks/get&quot;,\n  &quot;const&quot;: &quot;tasks/get&quot;,\n  &quot;title&quot;: &quot;Method&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818188
+    "timestamp": 1751287540773
   },
   "references/eClassifiers/SetTaskPushNotificationRequest/references/eStructuralFeatures/method/index.html": {
     "path": "SetTaskPushNotificationRequest/Attributes/method",
-    "link-uuid": "4deacc18-2478-4c5c-b491-25f5f24e62c0",
+    "link-uuid": "9ca64b0d-88eb-40ab-b192-59b2cc423e23",
     "title": "method",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;default&quot;: &quot;tasks/pushNotification/set&quot;,\n  &quot;const&quot;: &quot;tasks/pushNotification/set&quot;,\n  &quot;title&quot;: &quot;Method&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819230
+    "timestamp": 1751287541861
   },
   "references/eClassifiers/AgentCard/references/eStructuralFeatures/authentication/index.html": {
     "path": "AgentCard/References/authentication",
-    "link-uuid": "23f84f07-8e13-4698-842f-ff3a4c8c812b",
+    "link-uuid": "ffbe4bd3-75fd-4a71-877c-888182ba7ced",
     "title": "authentication",
     "content": "Type AgentAuthentication Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/AgentAuthentication&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679817404
+    "timestamp": 1751287539973
   },
   "references/eClassifiers/AuthenticationInfo/index.html": {
-    "link-uuid": "0e8f4f2c-0a59-4f0e-836d-f1efb30de6c0",
+    "link-uuid": "486682d1-1392-4058-ad06-4fc002749635",
     "title": "AuthenticationInfo",
     "content": "Specification {\n  &quot;additionalProperties&quot;: {},\n  &quot;title&quot;: &quot;AuthenticationInfo&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;credentials&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Credentials&quot;\n    },\n    &quot;schemes&quot;: {\n      &quot;title&quot;: &quot;Schemes&quot;,\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n    }\n  },\n  &quot;required&quot;: [&quot;schemes&quot;]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817682
+    "timestamp": 1751287540273
   },
   "references/eClassifiers/MethodNotFoundError/references/eStructuralFeatures/code/index.html": {
     "path": "MethodNotFoundError/Attributes/code",
-    "link-uuid": "8a6dfb8e-8073-45d6-8a4c-e5469dffbdcf",
+    "link-uuid": "f35c25c0-580e-4e8a-98b7-05f579e03656",
     "title": "code",
     "content": "Type EIntegerObject Multiplicity 1 Error code Specification {\n  &quot;default&quot;: -32601,\n  &quot;const&quot;: -32601,\n  &quot;examples&quot;: [-32601],\n  &quot;description&quot;: &quot;Error code&quot;,\n  &quot;title&quot;: &quot;Code&quot;,\n  &quot;type&quot;: &quot;integer&quot;\n}",
-    "timestamp": 1749679818777
+    "timestamp": 1751287541384
   },
   "references/eClassifiers/Part/index.html": {
-    "link-uuid": "2492a376-7d5c-4e1f-967f-b6d1ed2347db",
+    "link-uuid": "8651e2ec-4d02-45f6-afc6-02a9d854b542",
     "title": "Part",
     "content": "Specification {\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/TextPart&quot;},\n    {&quot;$ref&quot;: &quot;#/$defs/FilePart&quot;},\n    {&quot;$ref&quot;: &quot;#/$defs/DataPart&quot;}\n  ],\n  &quot;title&quot;: &quot;Part&quot;\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818810
+    "timestamp": 1751287541417
   },
   "references/eClassifiers/JSONRPCError/references/eStructuralFeatures/data/index.html": {
     "path": "JSONRPCError/References/data",
-    "link-uuid": "7e938163-1d26-41ee-b852-93da60c82e98",
+    "link-uuid": "075b1237-90f4-49e7-b01c-67c770de5419",
     "title": "data",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Data&quot;\n}",
-    "timestamp": 1749679818513
+    "timestamp": 1751287541111
   },
   "references/eClassifiers/PushNotificationNotSupportedError/references/eStructuralFeatures/code/index.html": {
     "path": "PushNotificationNotSupportedError/Attributes/code",
-    "link-uuid": "f3b3c6e0-e432-4e44-b320-59666aeca1e7",
+    "link-uuid": "987b298c-5b34-4c2b-9220-85ce3c0ed852",
     "title": "code",
     "content": "Type EIntegerObject Multiplicity 1 Error code Specification {\n  &quot;default&quot;: -32003,\n  &quot;const&quot;: -32003,\n  &quot;examples&quot;: [-32003],\n  &quot;description&quot;: &quot;Error code&quot;,\n  &quot;title&quot;: &quot;Code&quot;,\n  &quot;type&quot;: &quot;integer&quot;\n}",
-    "timestamp": 1749679818903
+    "timestamp": 1751287541520
   },
   "references/eClassifiers/TaskStatusUpdateEvent/inheritance.html": {
     "path": "TaskStatusUpdateEvent/Inheritance",
-    "link-uuid": "e6c46119-c5b8-4122-9941-20ab0c24d3e7",
+    "link-uuid": "c9a8798c-8117-4862-ba4f-b43d566edac3",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1749679819903
+    "timestamp": 1751287542579
   },
   "references/eClassifiers/AgentAuthentication/references/eStructuralFeatures/credentials/index.html": {
     "path": "AgentAuthentication/Attributes/credentials",
-    "link-uuid": "1e1964d0-7585-401d-a004-8693c8acf01e",
+    "link-uuid": "3d63abae-eb1c-40b2-ba02-20e49be6e5e1",
     "title": "credentials",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Credentials&quot;\n}",
-    "timestamp": 1749679817311
+    "timestamp": 1751287539873
   },
   "references/eClassifiers/MethodNotFoundError/references/eStructuralFeatures/message/index.html": {
     "path": "MethodNotFoundError/Attributes/message",
-    "link-uuid": "d395c641-ba5f-487e-8d4e-a15e0648c2b2",
+    "link-uuid": "44279924-71aa-49e5-826e-49194ca8e8f5",
     "title": "message",
     "content": "Type EString Multiplicity 1 A short description of the error Specification {\n  &quot;default&quot;: &quot;Method not found&quot;,\n  &quot;const&quot;: &quot;Method not found&quot;,\n  &quot;examples&quot;: [&quot;Method not found&quot;],\n  &quot;description&quot;: &quot;A short description of the error&quot;,\n  &quot;title&quot;: &quot;Message&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818787
+    "timestamp": 1751287541394
   },
   "references/eClassifiers/SendTaskStreamingRequest/references/eStructuralFeatures/params/index.html": {
     "path": "SendTaskStreamingRequest/References/params",
-    "link-uuid": "e4c8fbe6-a629-4897-8ee0-6fe15ec55242",
+    "link-uuid": "efb718fb-17a8-405f-b2f6-fc56d170926f",
     "title": "params",
     "content": "Type TaskSendParams Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/TaskSendParams&quot;}",
-    "timestamp": 1749679819091
+    "timestamp": 1751287541707
   },
   "references/eClassifiers/AgentCard/references/eStructuralFeatures/description/index.html": {
     "path": "AgentCard/Attributes/description",
-    "link-uuid": "caa2d338-79ff-4800-9986-5b5fb9bb79c3",
+    "link-uuid": "481b19ea-d6af-4daa-9e8a-7bc485261f98",
     "title": "description",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Description&quot;\n}",
-    "timestamp": 1749679817425
+    "timestamp": 1751287539994
   },
   "references/eClassifiers/Task/references/eStructuralFeatures/status/index.html": {
     "path": "Task/References/status",
-    "link-uuid": "76d1eb04-680b-456e-8138-c9bfdb2541ec",
+    "link-uuid": "7a6d0bde-f43a-4c84-b74e-8077c9832659",
     "title": "status",
     "content": "Type TaskStatus Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/TaskStatus&quot;}",
-    "timestamp": 1749679819364
+    "timestamp": 1751287542001
   },
   "references/eClassifiers/AgentCard/references/eStructuralFeatures/defaultInputModes/index.html": {
     "path": "AgentCard/Attributes/defaultInputModes",
-    "link-uuid": "9fa5055f-e67d-4e53-b4f9-beaf20d30428",
+    "link-uuid": "fe2e922f-40c7-4117-b43f-0aefa55dc6a4",
     "title": "defaultInputModes",
     "content": "Type EString Multiplicity 0..* Specification {\n  &quot;default&quot;: [&quot;text&quot;],\n  &quot;title&quot;: &quot;Defaultinputmodes&quot;,\n  &quot;type&quot;: &quot;array&quot;,\n  &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n}",
-    "timestamp": 1749679817414
+    "timestamp": 1751287539984
   },
   "references/eClassifiers/Task/references/eStructuralFeatures/artifacts/index.html": {
     "path": "Task/References/artifacts",
-    "link-uuid": "5c159a6a-d205-4f01-993f-3b4262f1a722",
+    "link-uuid": "a4be2d8d-fde5-4664-9471-9c92c30c8e97",
     "title": "artifacts",
     "content": "Type Artifact Multiplicity 0..* Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Artifact&quot;}\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Artifacts&quot;\n}",
-    "timestamp": 1749679819338
+    "timestamp": 1751287541975
   },
   "references/eClassifiers/UnsupportedOperationError/references/eStructuralFeatures/data/index.html": {
     "path": "UnsupportedOperationError/Attributes/data",
-    "link-uuid": "e51337e0-bfb1-4ed8-ba99-6a0a28d629f6",
+    "link-uuid": "d8e8d7dc-1803-44d9-8823-198cffc9909f",
     "title": "data",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;default&quot;: null,\n  &quot;const&quot;: null,\n  &quot;title&quot;: &quot;Data&quot;\n}",
-    "timestamp": 1749679820031
+    "timestamp": 1751287542718
   },
   "references/eClassifiers/TaskNotCancelableError/references/eStructuralFeatures/code/index.html": {
     "path": "TaskNotCancelableError/Attributes/code",
-    "link-uuid": "72e451cb-12cd-4686-962f-813a14fdac1e",
+    "link-uuid": "50329704-6a7e-4a4d-b94e-6693d9c4b4df",
     "title": "code",
     "content": "Type EIntegerObject Multiplicity 1 Error code Specification {\n  &quot;default&quot;: -32002,\n  &quot;const&quot;: -32002,\n  &quot;examples&quot;: [-32002],\n  &quot;description&quot;: &quot;Error code&quot;,\n  &quot;title&quot;: &quot;Code&quot;,\n  &quot;type&quot;: &quot;integer&quot;\n}",
-    "timestamp": 1749679819519
+    "timestamp": 1751287542164
   },
   "references/eClassifiers/Artifact/references/eStructuralFeatures/lastChunk/index.html": {
     "path": "Artifact/Attributes/lastChunk",
-    "link-uuid": "774f7a1e-0fdf-458e-bb16-1cd7eee86a23",
+    "link-uuid": "eab9dcfb-a118-412f-9562-05b1c68cb317",
     "title": "lastChunk",
     "content": "Type EBooleanObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;boolean&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;LastChunk&quot;\n}",
-    "timestamp": 1749679817627
+    "timestamp": 1751287540225
   },
   "references/eClassifiers/PushNotificationConfig/index.html": {
-    "link-uuid": "40562d5e-ac24-44ae-87d7-831ba8cec03a",
+    "link-uuid": "651d3ed0-6d6e-4270-94e6-2c54d41e8722",
     "title": "PushNotificationConfig",
     "content": "Specification {\n  &quot;title&quot;: &quot;PushNotificationConfig&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;url&quot;: {\n      &quot;title&quot;: &quot;Url&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;token&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Token&quot;\n    },\n    &quot;authentication&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/AuthenticationInfo&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    }\n  },\n  &quot;required&quot;: [&quot;url&quot;]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818842
+    "timestamp": 1751287541454
   },
   "references/eClassifiers/SetTaskPushNotificationRequest/inheritance.html": {
     "path": "SetTaskPushNotificationRequest/Inheritance",
-    "link-uuid": "f9ae08d5-b6a2-4263-8045-e01da2b77f2d",
+    "link-uuid": "e2a8321a-e306-4bfd-b1ec-f79e14c0112a",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1749679819209
+    "timestamp": 1751287541841
   },
   "references/eClassifiers/AgentCapabilities/index.html": {
-    "link-uuid": "462839ed-703c-4e7f-b84a-6b04d5786e41",
+    "link-uuid": "970e4943-2c77-4e96-8f81-f59d8c149f26",
     "title": "AgentCapabilities",
     "content": "Specification {\n  &quot;title&quot;: &quot;AgentCapabilities&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;streaming&quot;: {\n      &quot;default&quot;: false,\n      &quot;title&quot;: &quot;Streaming&quot;,\n      &quot;type&quot;: &quot;boolean&quot;\n    },\n    &quot;pushNotifications&quot;: {\n      &quot;default&quot;: false,\n      &quot;title&quot;: &quot;PushNotifications&quot;,\n      &quot;type&quot;: &quot;boolean&quot;\n    },\n    &quot;stateTransitionHistory&quot;: {\n      &quot;default&quot;: false,\n      &quot;title&quot;: &quot;Statetransitionhistory&quot;,\n      &quot;type&quot;: &quot;boolean&quot;\n    }\n  }\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817343
+    "timestamp": 1751287539905
   },
   "references/eClassifiers/InvalidParamsError/index.html": {
-    "link-uuid": "2a465cff-87d9-458f-a766-0a32e27feed0",
+    "link-uuid": "4d7ed9aa-e1e8-489f-a432-c985544f0bd5",
     "title": "InvalidParamsError",
     "content": "Specification {\n  &quot;title&quot;: &quot;InvalidParamsError&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;code&quot;: {\n      &quot;default&quot;: -32602,\n      &quot;const&quot;: -32602,\n      &quot;examples&quot;: [-32602],\n      &quot;description&quot;: &quot;Error code&quot;,\n      &quot;title&quot;: &quot;Code&quot;,\n      &quot;type&quot;: &quot;integer&quot;\n    },\n    &quot;data&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Data&quot;\n    },\n    &quot;message&quot;: {\n      &quot;default&quot;: &quot;Invalid parameters&quot;,\n      &quot;const&quot;: &quot;Invalid parameters&quot;,\n      &quot;examples&quot;: [&quot;Invalid parameters&quot;],\n      &quot;description&quot;: &quot;A short description of the error&quot;,\n      &quot;title&quot;: &quot;Message&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;code&quot;,\n    &quot;message&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818336
+    "timestamp": 1751287540924
   },
   "references/eClassifiers/SendTaskResponse/references/eStructuralFeatures/result/index.html": {
     "path": "SendTaskResponse/References/result",
-    "link-uuid": "824bf094-a5fb-4486-9c18-b5d315cc2ff4",
+    "link-uuid": "1af4bc3c-e739-4591-a3be-0a8d9c7e31d8",
     "title": "result",
     "content": "Type Task Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/Task&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679819031
+    "timestamp": 1751287541649
   },
   "references/eClassifiers/AgentCapabilities/references/eStructuralFeatures/stateTransitionHistory/index.html": {
     "path": "AgentCapabilities/Attributes/stateTransitionHistory",
-    "link-uuid": "0bb464f9-2b50-469a-83e7-ff2b9453006c",
+    "link-uuid": "bbfd40c3-e07f-49eb-8563-bf17b525a578",
     "title": "stateTransitionHistory",
     "content": "Type EBooleanObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: false,\n  &quot;title&quot;: &quot;Statetransitionhistory&quot;,\n  &quot;type&quot;: &quot;boolean&quot;\n}",
-    "timestamp": 1749679817358
+    "timestamp": 1751287539922
   },
   "references/eClassifiers/SendTaskStreamingRequest/references/eStructuralFeatures/id/index.html": {
     "path": "SendTaskStreamingRequest/Attributes/id",
-    "link-uuid": "fea4ca12-83fc-453b-8421-05a514b9d06a",
+    "link-uuid": "93967522-24cf-4f54-acf6-d4294e7af287",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679819075
+    "timestamp": 1751287541691
   },
   "references/eClassifiers/TaskResubscriptionRequest/references/eStructuralFeatures/params/index.html": {
     "path": "TaskResubscriptionRequest/References/params",
-    "link-uuid": "b52cf271-128d-414b-9232-a5a4a47639aa",
+    "link-uuid": "2d69a849-dc65-4a40-9715-13d76d8ccdaa",
     "title": "params",
     "content": "Type TaskQueryParams Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/TaskQueryParams&quot;}",
-    "timestamp": 1749679819731
+    "timestamp": 1751287542400
   },
   "references/eClassifiers/AuthenticationInfo/references/eStructuralFeatures/credentials/index.html": {
     "path": "AuthenticationInfo/Attributes/credentials",
-    "link-uuid": "ad549f8d-760c-46f9-8e17-ca0d53888087",
+    "link-uuid": "636de066-4776-4c98-a050-2c76b10ca7c4",
     "title": "credentials",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Credentials&quot;\n}",
-    "timestamp": 1749679817694
+    "timestamp": 1751287540284
   },
   "references/eClassifiers/JSONParseError/references/eStructuralFeatures/message/index.html": {
     "path": "JSONParseError/Attributes/message",
-    "link-uuid": "3eb7b7d4-cfd7-473b-8ca1-1e5cd083e375",
+    "link-uuid": "2349a631-3a04-4ee1-9529-ca3b51305c75",
     "title": "message",
     "content": "Type EString Multiplicity 1 A short description of the error Specification {\n  &quot;default&quot;: &quot;Invalid JSON payload&quot;,\n  &quot;const&quot;: &quot;Invalid JSON payload&quot;,\n  &quot;examples&quot;: [&quot;Invalid JSON payload&quot;],\n  &quot;description&quot;: &quot;A short description of the error&quot;,\n  &quot;title&quot;: &quot;Message&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818462
+    "timestamp": 1751287541055
   },
   "references/eClassifiers/TaskNotFoundError/index.html": {
-    "link-uuid": "4b6269f9-55da-40c7-98c6-11c001e96a86",
+    "link-uuid": "4cbb4b3f-4b1e-428f-b1a0-355cd0a59cf3",
     "title": "TaskNotFoundError",
     "content": "Specification {\n  &quot;title&quot;: &quot;TaskNotFoundError&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;code&quot;: {\n      &quot;default&quot;: -32001,\n      &quot;const&quot;: -32001,\n      &quot;examples&quot;: [-32001],\n      &quot;description&quot;: &quot;Error code&quot;,\n      &quot;title&quot;: &quot;Code&quot;,\n      &quot;type&quot;: &quot;integer&quot;\n    },\n    &quot;data&quot;: {\n      &quot;default&quot;: null,\n      &quot;const&quot;: null,\n      &quot;title&quot;: &quot;Data&quot;\n    },\n    &quot;message&quot;: {\n      &quot;default&quot;: &quot;Task not found&quot;,\n      &quot;const&quot;: &quot;Task not found&quot;,\n      &quot;examples&quot;: [&quot;Task not found&quot;],\n      &quot;description&quot;: &quot;A short description of the error&quot;,\n      &quot;title&quot;: &quot;Message&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;code&quot;,\n    &quot;message&quot;,\n    &quot;data&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819555
+    "timestamp": 1751287542207
   },
   "references/eClassifiers/TaskStatus/references/eStructuralFeatures/state/index.html": {
     "path": "TaskStatus/Attributes/state",
-    "link-uuid": "b2718af3-b205-4540-9390-71a706873214",
+    "link-uuid": "4cd4fc36-e4b3-476a-a3e5-c6ca3da2c2fc",
     "title": "state",
     "content": "Type TaskState Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/TaskState&quot;}",
-    "timestamp": 1749679819859
+    "timestamp": 1751287542534
   },
   "references/eClassifiers/JSONRPCRequest/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "JSONRPCRequest/Attributes/jsonrpc",
-    "link-uuid": "6f522835-58e0-4a77-8791-0f3d3ea9c15f",
+    "link-uuid": "7149721c-2401-4867-b402-c344faec1f19",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818612
+    "timestamp": 1751287541213
   },
   "references/eClassifiers/TaskArtifactUpdateEvent/inheritance.html": {
     "path": "TaskArtifactUpdateEvent/Inheritance",
-    "link-uuid": "0e246558-60eb-42c9-898d-1ec0766024b6",
+    "link-uuid": "7b3f00e8-fbd1-4523-bc82-30d42ecd4e45",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1749679819406
+    "timestamp": 1751287542053
   },
   "references/eClassifiers/AgentCard/references/eStructuralFeatures/provider/index.html": {
     "path": "AgentCard/References/provider",
-    "link-uuid": "aad0eab2-6ad8-4f56-8450-603140b78dc4",
+    "link-uuid": "03ad9c39-471b-4383-a49a-9eb221923a84",
     "title": "provider",
     "content": "Type AgentProvider Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/AgentProvider&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679817440
+    "timestamp": 1751287540010
   },
   "references/eClassifiers/SetTaskPushNotificationResponse/index.html": {
-    "link-uuid": "b1c9d0f9-3334-45f8-8f5d-58c8429cbbcd",
+    "link-uuid": "efe10381-408e-4b90-a300-3604101f3d75",
     "title": "SetTaskPushNotificationResponse",
     "content": "Specification {\n  &quot;title&quot;: &quot;SetTaskPushNotificationResponse&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;result&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/TaskPushNotificationConfig&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;error&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    }\n  }\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819267
+    "timestamp": 1751287541899
   },
   "references/eClassifiers/InvalidRequestError/references/eStructuralFeatures/code/index.html": {
     "path": "InvalidRequestError/Attributes/code",
-    "link-uuid": "65153408-3688-4b19-ac93-a48a704a68d7",
+    "link-uuid": "0e15aeb3-3ccd-41ef-92fc-e288be89c96d",
     "title": "code",
     "content": "Type EIntegerObject Multiplicity 1 Error code Specification {\n  &quot;default&quot;: -32600,\n  &quot;const&quot;: -32600,\n  &quot;examples&quot;: [-32600],\n  &quot;description&quot;: &quot;Error code&quot;,\n  &quot;title&quot;: &quot;Code&quot;,\n  &quot;type&quot;: &quot;integer&quot;\n}",
-    "timestamp": 1749679818400
+    "timestamp": 1751287540989
   },
   "references/eClassifiers/SendTaskResponse/index.html": {
-    "link-uuid": "31df0a2f-77c6-4296-aef5-706d7bd81edc",
+    "link-uuid": "aced5791-4d3f-4966-a8b1-b72e7abfa422",
     "title": "SendTaskResponse",
     "content": "Specification {\n  &quot;title&quot;: &quot;SendTaskResponse&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;result&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/Task&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;error&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    }\n  }\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819005
+    "timestamp": 1751287541622
   },
   "references/eClassifiers/Part/inheritance.html": {
     "path": "Part/Inheritance",
-    "link-uuid": "bcf78833-ee5f-44f6-aae7-38f5412dc303",
+    "link-uuid": "755be54b-b3ab-44e6-9f59-2db993d5f2d1",
     "title": "Inheritance",
     "content": "Subtypes ",
-    "timestamp": 1749679818815
+    "timestamp": 1751287541423
   },
   "references/eClassifiers/DataPart/references/eStructuralFeatures/data/index.html": {
     "path": "DataPart/References/data",
-    "link-uuid": "8da334a5-6c34-4e67-8e14-b06c8af32a10",
+    "link-uuid": "1d5ab727-4937-4885-a99e-01d33fba1965",
     "title": "data",
     "content": "Type EObject Multiplicity 1 Specification {\n  &quot;additionalProperties&quot;: {},\n  &quot;title&quot;: &quot;Data&quot;,\n  &quot;type&quot;: &quot;object&quot;\n}",
-    "timestamp": 1749679817866
+    "timestamp": 1751287540467
   },
   "references/eClassifiers/JSONParseError/index.html": {
-    "link-uuid": "42df470a-ef37-4d05-84e4-7aa7800d3aaf",
+    "link-uuid": "1cc6d3b4-a8f1-4c4d-9aeb-d8638ef091a2",
     "title": "JSONParseError",
     "content": "Specification {\n  &quot;title&quot;: &quot;JSONParseError&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;code&quot;: {\n      &quot;default&quot;: -32700,\n      &quot;const&quot;: -32700,\n      &quot;examples&quot;: [-32700],\n      &quot;description&quot;: &quot;Error code&quot;,\n      &quot;title&quot;: &quot;Code&quot;,\n      &quot;type&quot;: &quot;integer&quot;\n    },\n    &quot;data&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Data&quot;\n    },\n    &quot;message&quot;: {\n      &quot;default&quot;: &quot;Invalid JSON payload&quot;,\n      &quot;const&quot;: &quot;Invalid JSON payload&quot;,\n      &quot;examples&quot;: [&quot;Invalid JSON payload&quot;],\n      &quot;description&quot;: &quot;A short description of the error&quot;,\n      &quot;title&quot;: &quot;Message&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;code&quot;,\n    &quot;message&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818442
+    "timestamp": 1751287541035
   },
   "references/eClassifiers/SetTaskPushNotificationRequest/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "SetTaskPushNotificationRequest/Attributes/jsonrpc",
-    "link-uuid": "f8f0c4c4-0e44-4600-ac8a-9fd5fd7f3046",
+    "link-uuid": "cdbcc735-a759-4827-b6c9-df70716abf0b",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819225
+    "timestamp": 1751287541855
   },
   "references/eClassifiers/TaskResubscriptionRequest/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "TaskResubscriptionRequest/Attributes/jsonrpc",
-    "link-uuid": "e35d5b00-d3d7-4f3e-8ea9-b6932c9b537e",
+    "link-uuid": "43cb6828-9f8b-4402-acb6-eeb8529b972f",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819721
+    "timestamp": 1751287542390
   },
   "references/eClassifiers/TaskNotCancelableError/references/eStructuralFeatures/message/index.html": {
     "path": "TaskNotCancelableError/Attributes/message",
-    "link-uuid": "4b75344a-cad0-4380-9b34-9351bfa6e50b",
+    "link-uuid": "9664875d-a5a4-461b-adbe-6f2be2cdf6e0",
     "title": "message",
     "content": "Type EString Multiplicity 1 A short description of the error Specification {\n  &quot;default&quot;: &quot;Task cannot be canceled&quot;,\n  &quot;const&quot;: &quot;Task cannot be canceled&quot;,\n  &quot;examples&quot;: [&quot;Task cannot be canceled&quot;],\n  &quot;description&quot;: &quot;A short description of the error&quot;,\n  &quot;title&quot;: &quot;Message&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819530
+    "timestamp": 1751287542177
   },
   "references/eClassifiers/CancelTaskResponse/references/eStructuralFeatures/result/index.html": {
     "path": "CancelTaskResponse/References/result",
-    "link-uuid": "9ae12269-5a58-40d7-8e18-9efbdfa92a43",
+    "link-uuid": "db0b97cd-29a0-4441-9a4e-7f18271e5871",
     "title": "result",
     "content": "Type Task Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/Task&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679817814
+    "timestamp": 1751287540419
   },
   "references/eClassifiers/CancelTaskResponse/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "CancelTaskResponse/Attributes/jsonrpc",
-    "link-uuid": "2d9d9b41-2640-4f47-a197-8dec0009a47e",
+    "link-uuid": "ac5526a9-aa90-4f65-a701-e059a2673ca5",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679817809
+    "timestamp": 1751287540414
   },
   "references/eClassifiers/InvalidRequestError/index.html": {
-    "link-uuid": "ac9e85b9-747b-49a2-8f88-32546a1c3e02",
+    "link-uuid": "5c25f3ed-af85-497b-81e4-e759bdfb1088",
     "title": "InvalidRequestError",
     "content": "Specification {\n  &quot;title&quot;: &quot;InvalidRequestError&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;code&quot;: {\n      &quot;default&quot;: -32600,\n      &quot;const&quot;: -32600,\n      &quot;examples&quot;: [-32600],\n      &quot;description&quot;: &quot;Error code&quot;,\n      &quot;title&quot;: &quot;Code&quot;,\n      &quot;type&quot;: &quot;integer&quot;\n    },\n    &quot;data&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Data&quot;\n    },\n    &quot;message&quot;: {\n      &quot;default&quot;: &quot;Request payload validation error&quot;,\n      &quot;const&quot;: &quot;Request payload validation error&quot;,\n      &quot;examples&quot;: [&quot;Request payload validation error&quot;],\n      &quot;description&quot;: &quot;A short description of the error&quot;,\n      &quot;title&quot;: &quot;Message&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;code&quot;,\n    &quot;message&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818389
+    "timestamp": 1751287540979
   },
   "references/eClassifiers/JSONParseError/references/eStructuralFeatures/data/index.html": {
     "path": "JSONParseError/References/data",
-    "link-uuid": "94952012-c42b-403a-a2ea-9e54c6aa3a0b",
+    "link-uuid": "9017d79d-9417-4187-864b-612eef39adfb",
     "title": "data",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Data&quot;\n}",
-    "timestamp": 1749679818457
+    "timestamp": 1751287541050
   },
   "references/eClassifiers/TaskQueryParams/references/eStructuralFeatures/id/index.html": {
     "path": "TaskQueryParams/Attributes/id",
-    "link-uuid": "db658b88-486d-4fdd-82e4-c70f577cabf5",
+    "link-uuid": "01baec99-69f8-4fab-80ad-d76b8aa7b223",
     "title": "id",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Id&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819665
+    "timestamp": 1751287542334
   },
   "references/eClassifiers/PushNotificationNotSupportedError/references/eStructuralFeatures/message/index.html": {
     "path": "PushNotificationNotSupportedError/Attributes/message",
-    "link-uuid": "2b56f7f5-4054-49e0-945a-2b9bfe403233",
+    "link-uuid": "24d6c171-92da-43e7-9132-aae5977cdfbf",
     "title": "message",
     "content": "Type EString Multiplicity 1 A short description of the error Specification {\n  &quot;default&quot;: &quot;Push Notification is not supported&quot;,\n  &quot;const&quot;: &quot;Push Notification is not supported&quot;,\n  &quot;examples&quot;: [&quot;Push Notification is not supported&quot;],\n  &quot;description&quot;: &quot;A short description of the error&quot;,\n  &quot;title&quot;: &quot;Message&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818914
+    "timestamp": 1751287541530
   },
   "references/eClassifiers/Message/references/eStructuralFeatures/metadata/index.html": {
     "path": "Message/References/metadata",
-    "link-uuid": "3ed9c6e1-f84c-4154-aee2-607e53f7e57a",
+    "link-uuid": "f03f795f-165c-4281-a13f-d9a57373ea91",
     "title": "metadata",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Metadata&quot;\n}",
-    "timestamp": 1749679818728
+    "timestamp": 1751287541330
   },
   "references/eClassifiers/TaskIdParams/references/eStructuralFeatures/metadata/index.html": {
     "path": "TaskIdParams/References/metadata",
-    "link-uuid": "20019f48-90d3-4367-a916-d52536fd5a5a",
+    "link-uuid": "b469595f-4af1-42fe-b3cf-09c162ffcebc",
     "title": "metadata",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Metadata&quot;\n}",
-    "timestamp": 1749679819480
+    "timestamp": 1751287542122
   },
   "references/eClassifiers/TaskStatus/index.html": {
-    "link-uuid": "ea4ff726-3f6f-4645-8c29-63fed4762b80",
+    "link-uuid": "4cec0699-734b-4040-8b54-65fd5094c333",
     "title": "TaskStatus",
     "content": "Specification {\n  &quot;title&quot;: &quot;TaskStatus&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;state&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskState&quot;},\n    &quot;message&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/Message&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    },\n    &quot;timestamp&quot;: {\n      &quot;format&quot;: &quot;date-time&quot;,\n      &quot;title&quot;: &quot;Timestamp&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [&quot;state&quot;]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819843
+    "timestamp": 1751287542517
   },
   "references/eClassifiers/Artifact/references/eStructuralFeatures/index/index.html": {
     "path": "Artifact/Attributes/index",
-    "link-uuid": "b29cd6e0-57b3-4d35-abc8-7d6928478bf1",
+    "link-uuid": "8073bc1c-6e0d-44a2-8ee7-88ac3ceb59b3",
     "title": "index",
     "content": "Type EIntegerObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: 0,\n  &quot;type&quot;: &quot;integer&quot;,\n  &quot;title&quot;: &quot;Index&quot;\n}",
-    "timestamp": 1749679817622
+    "timestamp": 1751287540220
   },
   "references/eClassifiers/GetTaskPushNotificationRequest/references/eStructuralFeatures/params/index.html": {
     "path": "GetTaskPushNotificationRequest/References/params",
-    "link-uuid": "719fdf5c-1dbb-40b4-ba27-bd5e4b68ea17",
+    "link-uuid": "bb8fa78e-072f-49df-b9c7-809264d35f73",
     "title": "params",
     "content": "Type TaskIdParams Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/TaskIdParams&quot;}",
-    "timestamp": 1749679818069
+    "timestamp": 1751287540653
   },
   "references/eClassifiers/JSONRPCMessage/references/eStructuralFeatures/id/index.html": {
     "path": "JSONRPCMessage/Attributes/id",
-    "link-uuid": "203a87a8-a624-41ab-b3ce-4e31a2560705",
+    "link-uuid": "2b068e91-d834-4c0d-a726-9d7be448af45",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679818562
+    "timestamp": 1751287541162
   },
   "references/eClassifiers/SendTaskRequest/references/eStructuralFeatures/id/index.html": {
     "path": "SendTaskRequest/Attributes/id",
-    "link-uuid": "7241a283-d87f-4774-9fc2-0eb598ad7278",
+    "link-uuid": "a60de00e-9b25-4dc4-b14b-b9d32047e2ae",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679818955
+    "timestamp": 1751287541572
   },
   "references/eClassifiers/GetTaskRequest/references/eStructuralFeatures/params/index.html": {
     "path": "GetTaskRequest/References/params",
-    "link-uuid": "9546eee2-3f2c-498c-b0a9-83b96cf35619",
+    "link-uuid": "bfceda12-7495-4a2c-8ce2-38b0384ddfd3",
     "title": "params",
     "content": "Type TaskQueryParams Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/TaskQueryParams&quot;}",
-    "timestamp": 1749679818193
+    "timestamp": 1751287540779
   },
   "references/eClassifiers/SetTaskPushNotificationResponse/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "SetTaskPushNotificationResponse/Attributes/jsonrpc",
-    "link-uuid": "efc734fe-a5cb-4d32-8086-06ac17eefb43",
+    "link-uuid": "c3fcf61a-ac4b-465b-8372-44e2d759937d",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819287
+    "timestamp": 1751287541920
   },
   "references/eClassifiers/SendTaskStreamingResponseResult/index.html": {
-    "link-uuid": "b2678aa5-6ed0-4044-8a4e-e32b1f37f8fd",
+    "link-uuid": "2071999a-665b-42c8-adbd-76ba9bb4255e",
     "title": "SendTaskStreamingResponseResult",
     "content": "Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819173
+    "timestamp": 1751287541798
   },
   "references/eClassifiers/TaskArtifactUpdateEvent/references/eStructuralFeatures/id/index.html": {
     "path": "TaskArtifactUpdateEvent/Attributes/id",
-    "link-uuid": "0a9b5be0-8cad-4f5c-ab4d-9e0306f3f453",
+    "link-uuid": "b2981af9-f32e-4275-85b4-5afb7f21559d",
     "title": "id",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Id&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819421
+    "timestamp": 1751287542068
   },
   "references/eClassifiers/Message/index.html": {
-    "link-uuid": "2edde2d7-6a49-489e-8d67-14dd3944c075",
+    "link-uuid": "7b5aa1e7-7ced-421d-860f-3fc291dd586b",
     "title": "Message",
     "content": "Specification {\n  &quot;title&quot;: &quot;Message&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;metadata&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Metadata&quot;\n    },\n    &quot;role&quot;: {\n      &quot;title&quot;: &quot;Role&quot;,\n      &quot;type&quot;: &quot;string&quot;,\n      &quot;enum&quot;: [\n        &quot;user&quot;,\n        &quot;agent&quot;\n      ]\n    },\n    &quot;parts&quot;: {\n      &quot;title&quot;: &quot;Parts&quot;,\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Part&quot;}\n    }\n  },\n  &quot;required&quot;: [\n    &quot;role&quot;,\n    &quot;parts&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818718
+    "timestamp": 1751287541319
   },
   "references/eClassifiers/TaskArtifactUpdateEvent/references/eStructuralFeatures/metadata/index.html": {
     "path": "TaskArtifactUpdateEvent/References/metadata",
-    "link-uuid": "534f1717-fffa-4437-a79b-587e1427efb1",
+    "link-uuid": "3ed89fb2-b695-4807-8530-61eec7b37595",
     "title": "metadata",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Metadata&quot;\n}",
-    "timestamp": 1749679819426
+    "timestamp": 1751287542074
   },
   "references/eClassifiers/PushNotificationConfig/references/eStructuralFeatures/authentication/index.html": {
     "path": "PushNotificationConfig/References/authentication",
-    "link-uuid": "981d3fd6-86bf-41a6-ad34-88d4da3a9946",
+    "link-uuid": "89d177ed-870b-4a3d-852d-8813907f38cf",
     "title": "authentication",
     "content": "Type AuthenticationInfo Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/AuthenticationInfo&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679818852
+    "timestamp": 1751287541464
   },
   "references/eClassifiers/AgentProvider/references/eStructuralFeatures/organization/index.html": {
     "path": "AgentProvider/Attributes/organization",
-    "link-uuid": "3bedcab8-bd05-4e0d-aaba-6706d75e63f5",
+    "link-uuid": "775b2d4f-2b7e-4bbd-aa00-64c3b9016228",
     "title": "organization",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Organization&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679817498
+    "timestamp": 1751287540075
   },
   "references/eClassifiers/InternalError/references/eStructuralFeatures/data/index.html": {
     "path": "InternalError/References/data",
-    "link-uuid": "0a9c452e-e4d2-4ebc-83ef-ec7c450ee77d",
+    "link-uuid": "a1e88e1f-582c-4c9c-a80c-d624b064895a",
     "title": "data",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Data&quot;\n}",
-    "timestamp": 1749679818299
+    "timestamp": 1751287540888
   },
   "references/eClassifiers/AgentCapabilities/references/eStructuralFeatures/pushNotifications/index.html": {
     "path": "AgentCapabilities/Attributes/pushNotifications",
-    "link-uuid": "adcc8bdf-6888-43b8-acbb-2da540e4616b",
+    "link-uuid": "9bbeac88-2439-471c-b458-a9a97b53e55b",
     "title": "pushNotifications",
     "content": "Type EBooleanObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: false,\n  &quot;title&quot;: &quot;PushNotifications&quot;,\n  &quot;type&quot;: &quot;boolean&quot;\n}",
-    "timestamp": 1749679817353
+    "timestamp": 1751287539916
   },
   "references/eClassifiers/GetTaskPushNotificationRequest/references/eStructuralFeatures/id/index.html": {
     "path": "GetTaskPushNotificationRequest/Attributes/id",
-    "link-uuid": "4fdeae58-7a85-4a7a-93e1-38e2458b3fca",
+    "link-uuid": "27dba5b3-fb6f-4bb3-ab44-0163591e4c81",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679818054
+    "timestamp": 1751287540637
   },
   "references/eClassifiers/GetTaskResponse/index.html": {
-    "link-uuid": "90db75c7-3bd2-4701-9c64-ab3a741f4ad9",
+    "link-uuid": "a71985c8-f0be-41bc-97a9-2d2c5f6c50cd",
     "title": "GetTaskResponse",
     "content": "Specification {\n  &quot;title&quot;: &quot;GetTaskResponse&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;result&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/Task&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;error&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    }\n  }\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818227
+    "timestamp": 1751287540811
   },
   "references/eClassifiers/JSONRPCRequest/references/eStructuralFeatures/method/index.html": {
     "path": "JSONRPCRequest/Attributes/method",
-    "link-uuid": "fd8ed787-228f-4df1-b6fb-1e8556b56a0f",
+    "link-uuid": "957534c9-5484-4a7f-ae82-1b382f3b03cd",
     "title": "method",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Method&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818617
+    "timestamp": 1751287541219
   },
   "references/eClassifiers/TaskQueryParams/references/eStructuralFeatures/metadata/index.html": {
     "path": "TaskQueryParams/References/metadata",
-    "link-uuid": "8f53bdde-31cb-4c7b-93df-e036d7d0a396",
+    "link-uuid": "8ea56a4a-be48-4737-aa7d-07bcc9ad62d4",
     "title": "metadata",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Metadata&quot;\n}",
-    "timestamp": 1749679819670
+    "timestamp": 1751287542339
   },
   "references/eClassifiers/FilePart/index.html": {
-    "link-uuid": "8b25061b-d869-44ce-b441-bc881a152d32",
+    "link-uuid": "1f1a3235-7b35-479a-8ff6-f29749fdef56",
     "title": "FilePart",
     "content": "Specification {\n  &quot;title&quot;: &quot;FilePart&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;metadata&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Metadata&quot;\n    },\n    &quot;file&quot;: {&quot;$ref&quot;: &quot;#/$defs/FileContent&quot;},\n    &quot;type&quot;: {\n      &quot;default&quot;: &quot;file&quot;,\n      &quot;const&quot;: &quot;file&quot;,\n      &quot;examples&quot;: [&quot;file&quot;],\n      &quot;description&quot;: &quot;Type of the part&quot;,\n      &quot;title&quot;: &quot;Type&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;type&quot;,\n    &quot;file&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817978
+    "timestamp": 1751287540564
   },
   "references/eClassifiers/Task/index.html": {
-    "link-uuid": "327ac71c-fef6-489f-9c9d-97b704aa0287",
+    "link-uuid": "c155671e-08f1-4def-881e-a8468b0c23a9",
     "title": "Task",
     "content": "Specification {\n  &quot;title&quot;: &quot;Task&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;metadata&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Metadata&quot;\n    },\n    &quot;id&quot;: {\n      &quot;title&quot;: &quot;Id&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;sessionId&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Sessionid&quot;\n    },\n    &quot;history&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;type&quot;: &quot;array&quot;,\n          &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Message&quot;}\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;History&quot;\n    },\n    &quot;status&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskStatus&quot;},\n    &quot;artifacts&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;type&quot;: &quot;array&quot;,\n          &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Artifact&quot;}\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Artifacts&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;id&quot;,\n    &quot;status&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819328
+    "timestamp": 1751287541961
   },
   "references/eClassifiers/SetTaskPushNotificationRequest/references/eStructuralFeatures/id/index.html": {
     "path": "SetTaskPushNotificationRequest/Attributes/id",
-    "link-uuid": "0d2a856b-d665-4b0f-8e2c-98cbe09677d8",
+    "link-uuid": "91caebc8-098c-479f-b21c-6f319c57d1a0",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679819220
+    "timestamp": 1751287541851
   },
   "references/eClassifiers/GetTaskPushNotificationResponse/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "GetTaskPushNotificationResponse/Attributes/jsonrpc",
-    "link-uuid": "509e3edf-f8e6-4bf7-8c12-6733fa800b13",
+    "link-uuid": "24b16899-7c1a-48ab-8a32-a095a3a77bf5",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818124
+    "timestamp": 1751287540709
   },
   "references/eClassifiers/TaskNotCancelableError/index.html": {
-    "link-uuid": "7818d8c4-9fab-4335-a5f1-68c816a23eb4",
+    "link-uuid": "3299ecf0-e574-4a68-b94e-26706d68ae6e",
     "title": "TaskNotCancelableError",
     "content": "Specification {\n  &quot;title&quot;: &quot;TaskNotCancelableError&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;code&quot;: {\n      &quot;default&quot;: -32002,\n      &quot;const&quot;: -32002,\n      &quot;examples&quot;: [-32002],\n      &quot;description&quot;: &quot;Error code&quot;,\n      &quot;title&quot;: &quot;Code&quot;,\n      &quot;type&quot;: &quot;integer&quot;\n    },\n    &quot;data&quot;: {\n      &quot;default&quot;: null,\n      &quot;const&quot;: null,\n      &quot;title&quot;: &quot;Data&quot;\n    },\n    &quot;message&quot;: {\n      &quot;default&quot;: &quot;Task cannot be canceled&quot;,\n      &quot;const&quot;: &quot;Task cannot be canceled&quot;,\n      &quot;examples&quot;: [&quot;Task cannot be canceled&quot;],\n      &quot;description&quot;: &quot;A short description of the error&quot;,\n      &quot;title&quot;: &quot;Message&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;code&quot;,\n    &quot;message&quot;,\n    &quot;data&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819510
+    "timestamp": 1751287542153
   },
   "references/eClassifiers/SetTaskPushNotificationResponse/references/eStructuralFeatures/error/index.html": {
     "path": "SetTaskPushNotificationResponse/References/error",
-    "link-uuid": "066d2e5a-a923-4a05-a2dc-8a91b502ec80",
+    "link-uuid": "4b5330dc-99d8-4752-b0b0-0b8a3926e0ce",
     "title": "error",
     "content": "Type JSONRPCError Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679819276
+    "timestamp": 1751287541909
   },
   "references/eClassifiers/AgentSkill/references/eStructuralFeatures/id/index.html": {
     "path": "AgentSkill/Attributes/id",
-    "link-uuid": "3736eb1d-70cb-421d-877e-7c5e000e93a0",
+    "link-uuid": "a60e32dc-9dbd-4817-a745-3f7805af43fc",
     "title": "id",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Id&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679817552
+    "timestamp": 1751287540147
   },
   "references/eClassifiers/DataPart/inheritance.html": {
     "path": "DataPart/Inheritance",
-    "link-uuid": "c9e08220-3448-4610-ad18-20e7c2fafb58",
+    "link-uuid": "35e87fef-127e-4be1-98e0-faad1e25f574",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1749679817854
+    "timestamp": 1751287540456
   },
   "references/eClassifiers/SendTaskStreamingRequest/index.html": {
-    "link-uuid": "811a872c-1769-4abd-9544-20367e183bee",
+    "link-uuid": "344a2aaf-3a9f-440d-bd2a-be3c62735572",
     "title": "SendTaskStreamingRequest",
     "content": "Specification {\n  &quot;title&quot;: &quot;SendTaskStreamingRequest&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;method&quot;: {\n      &quot;default&quot;: &quot;tasks/sendSubscribe&quot;,\n      &quot;const&quot;: &quot;tasks/sendSubscribe&quot;,\n      &quot;title&quot;: &quot;Method&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskSendParams&quot;}\n  },\n  &quot;required&quot;: [\n    &quot;method&quot;,\n    &quot;params&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819064
+    "timestamp": 1751287541681
   },
   "references/eClassifiers/FilePart/references/eStructuralFeatures/metadata/index.html": {
     "path": "FilePart/References/metadata",
-    "link-uuid": "900f47de-ba03-4f51-9a0c-f918d9bca081",
+    "link-uuid": "a0fa986b-47f2-4300-bed1-d3bb5707c4dc",
     "title": "metadata",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Metadata&quot;\n}",
-    "timestamp": 1749679818000
+    "timestamp": 1751287540584
   },
   "references/eClassifiers/GetTaskPushNotificationRequest/inheritance.html": {
     "path": "GetTaskPushNotificationRequest/Inheritance",
-    "link-uuid": "7e2d3179-723e-4351-8908-44d6c3e60c73",
+    "link-uuid": "e139b67d-0814-4203-9f5e-3f0a42dfcebe",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1749679818044
+    "timestamp": 1751287540626
   },
   "references/eClassifiers/CancelTaskRequest/references/eStructuralFeatures/method/index.html": {
     "path": "CancelTaskRequest/Attributes/method",
-    "link-uuid": "2cb11dff-14b4-454a-abaa-11286d4f1877",
+    "link-uuid": "5327b9b8-8dba-4456-b834-2a0a814502a7",
     "title": "method",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;default&quot;: &quot;tasks/cancel&quot;,\n  &quot;const&quot;: &quot;tasks/cancel&quot;,\n  &quot;title&quot;: &quot;Method&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679817752
+    "timestamp": 1751287540351
   },
   "references/eClassifiers/TaskSendParams/references/eStructuralFeatures/pushNotification/index.html": {
     "path": "TaskSendParams/References/pushNotification",
-    "link-uuid": "92b4edf7-2371-49cf-9c15-a9bc2105aab2",
+    "link-uuid": "38f74806-83e6-4bee-bada-2c1d97ca3dda",
     "title": "pushNotification",
     "content": "Type PushNotificationConfig Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/PushNotificationConfig&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679819796
+    "timestamp": 1751287542470
   },
   "references/eClassifiers/JSONRPCError/index.html": {
-    "link-uuid": "6ec65046-6a92-4635-ad50-25da78942fe7",
+    "link-uuid": "77f93d7f-9a99-4dde-8574-9f10588fca87",
     "title": "JSONRPCError",
     "content": "Specification {\n  &quot;title&quot;: &quot;JSONRPCError&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;code&quot;: {\n      &quot;title&quot;: &quot;Code&quot;,\n      &quot;type&quot;: &quot;integer&quot;\n    },\n    &quot;data&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Data&quot;\n    },\n    &quot;message&quot;: {\n      &quot;title&quot;: &quot;Message&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [\n    &quot;code&quot;,\n    &quot;message&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818498
+    "timestamp": 1751287541096
   },
   "references/eClassifiers/JSONRPCMessage/index.html": {
-    "link-uuid": "7debe710-5693-41b1-9911-d8f7ae9e2ec8",
+    "link-uuid": "895ae88d-554e-4ea8-a363-2d391d1f4891",
     "title": "JSONRPCMessage",
     "content": "Specification {\n  &quot;title&quot;: &quot;JSONRPCMessage&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  }\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818552
+    "timestamp": 1751287541151
   },
   "references/eClassifiers/TaskIdParams/index.html": {
-    "link-uuid": "49e5dffe-f8d5-4c59-b324-dc80299c29e9",
+    "link-uuid": "4299b1b9-4353-43b1-895c-fabb5d568270",
     "title": "TaskIdParams",
     "content": "Specification {\n  &quot;title&quot;: &quot;TaskIdParams&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;metadata&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Metadata&quot;\n    },\n    &quot;id&quot;: {\n      &quot;title&quot;: &quot;Id&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    }\n  },\n  &quot;required&quot;: [&quot;id&quot;]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819465
+    "timestamp": 1751287542106
   },
   "references/eClassifiers/SendTaskStreamingRequest/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "SendTaskStreamingRequest/Attributes/jsonrpc",
-    "link-uuid": "4c71ccec-5a7d-4f6c-851a-ee4c8199a455",
+    "link-uuid": "13e978b4-5f3a-4be1-ab7d-d7c56c11993d",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819080
+    "timestamp": 1751287541697
   },
   "references/eClassifiers/TaskPushNotificationConfig/references/eStructuralFeatures/pushNotificationConfig/index.html": {
     "path": "TaskPushNotificationConfig/References/pushNotificationConfig",
-    "link-uuid": "974da842-1db8-4b84-b0f0-8d8da0a73237",
+    "link-uuid": "caa9736f-a400-4cd9-b931-9b50e63194d1",
     "title": "pushNotificationConfig",
     "content": "Type PushNotificationConfig Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/PushNotificationConfig&quot;}",
-    "timestamp": 1749679819617
+    "timestamp": 1751287542283
   },
   "references/eClassifiers/AgentAuthentication/index.html": {
-    "link-uuid": "0d49d2b1-930a-4e2f-bf04-c1bb77b5a0ab",
+    "link-uuid": "0215bae7-aeb8-4545-8568-9ccd952bc678",
     "title": "AgentAuthentication",
     "content": "Specification {\n  &quot;title&quot;: &quot;AgentAuthentication&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;credentials&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Credentials&quot;\n    },\n    &quot;schemes&quot;: {\n      &quot;title&quot;: &quot;Schemes&quot;,\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n    }\n  },\n  &quot;required&quot;: [&quot;schemes&quot;]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679817300
+    "timestamp": 1751287539862
   },
   "references/eClassifiers/GetTaskRequest/index.html": {
-    "link-uuid": "3821de96-eb27-4406-903b-0e4afe71f3da",
+    "link-uuid": "fb80fc0d-8780-4711-abe5-8364effab03f",
     "title": "GetTaskRequest",
     "content": "Specification {\n  &quot;title&quot;: &quot;GetTaskRequest&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;method&quot;: {\n      &quot;default&quot;: &quot;tasks/get&quot;,\n      &quot;const&quot;: &quot;tasks/get&quot;,\n      &quot;title&quot;: &quot;Method&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskQueryParams&quot;}\n  },\n  &quot;required&quot;: [\n    &quot;method&quot;,\n    &quot;params&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818161
+    "timestamp": 1751287540747
   },
   "references/eClassifiers/SetTaskPushNotificationResponse/references/eStructuralFeatures/result/index.html": {
     "path": "SetTaskPushNotificationResponse/References/result",
-    "link-uuid": "8a657735-31d2-4f4a-b8a0-c7ef77c33d28",
+    "link-uuid": "a39d424d-4201-4ffa-b0e4-424ef1ada597",
     "title": "result",
     "content": "Type TaskPushNotificationConfig Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/TaskPushNotificationConfig&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679819292
+    "timestamp": 1751287541925
   },
   "references/eClassifiers/GetTaskPushNotificationRequest/index.html": {
-    "link-uuid": "fe4f7a67-ab52-496d-abfc-5f90857b36b0",
+    "link-uuid": "9e566c7b-a4fd-4d29-a77e-0c81a5f461ae",
     "title": "GetTaskPushNotificationRequest",
     "content": "Specification {\n  &quot;title&quot;: &quot;GetTaskPushNotificationRequest&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;method&quot;: {\n      &quot;default&quot;: &quot;tasks/pushNotification/get&quot;,\n      &quot;const&quot;: &quot;tasks/pushNotification/get&quot;,\n      &quot;title&quot;: &quot;Method&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;params&quot;: {&quot;$ref&quot;: &quot;#/$defs/TaskIdParams&quot;}\n  },\n  &quot;required&quot;: [\n    &quot;method&quot;,\n    &quot;params&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818039
+    "timestamp": 1751287540621
   },
   "references/eClassifiers/Task/references/eStructuralFeatures/id/index.html": {
     "path": "Task/Attributes/id",
-    "link-uuid": "931a0a4f-c465-4618-b0e3-ab75f6e5a813",
+    "link-uuid": "76795d74-d246-4e46-ac2f-92d5782d0022",
     "title": "id",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Id&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819348
+    "timestamp": 1751287541985
   },
   "references/eClassifiers/InvalidParamsError/references/eStructuralFeatures/code/index.html": {
     "path": "InvalidParamsError/Attributes/code",
-    "link-uuid": "7671fb1d-7967-4f82-b3dd-233e054839f0",
+    "link-uuid": "848793a2-d89d-4dd1-8f49-b5431f62e33f",
     "title": "code",
     "content": "Type EIntegerObject Multiplicity 1 Error code Specification {\n  &quot;default&quot;: -32602,\n  &quot;const&quot;: -32602,\n  &quot;examples&quot;: [-32602],\n  &quot;description&quot;: &quot;Error code&quot;,\n  &quot;title&quot;: &quot;Code&quot;,\n  &quot;type&quot;: &quot;integer&quot;\n}",
-    "timestamp": 1749679818346
+    "timestamp": 1751287540936
   },
   "references/eClassifiers/UnsupportedOperationError/references/eStructuralFeatures/message/index.html": {
     "path": "UnsupportedOperationError/Attributes/message",
-    "link-uuid": "8dcdad15-cddd-41f4-9a81-3388a5be575f",
+    "link-uuid": "d4e3faaa-0095-4360-ad3a-2365e33341f8",
     "title": "message",
     "content": "Type EString Multiplicity 1 A short description of the error Specification {\n  &quot;default&quot;: &quot;This operation is not supported&quot;,\n  &quot;const&quot;: &quot;This operation is not supported&quot;,\n  &quot;examples&quot;: [&quot;This operation is not supported&quot;],\n  &quot;description&quot;: &quot;A short description of the error&quot;,\n  &quot;title&quot;: &quot;Message&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679820036
+    "timestamp": 1751287542723
   },
   "references/eClassifiers/TaskStatus/references/eStructuralFeatures/message/index.html": {
     "path": "TaskStatus/References/message",
-    "link-uuid": "bae380bc-98e6-4e81-9e47-0e777ffc11b8",
+    "link-uuid": "d0758d7a-8c9c-4303-9a0e-3525359dde66",
     "title": "message",
     "content": "Type Message Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/Message&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679819853
+    "timestamp": 1751287542528
   },
   "references/eClassifiers/JSONRPCRequest/references/eStructuralFeatures/id/index.html": {
     "path": "JSONRPCRequest/Attributes/id",
-    "link-uuid": "c333c599-67ff-4cee-88ef-23c67e09c733",
+    "link-uuid": "86478da5-2032-4246-80d5-71e5e0799260",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679818607
+    "timestamp": 1751287541207
   },
   "references/eClassifiers/TaskNotFoundError/references/eStructuralFeatures/data/index.html": {
     "path": "TaskNotFoundError/Attributes/data",
-    "link-uuid": "30193082-cc7f-4dda-98d2-1893201ac894",
+    "link-uuid": "ce5fb23c-0be7-4539-a78b-990741a75c9d",
     "title": "data",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;default&quot;: null,\n  &quot;const&quot;: null,\n  &quot;title&quot;: &quot;Data&quot;\n}",
-    "timestamp": 1749679819570
+    "timestamp": 1751287542226
   },
   "references/eClassifiers/TaskQueryParams/references/eStructuralFeatures/historyLength/index.html": {
     "path": "TaskQueryParams/Attributes/historyLength",
-    "link-uuid": "ec6e497f-f735-48e8-a254-339f21d975f9",
+    "link-uuid": "ee3abdcd-e175-425b-bfaf-229181f7ef4a",
     "title": "historyLength",
     "content": "Type EIntegerObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;HistoryLength&quot;\n}",
-    "timestamp": 1749679819661
+    "timestamp": 1751287542329
   },
   "references/eClassifiers/CancelTaskResponse/references/eStructuralFeatures/id/index.html": {
     "path": "CancelTaskResponse/Attributes/id",
-    "link-uuid": "4b31b782-e20a-440f-9ba9-ce5e72bb4ce0",
+    "link-uuid": "475c2c22-2501-4e03-8f60-06a89089baa8",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679817804
+    "timestamp": 1751287540406
   },
   "references/eClassifiers/AgentCard/references/eStructuralFeatures/documentationUrl/index.html": {
     "path": "AgentCard/Attributes/documentationUrl",
-    "link-uuid": "43f05ff7-1ec8-492d-a0d9-3002493b88d7",
+    "link-uuid": "d7ef01ac-75dc-4857-83ad-d35bcad13461",
     "title": "documentationUrl",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Documentationurl&quot;\n}",
-    "timestamp": 1749679817430
+    "timestamp": 1751287540001
   },
   "references/eClassifiers/Message/references/eStructuralFeatures/parts/index.html": {
     "path": "Message/References/parts",
-    "link-uuid": "aa104b66-2800-4f71-9193-da54d380ee87",
+    "link-uuid": "e9067e3d-67c4-463c-bde3-8663de3f1bd8",
     "title": "parts",
     "content": "Type Part Multiplicity 0..* Specification {\n  &quot;title&quot;: &quot;Parts&quot;,\n  &quot;type&quot;: &quot;array&quot;,\n  &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Part&quot;}\n}",
-    "timestamp": 1749679818733
+    "timestamp": 1751287541335
   },
   "references/eClassifiers/GetTaskRequest/references/eStructuralFeatures/id/index.html": {
     "path": "GetTaskRequest/Attributes/id",
-    "link-uuid": "c1ff6ab6-b9d8-47af-80a3-27341c1c9dbc",
+    "link-uuid": "637690d4-e57d-4c05-9203-2524e37a0a9a",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679818177
+    "timestamp": 1751287540763
   },
   "references/eClassifiers/GetTaskResponse/references/eStructuralFeatures/error/index.html": {
     "path": "GetTaskResponse/References/error",
-    "link-uuid": "278d83c9-7483-4ab4-8772-9737ee1d636a",
+    "link-uuid": "eb256524-6c9c-49ef-8c9c-cf184ec1048f",
     "title": "error",
     "content": "Type JSONRPCError Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679818237
+    "timestamp": 1751287540821
   },
   "references/eClassifiers/AgentCard/references/eStructuralFeatures/name/index.html": {
     "path": "AgentCard/Attributes/name",
-    "link-uuid": "310a50be-e5f6-49f9-be5d-a7da9aaaeef6",
+    "link-uuid": "b4787eb6-f1f2-47ae-9d29-a508eee7d210",
     "title": "name",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Name&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679817435
+    "timestamp": 1751287540005
   },
   "references/eClassifiers/AgentSkill/references/eStructuralFeatures/inputModes/index.html": {
     "path": "AgentSkill/Attributes/inputModes",
-    "link-uuid": "67a89e4f-e617-4b54-a715-9baddb7aed2d",
+    "link-uuid": "3f1811d7-b7d0-44af-825e-9a92826b99b3",
     "title": "inputModes",
     "content": "Type EString Multiplicity 0..* Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;type&quot;: &quot;array&quot;,\n      &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Inputmodes&quot;\n}",
-    "timestamp": 1749679817557
+    "timestamp": 1751287540153
   },
   "references/eClassifiers/SendTaskStreamingResponseResult/inheritance.html": {
     "path": "SendTaskStreamingResponseResult/Inheritance",
-    "link-uuid": "eb312fcb-182b-4147-9a4d-e6357bc92a77",
+    "link-uuid": "42d3d882-dbdb-4e56-b9bb-84e697d1a223",
     "title": "Inheritance",
     "content": "Subtypes ",
-    "timestamp": 1749679819178
+    "timestamp": 1751287541803
   },
   "references/eClassifiers/TaskArtifactUpdateEvent/references/eStructuralFeatures/artifact/index.html": {
     "path": "TaskArtifactUpdateEvent/References/artifact",
-    "link-uuid": "5d797956-4287-4efa-bafd-18754a5b4bc0",
+    "link-uuid": "41e7bffe-93e9-40be-bf21-3261e7f08511",
     "title": "artifact",
     "content": "Type Artifact Multiplicity 1 Specification {&quot;$ref&quot;: &quot;#/$defs/Artifact&quot;}",
-    "timestamp": 1749679819416
+    "timestamp": 1751287542063
   },
   "references/eClassifiers/SendTaskStreamingResponse/references/eStructuralFeatures/jsonrpc/index.html": {
     "path": "SendTaskStreamingResponse/Attributes/jsonrpc",
-    "link-uuid": "681dfd59-da97-4f00-8885-9c068b6be607",
+    "link-uuid": "f1667c29-4488-4a09-846d-bed15475713e",
     "title": "jsonrpc",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;default&quot;: &quot;2.0&quot;,\n  &quot;const&quot;: &quot;2.0&quot;,\n  &quot;title&quot;: &quot;Jsonrpc&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679819142
+    "timestamp": 1751287541765
   },
   "references/eClassifiers/InvalidRequestError/references/eStructuralFeatures/message/index.html": {
     "path": "InvalidRequestError/Attributes/message",
-    "link-uuid": "010e2a59-7a24-49c6-9352-d77d79e67e1a",
+    "link-uuid": "e92a9f9a-0014-4640-a92d-57bdf832a949",
     "title": "message",
     "content": "Type EString Multiplicity 1 A short description of the error Specification {\n  &quot;default&quot;: &quot;Request payload validation error&quot;,\n  &quot;const&quot;: &quot;Request payload validation error&quot;,\n  &quot;examples&quot;: [&quot;Request payload validation error&quot;],\n  &quot;description&quot;: &quot;A short description of the error&quot;,\n  &quot;title&quot;: &quot;Message&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818410
+    "timestamp": 1751287541000
   },
   "references/eClassifiers/Artifact/references/eStructuralFeatures/metadata/index.html": {
     "path": "Artifact/References/metadata",
-    "link-uuid": "cc2e01ba-9ba0-471d-b870-0b69ab3e6f24",
+    "link-uuid": "0420cc64-9cc8-4ad4-8d8d-7aeef98f4818",
     "title": "metadata",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Metadata&quot;\n}",
-    "timestamp": 1749679817632
+    "timestamp": 1751287540230
   },
   "references/eClassifiers/GetTaskPushNotificationResponse/references/eStructuralFeatures/result/index.html": {
     "path": "GetTaskPushNotificationResponse/References/result",
-    "link-uuid": "3c442b75-fbd8-4660-8b27-2c316d986786",
+    "link-uuid": "e6755016-f01c-4a48-a2e5-68159ee95338",
     "title": "result",
     "content": "Type TaskPushNotificationConfig Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/TaskPushNotificationConfig&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679818128
+    "timestamp": 1751287540714
   },
   "references/eClassifiers/AgentCard/references/eStructuralFeatures/version/index.html": {
     "path": "AgentCard/Attributes/version",
-    "link-uuid": "0d7b57c2-90d7-4d11-be5f-5ea48af17db6",
+    "link-uuid": "ff60f3d6-0ad2-4f1e-bcf4-1e60eada371c",
     "title": "version",
     "content": "Type EString Multiplicity 1 Specification {\n  &quot;title&quot;: &quot;Version&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679817455
+    "timestamp": 1751287540026
   },
   "references/eClassifiers/JSONRPCResponse/index.html": {
-    "link-uuid": "c8037391-233c-4d43-add3-71b4da243e06",
+    "link-uuid": "5a915ec2-325c-4864-a042-6e771ce178fd",
     "title": "JSONRPCResponse",
     "content": "Specification {\n  &quot;title&quot;: &quot;JSONRPCResponse&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;result&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {\n          &quot;additionalProperties&quot;: {},\n          &quot;type&quot;: &quot;object&quot;\n        },\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Result&quot;\n    },\n    &quot;id&quot;: {\n      &quot;anyOf&quot;: [\n        {&quot;type&quot;: &quot;integer&quot;},\n        {&quot;type&quot;: &quot;string&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ],\n      &quot;title&quot;: &quot;Id&quot;\n    },\n    &quot;jsonrpc&quot;: {\n      &quot;default&quot;: &quot;2.0&quot;,\n      &quot;const&quot;: &quot;2.0&quot;,\n      &quot;title&quot;: &quot;Jsonrpc&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;error&quot;: {\n      &quot;default&quot;: null,\n      &quot;anyOf&quot;: [\n        {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n        {&quot;type&quot;: &quot;null&quot;}\n      ]\n    }\n  }\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679818657
+    "timestamp": 1751287541257
   },
   "references/eClassifiers/SendTaskResponse/references/eStructuralFeatures/error/index.html": {
     "path": "SendTaskResponse/References/error",
-    "link-uuid": "32f631ba-e474-4803-8e1f-206d1725ed54",
+    "link-uuid": "268bf12c-3e74-42b1-a185-ad817c480af7",
     "title": "error",
     "content": "Type JSONRPCError Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {&quot;$ref&quot;: &quot;#/$defs/JSONRPCError&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ]\n}",
-    "timestamp": 1749679819015
+    "timestamp": 1751287541632
   },
   "references/eClassifiers/FilePart/references/eStructuralFeatures/type/index.html": {
     "path": "FilePart/Attributes/type",
-    "link-uuid": "8c3c4f6a-aa7a-42b0-853c-09e14872aa56",
+    "link-uuid": "52ab64ec-dfcc-4eab-b4aa-e8e67965cb90",
     "title": "type",
     "content": "Type EString Multiplicity 1 Type of the part Specification {\n  &quot;default&quot;: &quot;file&quot;,\n  &quot;const&quot;: &quot;file&quot;,\n  &quot;examples&quot;: [&quot;file&quot;],\n  &quot;description&quot;: &quot;Type of the part&quot;,\n  &quot;title&quot;: &quot;Type&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818006
+    "timestamp": 1751287540589
   },
   "references/eClassifiers/InvalidParamsError/references/eStructuralFeatures/message/index.html": {
     "path": "InvalidParamsError/Attributes/message",
-    "link-uuid": "21fe1981-8e4a-4f22-99ef-65313dfbb9d2",
+    "link-uuid": "07af16b3-f485-4231-84c1-28e441d2d4a5",
     "title": "message",
     "content": "Type EString Multiplicity 1 A short description of the error Specification {\n  &quot;default&quot;: &quot;Invalid parameters&quot;,\n  &quot;const&quot;: &quot;Invalid parameters&quot;,\n  &quot;examples&quot;: [&quot;Invalid parameters&quot;],\n  &quot;description&quot;: &quot;A short description of the error&quot;,\n  &quot;title&quot;: &quot;Message&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679818356
+    "timestamp": 1751287540947
   },
   "references/eClassifiers/InvalidRequestError/references/eStructuralFeatures/data/index.html": {
     "path": "InvalidRequestError/References/data",
-    "link-uuid": "59acf488-0c39-4378-a01b-446f14ae9bca",
+    "link-uuid": "e125b3bc-8948-4f4b-975b-1c7febaa5cc6",
     "title": "data",
     "content": "Type EObject Multiplicity 0..1 Specification {\n  &quot;default&quot;: null,\n  &quot;anyOf&quot;: [\n    {\n      &quot;additionalProperties&quot;: {},\n      &quot;type&quot;: &quot;object&quot;\n    },\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Data&quot;\n}",
-    "timestamp": 1749679818405
+    "timestamp": 1751287540995
   },
   "references/eClassifiers/AgentAuthentication/references/eStructuralFeatures/schemes/index.html": {
     "path": "AgentAuthentication/Attributes/schemes",
-    "link-uuid": "dc45f1ed-082e-4f53-9474-a821e206aeb8",
+    "link-uuid": "fdc9a595-31bb-4db0-8b28-b55d00757391",
     "title": "schemes",
     "content": "Type EString Multiplicity 0..* Specification {\n  &quot;title&quot;: &quot;Schemes&quot;,\n  &quot;type&quot;: &quot;array&quot;,\n  &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}\n}",
-    "timestamp": 1749679817316
+    "timestamp": 1751287539878
   },
   "references/eClassifiers/DataPart/references/eStructuralFeatures/type/index.html": {
     "path": "DataPart/Attributes/type",
-    "link-uuid": "180061ec-dccc-432c-833d-11bd10abcb54",
+    "link-uuid": "e314ce99-9a7f-4ea6-93f9-1e95577521b1",
     "title": "type",
     "content": "Type EString Multiplicity 1 Type of the part Specification {\n  &quot;default&quot;: &quot;data&quot;,\n  &quot;const&quot;: &quot;data&quot;,\n  &quot;examples&quot;: [&quot;data&quot;],\n  &quot;description&quot;: &quot;Type of the part&quot;,\n  &quot;title&quot;: &quot;Type&quot;,\n  &quot;type&quot;: &quot;string&quot;\n}",
-    "timestamp": 1749679817876
+    "timestamp": 1751287540478
   },
   "references/eClassifiers/Artifact/references/eStructuralFeatures/parts/index.html": {
     "path": "Artifact/References/parts",
-    "link-uuid": "307aab97-00b9-48bd-acff-73ab9af32a31",
+    "link-uuid": "a5427795-9cb9-43e1-ac3c-d0ff091b915b",
     "title": "parts",
     "content": "Type Part Multiplicity 0..* Specification {\n  &quot;title&quot;: &quot;Parts&quot;,\n  &quot;type&quot;: &quot;array&quot;,\n  &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/Part&quot;}\n}",
-    "timestamp": 1749679817642
+    "timestamp": 1751287540241
   },
   "references/eClassifiers/GetTaskPushNotificationResponse/references/eStructuralFeatures/id/index.html": {
     "path": "GetTaskPushNotificationResponse/Attributes/id",
-    "link-uuid": "e9b05d7a-bb22-4364-b7be-4bbcb3aa0c5a",
+    "link-uuid": "4bce2a59-59ff-4c74-a618-fa3161e90676",
     "title": "id",
     "content": "Type EString Multiplicity 0..1 Specification {\n  &quot;anyOf&quot;: [\n    {&quot;type&quot;: &quot;integer&quot;},\n    {&quot;type&quot;: &quot;string&quot;},\n    {&quot;type&quot;: &quot;null&quot;}\n  ],\n  &quot;title&quot;: &quot;Id&quot;\n}",
-    "timestamp": 1749679818118
+    "timestamp": 1751287540700
   },
   "references/eClassifiers/TaskPushNotificationConfig/index.html": {
-    "link-uuid": "306ff690-2c1f-4183-a0b3-51c65a70709b",
+    "link-uuid": "e320cc5e-5864-4cc8-9c91-f1adbf3eb6b0",
     "title": "TaskPushNotificationConfig",
     "content": "Specification {\n  &quot;title&quot;: &quot;TaskPushNotificationConfig&quot;,\n  &quot;type&quot;: &quot;object&quot;,\n  &quot;properties&quot;: {\n    &quot;id&quot;: {\n      &quot;title&quot;: &quot;Id&quot;,\n      &quot;type&quot;: &quot;string&quot;\n    },\n    &quot;pushNotificationConfig&quot;: {&quot;$ref&quot;: &quot;#/$defs/PushNotificationConfig&quot;}\n  },\n  &quot;required&quot;: [\n    &quot;id&quot;,\n    &quot;pushNotificationConfig&quot;\n  ]\n}\n Diagram Graphs Default Graph Circular Graph Force Graph ",
-    "timestamp": 1749679819601
+    "timestamp": 1751287542265
   }
 }
