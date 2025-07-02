@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.function.BiConsumer;
 
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EDataType;
@@ -168,6 +169,7 @@ public class EcoreGenA2aProcessorsFactory {
 				
 				@Override
 				protected void createDrawioConnection(
+						URI base,
 						Layer layer, 
 						EClassifierNodeProcessor<?> dependency,
 						Node diagramNode, 
@@ -192,9 +194,9 @@ public class EcoreGenA2aProcessorsFactory {
 					// Reference
 					for (EReference ref: getTarget().getEReferences()) {
 						if (ref.getEType() == targetEClassifier) {
-							Connection containment = layer.createConnection(diagramNode, targetNode);
-							containment.setLabel(ref.getName());
-							Map<String, String> style = containment.getStyle();
+							Connection refConnection = layer.createConnection(diagramNode, targetNode);
+							refConnection.setLabel(ref.getName());
+							Map<String, String> style = refConnection.getStyle();
 							style.put("rounded", "0");
 							style.put("orthogonalLoop", "1");
 							style.put("jettySize", "1");
@@ -202,6 +204,13 @@ public class EcoreGenA2aProcessorsFactory {
 							if (ref.isMany()) {
 								style.put("startArrow", "diamondThin");
 								style.put("startFill", "1");
+							}
+							WidgetFactory refWidgetFactory = eReferenceWidgetFactories.get(ref.getName());
+							if (refWidgetFactory != null) {
+								Object refLink = refWidgetFactory.createLink(base, progressMonitor);
+								if (refLink instanceof org.nasdanika.models.app.Link) {
+									refConnection.setLink(((org.nasdanika.models.app.Link) refLink).getLocation());
+								}								
 							}
 						}
 					}
