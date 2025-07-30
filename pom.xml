@@ -189,7 +189,7 @@
 
 	 <profiles>
 		<profile>
-			<id>ossrh</id>
+			<id>central</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -206,39 +206,18 @@
 							</execution>
 						</executions>
 					</plugin>	
-					<plugin>
-						<groupId>org.sonatype.plugins</groupId>
-						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.7.0</version>
+					<plugin>					
+						<groupId>org.sonatype.central</groupId>
+						<artifactId>central-publishing-maven-plugin</artifactId>
+						<version>0.8.0</version>
 						<extensions>true</extensions>
 						<configuration>
-							<serverId>ossrh</serverId>
-							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-							<autoReleaseAfterClose>true</autoReleaseAfterClose>
+							<publishingServerId>central</publishingServerId>
+							<autoPublish>true</autoPublish>
 						</configuration>
-					</plugin>								
+					</plugin>
 				</plugins>
 			</build>
-			<distributionManagement>
-				<repository>
-					<id>ossrh</id>
-					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-				</repository>
-				<snapshotRepository>
-					<id>ossrh</id>
-					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-				</snapshotRepository>
-			</distributionManagement>	
-		</profile>
-		<profile>
-			<id>github</id>
-			<distributionManagement>
-			   <repository>
-			     <id>github</id>
-			     <name>GitHub Nasdanika Models Apache Maven Packages</name>
-			     <url>https://maven.pkg.github.com/Nasdanika-Models/excel</url>
-			   </repository>
-			</distributionManagement>
 		</profile>
 	</profiles>
 
