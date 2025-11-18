@@ -74,7 +74,7 @@ public class EcoreGenA2aProcessorsFactory {
 	)
 	public EPackageNodeProcessor createEPackageProcessor(
 			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
-			java.util.function.Function<ProgressMonitor, Action> prototypeProvider,
+			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {		
 		return new EPackageNodeProcessor(config, context, prototypeProvider) {
@@ -130,7 +130,7 @@ public class EcoreGenA2aProcessorsFactory {
 	@EClassifierNodeProcessorFactory
 	public EClassifierNodeProcessor<?> createEClassifierProcessor(
 			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
-			java.util.function.Function<ProgressMonitor, Action> prototypeProvider,
+			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {
 		
@@ -169,7 +169,7 @@ public class EcoreGenA2aProcessorsFactory {
 				
 				@Override
 				protected void createDrawioConnection(
-						URI base,
+						URI base, 
 						Layer layer, 
 						EClassifierNodeProcessor<?> dependency,
 						Node diagramNode, 
