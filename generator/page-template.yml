@@ -43,7 +43,7 @@ bootstrap.Page:
               user-select: none;
             }               
       </style>
-
+      
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
       <script>
@@ -53,11 +53,10 @@ bootstrap.Page:
       
         gtag('config', 'G-9BRJVLK8CC');
       </script>    
-      
-      <!-- ${search-config} -->
-       
   body:
     app.Page:
       fluid: true
+      navigation-panel:
+        style: SEARCHABLE_TREE 
         
  

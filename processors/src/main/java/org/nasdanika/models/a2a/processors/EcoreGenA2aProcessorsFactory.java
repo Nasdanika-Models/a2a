@@ -73,7 +73,7 @@ public class EcoreGenA2aProcessorsFactory {
 				"""
 	)
 	public EPackageNodeProcessor createEPackageProcessor(
-			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {		
@@ -101,7 +101,7 @@ public class EcoreGenA2aProcessorsFactory {
 					
 					Model model = page.getModel();
 					Root root = model.getRoot();
-					Layer backgroundLayer = root.getLayers().get(0);
+					Layer<?> backgroundLayer = root.getLayers().get(0);
 //					Map<EPackage, Layer> layers = new HashMap<>();
 					
 					generateDrawioDiagram(
@@ -129,7 +129,7 @@ public class EcoreGenA2aProcessorsFactory {
 	
 	@EClassifierNodeProcessorFactory
 	public EClassifierNodeProcessor<?> createEClassifierProcessor(
-			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {
@@ -170,7 +170,7 @@ public class EcoreGenA2aProcessorsFactory {
 				@Override
 				protected void createDrawioConnection(
 						URI base, 
-						Layer layer, 
+						Layer<?> layer, 
 						EClassifierNodeProcessor<?> dependency,
 						Node diagramNode, 
 						Node targetNode) {
