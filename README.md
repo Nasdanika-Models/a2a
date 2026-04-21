@@ -1,5 +1,4 @@
-# Excel
+# A2A 
 
-Ecore model, loader, resource and resource factory for MS Excel files. 
+Ecore model generated from A2A JSON schema.
 
-Use case - see https://github.com/Nasdanika-Models/architecture
